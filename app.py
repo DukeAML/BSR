@@ -269,14 +269,14 @@ def create_fcf_lineplot(date_slider):
     fig.add_trace(
         go.Bar(
             x=month_range_vis,
-            y=income,
-            name="Income",
+            y=(0 - np.array(expense)).tolist(),
+            name="Expenses",
         ))
     fig.add_trace(
         go.Bar(
             x=month_range_vis,
-            y=(0 - np.array(expense)).tolist(),
-            name="Expenses",
+            y=income,
+            name="Income",
         ))
     fig.update_layout(
             title="Free Cash Flow by Month",
@@ -326,14 +326,14 @@ def create_fcf_weekly(start_date, end_date):
     fig.add_trace(
         go.Bar(
             x=week_range_vis,
-            y=income,
-            name="Income",
+            y=(0 - np.array(expense)).tolist(),
+            name="Expenses",
         ))
     fig.add_trace(
         go.Bar(
             x=week_range_vis,
-            y=(0 - np.array(expense)).tolist(),
-            name="Expenses",
+            y=income,
+            name="Income",
         ))
     fig.update_layout(
             title="Free Cash Flow by Week",
@@ -381,14 +381,14 @@ def create_fcf_daily(start_date, end_date):
     fig.add_trace(
         go.Bar(
             x=day_range_vis,
-            y=income,
-            name="Income",
+            y=(0 - np.array(expense)).tolist(),
+            name="Expenses",
         ))
     fig.add_trace(
         go.Bar(
             x=day_range_vis,
-            y=(0 - np.array(expense)).tolist(),
-            name="Expenses",
+            y=income,
+            name="Income",
         ))
     fig.update_layout(
             title="Free Cash Flow by Day",

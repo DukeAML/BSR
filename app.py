@@ -1,5 +1,6 @@
 import pathlib
 import dash
+import numpy as np
 from datetime import datetime, timedelta
 import pandas as pd
 from dash.dependencies import Input, Output, ClientsideFunction
@@ -119,7 +120,7 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.P(
-                            "Filter by date:",
+                            "Filter by Date:",
                             className="control_label",
                             style={'margin-bottom':'15px'}
                         ),
@@ -135,8 +136,24 @@ app.layout = html.Div(
                         ),
                         html.Div(
                             id="output-date-slider",
-                            style={'margin-left':'25px'},
+                            style={'margin-left':'25px',
+                                    'margin-bottom':'10px'},
                         ),
+                        html.P(
+                            "Date Range for Weekly/Daily Graphs:",
+                            className="control_label",
+                            style={'margin-bottom':'10px'}
+                        ),
+                        dcc.DatePickerRange(
+                            id="date-picker-range",
+                            min_date_allowed=datetime(2017,1,1),
+                            max_date_allowed=yearwrap(NOW,1),
+                            initial_visible_month=datetime.now(),
+                            start_date_placeholder_text="Start Period",
+                            end_date_placeholder_text="End Period",
+                            start_date=datetime.now(),
+                            end_date=datetime.now()
+                        )
                     ],
                     className="pretty_container four columns",
                     id="filter-options",
@@ -155,7 +172,21 @@ app.layout = html.Div(
             ],
             className="row flex-display"
         ),
-
+        html.Div(
+            [
+                html.Div(
+                    [dcc.Graph(id="fcf_lineplot_weekly")],
+                    className="pretty_container six columns",
+                    id="weeklyGraphContainer",
+                ),
+                html.Div(
+                    [dcc.Graph(id="fcf_lineplot_daily")],
+                    className="pretty_container six columns",
+                    id="dailyGraphContainer",
+                ),
+            ],
+            className="row flex-display"
+        ),
 
         # temp div for none input for temp. display of graph e.g. placeholder
         html.Div(id='none',children=[],style={'display':'none'}),
@@ -166,15 +197,21 @@ app.layout = html.Div(
 )
 
 
-def filter_dataframe_month(df, date_slider):
-    date1 = EPOCH + timedelta(seconds=date_slider[0])
-    date2 = EPOCH + timedelta(seconds=date_slider[1])
+def filter_dataframe_wd(df, start, end):
     dff = df[
-        (df["DATE"] >= datetime(date1.year, date1.month, 1)) &
-        (df["DATE"] < datetime(date2.year, date2.month+1,1))
+        (df["DATE"] >= datetime(start.year, start.month, start.day)) &
+        (df["DATE"] < datetime(end.year, end.month, end.day))
     ]
     dff = dff.reset_index(drop=True)
     return dff
+
+
+def filter_dataframe_month(df, date_slider):
+    date1 = EPOCH + timedelta(seconds=date_slider[0])
+    date2 = EPOCH + timedelta(seconds=date_slider[1])
+    date1 = yearwrap(date1,0,0)
+    date2 = yearwrap(date2,0,1)
+    return filter_dataframe_wd(df, date1, date2)
 
 
 # Create callbacks
@@ -183,6 +220,7 @@ app.clientside_callback(
     Output("output-clientside", "children"),
     [Input("fcf_lineplot", "figure")],
 )
+
 
 @app.callback(
     Output('output-date-slider', 'children'),
@@ -204,30 +242,156 @@ def update_output(value):
     ]
 )
 def create_fcf_lineplot(date_slider):
+    # Data set-up
     dff = filter_dataframe_month(df, date_slider)
-    month_range = pd.date_range(dff["DATE"][0],dff["DATE"][len(dff)-1],freq='MS').strftime("%b %y").tolist()
+    month_range = pd.Series(pd.date_range(yearwrap(dff["DATE"][0],0,0),yearwrap(dff["DATE"][len(dff)-1],0,0),freq='MS')).tolist()
+    month_range_vis = pd.date_range(dff["DATE"][0],dff["DATE"][len(dff)-1],freq='MS').strftime("%b %y").tolist()
+
+    # Set up data for y axes
+    income = [0 for i in range(len(month_range))]
+    expense = [0 for i in range(len(month_range))]
+    for i in range(len(month_range)):
+        tempdf = filter_dataframe_wd(dff, month_range[i],
+                            yearwrap(month_range[i],0,1))
+        income[i] = sum(tempdf["INCOME"])
+        expense[i] = sum(tempdf["EXPENSES"])
+
+    # Create figure
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
-            x=month_range,
-            y=(df["INCOME"] - df["EXPENSES"]).tolist(),
+            x=month_range_vis,
+            y=(np.array(income) - np.array(expense)).tolist(),
+            mode="lines+markers",
             name="Free Cash Flow",
             marker_color="black"
         ))
     fig.add_trace(
         go.Bar(
-            x=month_range,
-            y=df["INCOME"].tolist(),
+            x=month_range_vis,
+            y=income,
             name="Income",
         ))
     fig.add_trace(
         go.Bar(
-            x=month_range,
-            y=(0 - df["EXPENSES"]).tolist(),
+            x=month_range_vis,
+            y=(0 - np.array(expense)).tolist(),
             name="Expenses",
         ))
     fig.update_layout(
             title="Free Cash Flow by Month",
+            yaxis_title="USD",
+            barmode='relative',
+            autosize=True
+    )
+    return fig
+
+
+@app.callback(
+    Output('fcf_lineplot_weekly', 'figure'),
+    [
+        Input('date-picker-range', 'start_date'),
+        Input('date-picker-range', 'end_date')
+    ]
+)
+def create_fcf_weekly(start_date, end_date):
+
+    # Data set-up
+    start_date = datetime.strptime(start_date.split('T')[0], '%Y-%m-%d')
+    end_date = datetime.strptime(end_date.split('T')[0], '%Y-%m-%d')
+    dff = filter_dataframe_wd(df, start_date, end_date)
+    week_range = pd.Series(pd.date_range(start_date,end_date,freq='W')).tolist()
+    week_range_vis = pd.date_range(start_date,end_date,freq='W').strftime("%b %d").tolist()
+    for i in range(len(week_range)):
+        week_range_vis[i] = week_range_vis[i] + " - " + pd.period_range(week_range[i],freq='W',periods=2).strftime("%b %d, %Y").tolist()[1]
+
+    # Set up data for y axes
+    income = [0 for i in range(len(week_range))]
+    expense = [0 for i in range(len(week_range))]
+    for i in range(len(week_range)):
+        tempdf = filter_dataframe_wd(dff, week_range[i],
+                        pd.Series(pd.period_range(week_range[i],freq='W',periods=2)).tolist()[1])
+        income[i] = sum(tempdf["INCOME"])
+        expense[i] = sum(tempdf["EXPENSES"])
+
+    # Create figure
+    fig = go.Figure()
+    fig.add_trace(
+        go.Scatter(
+            x=week_range_vis,
+            y=(np.array(income) - np.array(expense)).tolist(),
+            name="Free Cash Flow",
+            marker_color="black"
+        ))
+    fig.add_trace(
+        go.Bar(
+            x=week_range_vis,
+            y=income,
+            name="Income",
+        ))
+    fig.add_trace(
+        go.Bar(
+            x=week_range_vis,
+            y=(0 - np.array(expense)).tolist(),
+            name="Expenses",
+        ))
+    fig.update_layout(
+            title="Free Cash Flow by Week",
+            yaxis_title="USD",
+            barmode='relative',
+            autosize=True
+    )
+    return fig
+
+
+@app.callback(
+    Output('fcf_lineplot_daily', 'figure'),
+    [
+        Input('date-picker-range', 'start_date'),
+        Input('date-picker-range', 'end_date')
+    ]
+)
+def create_fcf_daily(start_date, end_date):
+
+    # Data set-up
+    start_date = datetime.strptime(start_date.split('T')[0], '%Y-%m-%d')
+    end_date = datetime.strptime(end_date.split('T')[0], '%Y-%m-%d')
+    dff = filter_dataframe_wd(df, start_date, end_date+timedelta(days=1))
+    day_range = pd.Series(pd.date_range(start_date,end_date,freq='D')).tolist()
+    day_range_vis = pd.date_range(start_date,end_date,freq='D').strftime("%b %d, %Y").tolist()
+
+    # Set up data for y axes
+    income = [0 for i in range(len(day_range))]
+    expense = [0 for i in range(len(day_range))]
+    for i in range(len(day_range)):
+        tempdf = filter_dataframe_wd(dff, day_range[i],
+                            day_range[i] + timedelta(days=1))
+        income[i] = sum(tempdf["INCOME"])
+        expense[i] = sum(tempdf["EXPENSES"])
+
+    # Create figure
+    fig = go.Figure()
+    fig.add_trace(
+        go.Scatter(
+            x=day_range_vis,
+            y=(np.array(income) - np.array(expense)).tolist(),
+            name="Free Cash Flow",
+            marker_color="black"
+        ))
+    fig.add_trace(
+        go.Bar(
+            x=day_range_vis,
+            y=income,
+            name="Income",
+        ))
+    fig.add_trace(
+        go.Bar(
+            x=day_range_vis,
+            y=(0 - np.array(expense)).tolist(),
+            name="Expenses",
+        ))
+    fig.update_layout(
+            title="Free Cash Flow by Day",
             yaxis_title="USD",
             barmode='relative',
             autosize=True

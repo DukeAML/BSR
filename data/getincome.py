@@ -1,6 +1,14 @@
 import requests
 import json
 import pandas as pd
+import time
+
+'''
+    def convert_to_dt(time):
+        """Converts passed time of YYYY-MM-DD to datetime object
+        """
+        return datetime.strptime(time, "%Y-%m-%d")
+'''
 
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
@@ -14,24 +22,15 @@ def extractData(data):
     orders = data["orders"]   #orders is a list of every order
     
     for order in orders:        # order is a dict
-        # get "Company Name" & "Company ID"
-        accountInfo = order["account"]
-        company_name = accountInfo["fully_qualified_name"]
-        company_id = accountInfo["id"]
-        # get "Due Date", "Invoice Date", "Order #", & "Money Paid"
         due_date = order["due_date"]
         invoice_date = order["invoice_date"]
         order_num = order["number"]
+        company_name = order["account"]["fully_qualified_name"]
+        company_id = order["account"]["id"]
         payment_total = order["payment_total"]
-        # get "Items"
-        itemsInfo = order["line_items"]
         items = []
-        for item in itemsInfo:
-            ID = item["id"]
-            variantID = item["variant_id"]
-            quantity = item["quantity"]
-            items.append({ID : [variantID, quantity]})
-
+        for item in order["line_items"]:
+            items.append([item["id"], item["variant_id"], item["quantity"]])
         # zip together the columns with the values
         values = [due_date, invoice_date, order_num, company_name, company_id, payment_total, items]
         allOrders.append(dict(zip(columns, values)))
@@ -42,6 +41,7 @@ def jprint(obj):
     text = json.dumps(obj, sort_keys=True, indent=4)
     print(text)
 
+
 def apiCall_orders(pageNum):
     payload = {'token': API_KEY, 'page':pageNum}
     r = requests.get(url=URL, headers=headers, params=payload)
@@ -51,31 +51,28 @@ def apiCall_orders(pageNum):
 
 def main():
     global allOrders
-
+    start_time = time.time()
+    
     data = apiCall_orders(1)
     meta = data['meta']
     totalPages = meta['total_pages']
 
-    print(totalPages)
     totalPages = 1
     
     for pageNum in range(1, totalPages+1):
         data = apiCall_orders(pageNum)
 
-        #jprint(data)
+        jprint(data)
         extractData(data)
 
     # create pandas dataframe
     df = pd.DataFrame(allOrders)
-    df.to_csv (r'income_data.csv', index = False, header=True)
+    #df.to_csv (r'income_data1.csv', index = False, header=True)
     print(len(df.index))    #tells you how many orders there are
-
+    print("--- %s seconds ---" % (time.time() - start_time))
+    
 
 if __name__ == '__main__':
     main()
 
-
-
-
-
-
+          

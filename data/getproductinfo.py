@@ -46,8 +46,9 @@ def jprint(obj):
 
 def apiCall(pageNum):
     #'q[name_eq]': "INGREDIENTS"  product_type = inventory_item
+    # 'q[product_type_eq]': "inventory_item"
     # 17669
-    payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_item"}
+    payload = {'token': API_KEY, 'page':pageNum}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data

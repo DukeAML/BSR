@@ -38,7 +38,7 @@ def yearwrap(time, add_years, add_months=0, daybool=False):
 def convert_to_dt(time):
     """Converts passed time of MM/DD/YY to datetime object
     """
-    return datetime.strptime(time, "%m/%d/%Y")
+    return datetime.strptime(time, "%Y-%m-%d")
 
 #
 #
@@ -46,9 +46,21 @@ def convert_to_dt(time):
 
 # Retrieve relative folder and load data
 PATH = pathlib.Path(__file__).parent
-df = pd.read_csv(PATH.joinpath("fakedata.csv"), low_memory=False)
-df["DATE"] = df["DATE"].apply(convert_to_dt)
-df = df.sort_values(by="DATE")
+
+indf = pd.read_csv(PATH.joinpath("data\income_data.csv"), low_memory=False)
+#indf["Due Date"] = indf["Due Date"].apply(convert_to_dt)
+
+expdf = pd.read_csv(PATH.joinpath("data\purchases.csv"), low_memory=False)
+expdf = expdf.rename({'date': 'Due Date', 'money spent': 'Money Paid'}, axis=1)
+#expdf["Due Date"] = expdf["Due Date"].apply(convert_to_dt)
+expdf["Money Paid"] = 0 - expdf["Money Paid"]
+
+df = indf[['Due Date', 'Money Paid']].copy()
+df = df.append(expdf[['Due Date', 'Money Paid']].copy())
+df["Due Date"] = pd.to_datetime(df["Due Date"])
+df = df.sort_values(by="Due Date")
+df.fillna(0)
+df = df.rename({'Due Date': 'DATE'}, axis=1)
 
 
 # Initialize app
@@ -126,10 +138,10 @@ app.layout = html.Div(
                         ),
                         dcc.RangeSlider(
                             id="date-slider",
-                            min=unix_time_secs(datetime(2017,1,1)),
-                            max=unix_time_secs(yearwrap(NOW,1)),
+                            min=unix_time_secs(min(df["DATE"])),
+                            max=unix_time_secs(max(df["DATE"])),
                             value=[unix_time_secs(yearwrap(NOW,0,-6)),
-                                    unix_time_secs(yearwrap(NOW,0,6))],
+                                    unix_time_secs(NOW)],
                             allowCross=False,
                             #updatemode='drag',
                             className="dcc_control",
@@ -146,12 +158,12 @@ app.layout = html.Div(
                         ),
                         dcc.DatePickerRange(
                             id="date-picker-range",
-                            min_date_allowed=datetime(2017,1,1),
-                            max_date_allowed=yearwrap(NOW,1),
+                            min_date_allowed=min(df["DATE"]),
+                            max_date_allowed=max(df["DATE"]),
                             #initial_visible_month=datetime.now(),
                             start_date_placeholder_text="Start Period",
                             end_date_placeholder_text="End Period",
-                            start_date=datetime.now(),
+                            start_date=datetime.now() - timedelta(days=14),
                             end_date=datetime.now()
                         )
                     ],
@@ -245,7 +257,7 @@ def create_fcf_lineplot(date_slider):
     # Data set-up
     dff = filter_dataframe_month(df, date_slider)
     month_range = pd.Series(pd.date_range(yearwrap(dff["DATE"][0],0,0),yearwrap(dff["DATE"][len(dff)-1],0,0),freq='MS')).tolist()
-    month_range_vis = pd.date_range(dff["DATE"][0],dff["DATE"][len(dff)-1],freq='MS').strftime("%b %y").tolist()
+    month_range_vis = pd.date_range(dff["DATE"][0],dff["DATE"][len(dff)-1],freq='MS').strftime("%b %Y").tolist()
 
     # Set up data for y axes
     income = [0 for i in range(len(month_range))]
@@ -253,15 +265,15 @@ def create_fcf_lineplot(date_slider):
     for i in range(len(month_range)):
         tempdf = filter_dataframe_wd(dff, month_range[i],
                             yearwrap(month_range[i],0,1))
-        income[i] = sum(tempdf["INCOME"])
-        expense[i] = sum(tempdf["EXPENSES"])
+        income[i] = sum(tempdf[tempdf["Money Paid"] > 0]["Money Paid"])
+        expense[i] = sum(tempdf[tempdf["Money Paid"] < 0]["Money Paid"])
 
     # Create figure
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
             x=month_range_vis,
-            y=(np.array(income) - np.array(expense)).tolist(),
+            y=(np.array(income) + np.array(expense)).tolist(),
             mode="lines+markers",
             name="Free Cash Flow",
             marker_color="black"
@@ -269,7 +281,7 @@ def create_fcf_lineplot(date_slider):
     fig.add_trace(
         go.Bar(
             x=month_range_vis,
-            y=(0 - np.array(expense)).tolist(),
+            y=expense,
             name="Expenses",
         ))
     fig.add_trace(
@@ -282,6 +294,7 @@ def create_fcf_lineplot(date_slider):
             title="Free Cash Flow by Month",
             yaxis_title="USD",
             barmode='relative',
+            hovermode='x',
             autosize=True
     )
     return fig
@@ -311,22 +324,22 @@ def create_fcf_weekly(start_date, end_date):
     for i in range(len(week_range)):
         tempdf = filter_dataframe_wd(dff, week_range[i],
                         pd.Series(pd.period_range(week_range[i],freq='W',periods=2)).tolist()[1])
-        income[i] = sum(tempdf["INCOME"])
-        expense[i] = sum(tempdf["EXPENSES"])
+        income[i] = sum(tempdf[tempdf["Money Paid"] > 0]["Money Paid"])
+        expense[i] = sum(tempdf[tempdf["Money Paid"] < 0]["Money Paid"])
 
     # Create figure
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
             x=week_range_vis,
-            y=(np.array(income) - np.array(expense)).tolist(),
+            y=(np.array(income) + np.array(expense)).tolist(),
             name="Free Cash Flow",
             marker_color="black"
         ))
     fig.add_trace(
         go.Bar(
             x=week_range_vis,
-            y=(0 - np.array(expense)).tolist(),
+            y=expense,
             name="Expenses",
         ))
     fig.add_trace(
@@ -336,9 +349,10 @@ def create_fcf_weekly(start_date, end_date):
             name="Income",
         ))
     fig.update_layout(
-            title="Free Cash Flow by Week",
+            title="Free Cash Flow by Week - only includes selected days",
             yaxis_title="USD",
             barmode='relative',
+            hovermode='x',
             autosize=True
     )
     return fig
@@ -366,22 +380,22 @@ def create_fcf_daily(start_date, end_date):
     for i in range(len(day_range)):
         tempdf = filter_dataframe_wd(dff, day_range[i],
                             day_range[i] + timedelta(days=1))
-        income[i] = sum(tempdf["INCOME"])
-        expense[i] = sum(tempdf["EXPENSES"])
+        income[i] = sum(tempdf[tempdf["Money Paid"] > 0]["Money Paid"])
+        expense[i] = sum(tempdf[tempdf["Money Paid"] < 0]["Money Paid"])
 
     # Create figure
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
             x=day_range_vis,
-            y=(np.array(income) - np.array(expense)).tolist(),
+            y=(np.array(income) + np.array(expense)).tolist(),
             name="Free Cash Flow",
             marker_color="black"
         ))
     fig.add_trace(
         go.Bar(
             x=day_range_vis,
-            y=(0 - np.array(expense)).tolist(),
+            y=expense,
             name="Expenses",
         ))
     fig.add_trace(
@@ -394,6 +408,7 @@ def create_fcf_daily(start_date, end_date):
             title="Free Cash Flow by Day",
             yaxis_title="USD",
             barmode='relative',
+            hovermode='x',
             autosize=True
     )
     return fig

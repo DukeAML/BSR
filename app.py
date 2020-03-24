@@ -50,7 +50,7 @@ PATH = pathlib.Path(__file__).parent
 indf = pd.read_csv(PATH.joinpath("data\income_data.csv"), low_memory=False)
 #indf["Due Date"] = indf["Due Date"].apply(convert_to_dt)
 
-expdf = pd.read_csv(PATH.joinpath("data\purchases.csv"), low_memory=False)
+expdf = pd.read_csv(PATH.joinpath("data\expense_data.csv"), low_memory=False)
 expdf = expdf.rename({'date': 'Due Date', 'money spent': 'Money Paid'}, axis=1)
 #expdf["Due Date"] = expdf["Due Date"].apply(convert_to_dt)
 expdf["Money Paid"] = 0 - expdf["Money Paid"]
@@ -138,9 +138,9 @@ app.layout = html.Div(
                         ),
                         dcc.RangeSlider(
                             id="date-slider",
-                            min=unix_time_secs(min(df["DATE"])),
+                            min=unix_time_secs(datetime(2019,11,1)),
                             max=unix_time_secs(max(df["DATE"])),
-                            value=[unix_time_secs(yearwrap(NOW,0,-6)),
+                            value=[unix_time_secs(yearwrap(NOW,0,-4)),
                                     unix_time_secs(NOW)],
                             allowCross=False,
                             #updatemode='drag',
@@ -158,7 +158,7 @@ app.layout = html.Div(
                         ),
                         dcc.DatePickerRange(
                             id="date-picker-range",
-                            min_date_allowed=min(df["DATE"]),
+                            min_date_allowed=datetime(2019,11,1),
                             max_date_allowed=max(df["DATE"]),
                             #initial_visible_month=datetime.now(),
                             start_date_placeholder_text="Start Period",

@@ -48,7 +48,7 @@ def apiCall(pageNum):
     #'q[name_eq]': "INGREDIENTS"  product_type = inventory_item
     # 'q[product_type_eq]': "inventory_item"
     # 17669
-    payload = {'token': API_KEY, 'page':pageNum}
+    payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_item"}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
@@ -59,11 +59,13 @@ def main():
     
     data = apiCall(1)
     totalPages = data['meta']['total_pages']
+
+    print(totalPages)
     
     for pageNum in range(1, totalPages+1):
         data = apiCall(pageNum)
-
-        #jprint(data)
+        '''if(pageNum == 5):
+            jprint(data)'''
         extractData(data)
 
     # create pandas dataframe

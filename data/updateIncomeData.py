@@ -4,6 +4,7 @@ import pandas as pd
 import time
 from csv import writer
 import pathlib
+from datetime import date
 
 '''
     ?page[after]=abcde
@@ -44,7 +45,7 @@ def extractData(data):
             items.append([item["id"], item["variant_id"], item["quantity"]])
         # add new row of values to csv
         values = [due_date, invoice_date, order_num, company_name, company_id, payment_total, items]
-        #add_new_row('income_data2.csv', values)
+        add_new_row('income_data2.csv', values)
         newOrders.append(dict(zip(columns, values)))
 
 
@@ -54,46 +55,69 @@ def jprint(obj):
     print(text)
 
 
-def apiCall(pageNum, q):
+def apiCall(pageNum, startDate):
     #{"_changed":{"$gt":{"$date":"2016-08-01"},"$lt":{"$date":"2016-08-05"}}}
     #'id_gt' > shopifyMaxOrderNum ||  companyMaxOrderNum < 'id_gt' < 'R'
-    payload = {'token': API_KEY, 'page': pageNum, 'q': q}
+    #currentDate = '2020-03-25'
+    #payload = {'token': API_KEY, 'page': pageNum, 'q[invoice_date_gteq]': startDate, 'q[invoice_date_lteq]': endDate}
+    #payload = {'token': API_KEY, 'page': pageNum, 'q[number_gt]': shopifyMaxOrderNum}
+    payload = {'token': API_KEY, 'page': pageNum, 'q[invoice_date_gteq]': startDate}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
 
 
-def getMaxOrderNums():
+def getRecentDate():
     # get most recent order# from csv file (greatest one) & most recent shopify (R+greatest) 20553 & R26203
     PATH = pathlib.Path(__file__).parent
-    df = pd.read_csv(PATH.joinpath("income_data2.csv"), low_memory=False)
+    df = pd.read_csv(PATH.joinpath("income_data.csv"), low_memory=False)
+    mostRecentDate = df["Invoice Date"].max()
+    mostRecentDate = '2020-03-18'
+
     df_noShopify = df[df['Order #'] < 'B']  # also gets rid of order numbers starting with BSR
-    
     shopifyMaxOrderNum = df["Order #"].max()
     companyMaxOrderNum = df_noShopify["Order #"].max()
-    print(shopifyMaxOrderNum)
-    print(companyMaxOrderNum)
-    return (shopifyMaxOrderNum, companyMaxOrderNum)
+    return (mostRecentDate, shopifyMaxOrderNum, companyMaxOrderNum)
 
 
 def main():
-    (shopifyMaxOrderNum, companyMaxOrderNum) = getMaxOrderNums()
+    start = time.time()
+    #(shopifyMaxOrderNum, companyMaxOrderNum) = getMaxOrderNums()
+    #(startDate, shopifyMaxOrderNum, companyMaxOrderNum) = getRecentDate()
 
     # query only the orders where order number > max order num (bc max is the last order you read from last update)
     #q = {'$or': [{'number_gt':shopifyMaxOrderNum}, {'number_gt': companyMaxOrderNum, 'number_lt':'R'}]}
-    #q = {'number_gt': shopifyMaxOrderNum}
-    q = {'number_not_start': "R"}
-    data = apiCall(1, q)    #returns JSON of only new orders that you have to put into csv
+    #data = apiCall(1, shopifyMaxOrderNum, companyMaxOrderNum)    #returns JSON of only new orders that you have to put into csv
+    #mostRecentDate =
+    #currentDate = '2020-03-25'
+    today = date.today()
+    startDate = date(today.year, today.month, today.day-7)
+    startDate = startDate.strftime("%Y-%m-%d")
+
+    endDate = today.strftime("%Y-%m-%d")
+    
+    data = apiCall(1, startDate)
     totalPages = data['meta']['total_pages']
-    jprint(data)
+
+    print(totalPages)
     
     for pageNum in range(1, totalPages+1):
-        data = apiCall(pageNum, q)
+        data = apiCall(pageNum, startDate)
         #jprint(data)
         extractData(data) #inserts every order on this page into the csv
 
-    # print the orders
-    jprint(newOrders)
+    # post processing: delete duplicates
+    PATH = pathlib.Path(__file__).parent
+    df = pd.read_csv(PATH.joinpath("income_data2.csv"), low_memory=False)
+    df.drop_duplicates(subset="Order #", keep='last', inplace=True)
+
+    df['Invoice Date'] = pd.to_datetime(df['Invoice Date'])
+    df.sort_values(by=['Invoice Date'], inplace=True)
+
+    df.to_csv (r'income_data2.csv', index = False, header=True)
+
+    end = time.time()
+    print(end - start)
 
 
 if __name__ == '__main__':

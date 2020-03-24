@@ -62,7 +62,6 @@ def main():
 
     # rename columns
     dfP.columns = ['date', 'amount bought', 'sku', 'money spent']
-    dfP.to_csv (r'purchases.csv', index = False, header=True)
     
     dfInfo = pd.read_csv(PATH.joinpath("product_info.csv"), low_memory=False)
 
@@ -70,7 +69,7 @@ def main():
     unitPrices = dfInfo['cost_price'].tolist()
     dictionary = dict(zip(skuNums, unitPrices))
 
-    sku_errors = []
+    sku_errors = set()
     
     for i in range(len(dfP.index)):
         sku = dfP.iat[i, 2]
@@ -80,12 +79,23 @@ def main():
         if(unitPrice != 'not here'):
             dfP.iat[i, 3] = amountBought * unitPrice
         else:
-            if sku not in sku_errors:
-                sku_errors.append(sku)
-
-    for sku in sku_errors:
-        print(sku)
+            sku_errors.add(sku)
+                
+    dfP['date'] = pd.to_datetime(dfP['date'])
+    dfP.sort_values(by=['date'], inplace=True)
+    # remove rows where money spent == null
+    dfP = dfP[dfP['money spent'].notna()]
     dfP.to_csv (r'purchases.csv', index = False, header=True)
+
+    # make a new dataframe that has only the date & money spent
+    df = dfP[['date', 'money spent']].copy()
+    print(df.shape)
+    # combine duplicate dates so it sums up their 'money spent' column
+    df = df.groupby(['date'], as_index = False).sum()
+    #df = df.groupby(['date']).agg('sum')
+    #df = df.groupby(['date'], as_index = False).agg({'money spent': 'sum'})
+    print(df.shape)
+    df.to_csv (r'expense_data.csv', index = False, header=True)
     
 if __name__ == '__main__':
     main()

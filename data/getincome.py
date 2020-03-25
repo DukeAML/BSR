@@ -20,7 +20,7 @@ allOrders = []
 def extractData(data):
     global allOrders
     orders = data["orders"]   #orders is a list of every order
-    
+
     for order in orders:        # order is a dict
         due_date = order["due_date"]
         invoice_date = order["invoice_date"]
@@ -30,7 +30,7 @@ def extractData(data):
         payment_total = order["payment_total"]
         items = []
         for item in order["line_items"]:
-            items.append([item["id"], item["variant_id"], item["quantity"]])
+            items.append([item["id"], item["variant_id"], item["price"], item["quantity"]])
         # zip together the columns with the values
         values = [due_date, invoice_date, order_num, company_name, company_id, payment_total, items]
         allOrders.append(dict(zip(columns, values)))
@@ -52,13 +52,13 @@ def apiCall_orders(pageNum):
 def main():
     global allOrders
     start_time = time.time()
-    
+
     data = apiCall_orders(1)
     meta = data['meta']
     totalPages = meta['total_pages']
 
-    totalPages = 1
-    
+    #totalPages = 1
+
     for pageNum in range(1, totalPages+1):
         data = apiCall_orders(pageNum)
 
@@ -70,9 +70,10 @@ def main():
     #df.to_csv (r'income_data1.csv', index = False, header=True)
     print(len(df.index))    #tells you how many orders there are
     print("--- %s seconds ---" % (time.time() - start_time))
-    
+    df.to_csv (r'income_data.csv', index = False, header=True)
+
 
 if __name__ == '__main__':
     main()
 
-          
+

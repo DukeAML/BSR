@@ -10,7 +10,7 @@ from datetime import date
     ?page[after]=abcde
 
     BSR14154
-    
+
 '''
 
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
@@ -32,7 +32,7 @@ def add_new_row(file_name, elements):
 def extractData(data):
     global newOrders
     orders = data["orders"]   #orders is a list of every order
-    
+
     for order in orders:        # order is a dict
         due_date = order["due_date"]
         invoice_date = order["invoice_date"]
@@ -42,7 +42,7 @@ def extractData(data):
         payment_total = order["payment_total"]
         items = []
         for item in order["line_items"]:
-            items.append([item["id"], item["variant_id"], item["quantity"]])
+            items.append([item["id"], item["variant_id"], item["price"], item["quantity"]])
         # add new row of values to csv
         values = [due_date, invoice_date, order_num, company_name, company_id, payment_total, items]
         add_new_row('income_data2.csv', values)
@@ -95,12 +95,12 @@ def main():
     startDate = startDate.strftime("%Y-%m-%d")
 
     endDate = today.strftime("%Y-%m-%d")
-    
+
     data = apiCall(1, startDate)
     totalPages = data['meta']['total_pages']
 
     print(totalPages)
-    
+
     for pageNum in range(1, totalPages+1):
         data = apiCall(pageNum, startDate)
         #jprint(data)

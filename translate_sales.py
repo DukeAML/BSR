@@ -58,7 +58,7 @@ def baseproducts_needed(orders):
     needed ={}
     for order in orders:
         A = Order(order)
-        get_base(A)
+        A.get_base()
         to_add = A.base
 
         for sku in to_add.keys():

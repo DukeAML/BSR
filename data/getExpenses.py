@@ -80,7 +80,8 @@ def main():
             dfP.iat[i, 3] = amountBought * unitPrice
         else:
             sku_errors.add(sku)
-                
+
+    # sort the dataframe by the date they bought more ingredients             
     dfP['date'] = pd.to_datetime(dfP['date'])
     dfP.sort_values(by=['date'], inplace=True)
     # remove rows where money spent == null

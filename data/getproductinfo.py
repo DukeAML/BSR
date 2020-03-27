@@ -48,7 +48,8 @@ def apiCall(pageNum):
     #'q[name_eq]': "INGREDIENTS"  product_type = inventory_item
     # 'q[product_type_eq]': "inventory_item"
     # 17669
-    payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_item"}
+    #payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_item"}
+    payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_assembly"}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
@@ -57,11 +58,11 @@ def apiCall(pageNum):
 def main():
     global allOrders
     
-    data = apiCall(1)
+    data = apiCall(2)
     totalPages = data['meta']['total_pages']
-
-    print(totalPages)
-    
+    jprint(data)
+    #print(totalPages)
+    """
     for pageNum in range(1, totalPages+1):
         data = apiCall(pageNum)
         '''if(pageNum == 5):
@@ -70,9 +71,9 @@ def main():
 
     # create pandas dataframe
     df = pd.DataFrame(allProducts)
-    df.to_csv (r'product_info.csv', index = False, header=True)
+    #df.to_csv (r'product_info.csv', index = False, header=True)
     print(len(df.index))    #tells you how many orders there are
-    
+    """
 
 if __name__ == '__main__':
     main()

@@ -17,7 +17,7 @@ API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
 URL = 'https://app.getsweet.com/api/v1/orders.json'
 
-columns = ["Due Date", "Invoice Date", "Order #", "Company Name", "Company ID", "Money Paid", "Items"]
+columns = ["Due Date", "Invoice Date", "Order #", "Company Name", "Company ID", "Money Paid", "Pending Payment", "Items"]
 newOrders = []
 
 
@@ -40,11 +40,12 @@ def extractData(data):
         company_name = order["account"]["fully_qualified_name"]
         company_id = order["account"]["id"]
         payment_total = order["payment_total"]
+        pending_payment_total = order["pending_payment_total"]
         items = []
         for item in order["line_items"]:
             items.append([item["id"], item["variant_id"], item["price"], item["quantity"]])
         # add new row of values to csv
-        values = [due_date, invoice_date, order_num, company_name, company_id, payment_total, items]
+        values = [due_date, invoice_date, order_num, company_name, company_id, payment_total, pending_payment_total, items]
         add_new_row('income_data2.csv', values)
         newOrders.append(dict(zip(columns, values)))
 

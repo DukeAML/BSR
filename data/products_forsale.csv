@@ -1,0 +1,501 @@
+sku,cost_price,fully_qualified_name,active,incremental_order_quantity,pack_size,pack_size_qty,weight,weight_units
+WHOLESALE-INACTIVE,0,WHOLESALE-INACTIVE,False,1,,,0,
+B-ACO-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ACO-4LB,False,1,Each,,6,lb
+B-ACO-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ACO-8LB,False,1,Each,,11,lb
+B-ACT-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ACT-4LB,False,1,Each,,6,lb
+B-ACT-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ACT-8LB,True,1,Each,,11,lb
+B-AGIN-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-AGIN-4LB,False,1,Each,,6,lb
+B-AGIN-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-AGIN-8LB,False,1,Each,,11,lb
+B-ALM-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ALM-4LB,False,1,Each,,6,lb
+B-ALM-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ALM-8LB,False,1,Each,,11,lb
+B-ALM-WFM-1GAL-INACTIVE,0,WHOLESALE-INACTIVE:B-ALM-WFM-1GAL,False,1,Each,,12,lb
+B-CHAI-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-CHAI-4LB,False,1,Each,,6,lb
+B-CHAI-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-CHAI-8LB,False,1,Each,,11,lb
+B-ESP-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ESP-4LB,False,1,Each,,6,lb
+B-ESP-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-ESP-8LB,False,1,Each,,12,lb
+B-HOTP-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-HOTP-4LB,False,1,Each,,6,lb
+B-HOTP-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-HOTP-8LB,False,1,Each,,11,lb
+B-MPC-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-MPC-4LB,True,1,Each,,6,lb
+B-MPC-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-MPC-8LB,True,1,Each,,11,lb
+B-PA-4LB,0,WHOLESALE-INACTIVE:B-PA-4LB,False,1,Each,,6,lb
+B-PA-8LB,0,WHOLESALE-INACTIVE:B-PA-8LB,False,1,Each,,12,lb
+B-PCASH-4LB,0,WHOLESALE-INACTIVE:B-PCASH-4LB,False,1,Each,,6,lb
+B-PCASH-8LB,0,WHOLESALE-INACTIVE:B-PCASH-8LB,False,1,Each,,11,lb
+B-PCO-4LB,0,WHOLESALE-INACTIVE:B-PCO-4LB,False,1,Each,,6,lb
+B-PCO-8LB,0,WHOLESALE-INACTIVE:B-PCO-8LB,False,1,Each,,11,lb
+B-PNUT-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-PNUT-4LB,False,1,Each,,6,lb
+B-PNUT-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-PNUT-8LB,False,1,Each,,11,lb
+B-PEANUTS-ONLY,0,WHOLESALE-INACTIVE:B-PEANUTS-ONLY,False,1,Each,,0,
+B-PPEC-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-PPEC-4LB,False,1,Each,,6,lb
+B-PPEC-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-PPEC-8LB,True,1,Each,,11,lb
+W-ACO-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ACO-10OZ,False,6,Each,,1.42,lb
+W-ACT-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ACT-10OZ,False,6,Each,,1.42,lb
+W-AGIN-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AGIN-10OZ,False,6,Each,,1.42,lb
+W-ALM-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ALM-10OZ,False,6,Each,,1.42,lb
+W-CHAI-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-CHAI-10OZ,False,6,Each,,1.42,lb
+W-ESP-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ESP-10OZ,False,6,Each,,1.42,lb
+W-HOTP-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-HOTP-10OZ,False,6,Each,,1.42,lb
+W-JCB-2PACK,0,WHOLESALE-INACTIVE:W-JCB-2PACK,False,12,Each,,3,lb
+W-JCB-HZL,0,WHOLESALE-INACTIVE:W-JCB-HZL,False,12,Each,,1.42,lb
+W-JCB-PNT,0,WHOLESALE-INACTIVE:W-JCB-PNT,False,12,Each,,1.42,lb
+W-MPC-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-MPC-10OZ,False,6,Each,,1.42,lb
+W-70-AP,0,WHOLESALE-INACTIVE:W-70-AP,False,12,Each,,0.17,lb
+W-70-CP,0,WHOLESALE-INACTIVE:W-70-CP,False,12,Each,,0.21,lb
+W-PA-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PA-10OZ,False,6,Each,,1.42,lb
+W-PCASH-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PCASH-10OZ,False,6,Each,,1.42,lb
+W-PCO-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PCO-10OZ,False,6,Each,,1.42,lb
+W-PNUT-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PNUT-10OZ,False,6,Each,,1.42,lb
+W-PNUT-3OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PNUT-3OZ,False,12,Each,,0,
+W-PPEC-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PPEC-10OZ,False,6,Each,,1.42,lb
+W-DISTCASE-AP-INACTIVE,0,WHOLESALE-INACTIVE:W-DISTCASE-AP,True,1,Each,28.0,58,lb
+W-NB-FC-INACTIVE,0,WHOLESALE-INACTIVE:W-NB-FC,False,12,Each,,0.17,lb
+W-NB-CC-INACTIVE,0,WHOLESALE-INACTIVE:W-NB-CC,False,12,Each,,0.17,lb
+B-PNUT-1LB-INACTIVE,0,WHOLESALE-INACTIVE:B-PNUT-1LB,False,1,Each,,1,lb
+B-PNUT-ONLY-INACTIVE,0,WHOLESALE-INACTIVE:B-PEANUTS-ONLY,False,5,EACH,,0,
+W-NB-AP-INACTIVE,0,WHOLESALE-INACTIVE:W-NB-AP,False,12,Each,,0.17,lb
+W-NB-CP-INACTIVE,0,WHOLESALE-INACTIVE:W-NB-CP,False,12,Each,,0.17,lb
+W-DISTCASE-CP-INACTIVE,0,WHOLESALE-INACTIVE:W-DISTCASE-CP,True,1,Each,28.0,58,lb
+W-DISTCASE-CC-INACTIVE,0,WHOLESALE-INACTIVE:W-DISTCASE-CC,True,1,Each,28.0,58,lb
+W-DISTCASE-FC-INACTIVE,0,WHOLESALE-INACTIVE:W-DISTCASE-FC,True,1,Each,28.0,58,lb
+W-CHAI-3OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-CHAI-3OZ,False,12,Each,,0,
+W-MPC-3OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-MPC-3OZ,False,12,Each,,0,
+W-PPEC-3OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PPEC-3OZ,False,12,EACH,,0,
+W-AGIN-3OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AGIN-3OZ,False,12,EACH,,0,
+W-NB-VP-INACTIVE,0,WHOLESALE-INACTIVE:W-NB-VP,False,1,Each,,0,
+W-CASE-FC-INACTIVE,0,WHOLESALE-INACTIVE:W-CASE-FC,True,1,Each,12.0,2,lb
+W-CASE-AP-INACTIVE,0,WHOLESALE-INACTIVE:W-CASE-AP,False,1,Each,12.0,2,lb
+W-CASE-CC-INACTIVE,0,WHOLESALE-INACTIVE:W-CASE-CC,True,1,Each,12.0,2,lb
+W-CASE-CP-INACTIVE,0,WHOLESALE-INACTIVE:W-CASE-CP,True,1,Each,12.0,2,lb
+WHOLESALE,0,WHOLESALE-INACTIVE:W-CASHEW-13OZ,False,6,Each,,13,oz
+W-PNUT-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PNUT-13OZ,False,6,Each,,1.3,lb
+W-PPEC-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-PPEC-13OZ,False,6,Each,,1.3,lb
+W-HOT-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-HOT-13OZ,False,6,Each,,1.3,lb
+W-CHAI-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-CHAI-13OZ,False,6,Each,,1.3,lb
+W-MPC-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-MPC-13OZ,True,6,Each,,1.3,lb
+W-CASH-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-CASH-13OZ,True,6,Each,,1.3,lb
+W-ESP-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ESP-13OZ,False,6,Each,,1.3,lb
+W-ALM-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ALM-13OZ,False,6,Each,,1.3,lb
+W-ACT-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ACT-13OZ,False,6,Each,,1.3,lb
+W-ACO-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-ACO-13OZ,True,6,Each,,1.3,lb
+W-AGIN-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AGIN-13OZ,True,6,Each,,1.3,lb
+W-3OZ-VP-NB-INACTIVE,0,WHOLESALE-INACTIVE:W-3OZ-VP,False,6,Each,,0,
+W-AMZN-ACO-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ACO-13OZ,False,1,,,0,
+W-AMZN-ACO-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ACO-13OZ -2PAK,False,1,,,0,
+W-AMZN-ACT-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ACT-13OZ,False,1,,,0,
+W-AMZN-ACT-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ACT-13OZ -2PAK,False,1,,,0,
+W-AMZN-AGIN-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-AGIN-13OZ,False,1,,,0,
+W-AMZN-AGIN-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-AGIN-13OZ -2PAK,False,1,,,0,
+W-AMZN-ALM-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ALM-13OZ,False,1,,,0,
+W-AMZN-ALM-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ALM-13OZ -2PAK,False,1,,,0,
+W-AMZN-CASH-13OZ,0,WHOLESALE-INACTIVE:W-AMZN-CASH-13OZ,False,1,,,0,
+W-AMZN-CASH-13OZ -2PAK,0,WHOLESALE-INACTIVE:W-AMZN-CASH-13OZ -2PAK,False,1,,,0,
+W-AMZN-CHAI-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-CHAI-13OZ,False,1,,,0,
+W-AMZN-CHAI-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-CHAI-13OZ -2PAK,False,1,,,0,
+W-AMZN-ESP-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ESP-13OZ,False,1,,,0,
+W-AMZN-ESP-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-ESP-13OZ -2PAK,False,1,,,0,
+W-AMZN-HOT-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-HOT-13OZ,False,1,,,0,
+W-AMZN-HOT-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-HOT-13OZ -2PAK,False,1,,,0,
+W-AMZN-MPC-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-MPC-13OZ,False,1,,,0,
+W-AMZN-MPC-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-MPC-13OZ -2PAK,False,1,,,0,
+W-AMZN-PNUT-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-PNUT-13OZ,False,1,,,0,
+W-AMZN-PNUT-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-PNUT-13OZ -2PAK,False,1,,,0,
+W-AMZN-PPEC-13OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-PPEC-13OZ,False,1,,,0,
+W-AMZN-PPEC-13OZ -2PAK-INACTIVE,0,WHOLESALE-INACTIVE:W-AMZN-PPEC-13OZ -2PAK,False,1,,,0,
+B-CASH-4LB-INACTIVE,0,WHOLESALE-INACTIVE:B-CASH-4LB,True,1,Each,,6,lb
+B-CASH-8LB-INACTIVE,0,WHOLESALE-INACTIVE:B-CASH-8LB,False,1,Each,,0,
+W-AMZN-3OZ-VP-NB,0,WHOLESALE-INACTIVE:W-AMZN-3OZ-VP-NB,False,1,,,0,
+W-LTD-PEP-10OZ-INACTIVE,0,WHOLESALE-INACTIVE:W-LTD-PEP-10OZ,False,1,,,0,
+BATCH,0,BATCH,True,1,,,0,
+BATCH-TWALK,0,BATCH:BATCH-TWALK,True,1,,,0,gm
+BATCH-ACO-INACTIVE,0,BATCH:Batch:Almond Coconut Batch,False,1,,,0,
+BATCH-ACT-INACTIVE,0,BATCH:Batch:Almond Coconut Batch,False,1,,,0,
+BATCH-AGIN-INACTIVE,0,BATCH:Batch:Almond Ginger Batch,False,1,,,0,
+BATCH-CHAI,0,BATCH:BATCH-CHAI,True,1,,,0,
+BATCH-MPC,0,BATCH:BATCH-MPC,True,1,,,0,
+BATCH-MISSION-ALM-INACTIVE,0,BATCH:Batch:Mission Almond Batch,False,1,,,0,
+BATCH-PNUT,0,BATCH:BATCH-PNUT,True,1,,,0,
+BATCH-PALM,0,BATCH:BATCH-PALM,False,1,,,0,
+BATCH-PCASH-INACTIVE,0,BATCH:Batch:Peanut Cashew Batch,False,1,,,0,
+BATCH-PPEC,0,BATCH:BATCH-PPEC,True,1,,,0,
+BATCH-PCO-INACTIVE,0,BATCH:Batch:Peanut Cocoa Batch,False,1,,,0,
+BATCH-JCB-PNUT-INACTIVE,0,BATCH:Batch:JCB Peanut Batch,False,1,,,0,
+BATCH-JCB-HZL-INACTIVE,0,BATCH:Batch:JCB Hazelnut Batch,False,1,,,0,
+BATCH-70-AP-INACTIVE,0,BATCH:Batch:70g Bar Batch - Apricot Pepita,False,1,,,0,
+BATCH-70-CP-INACTIVE,0,BATCH:Batch:70g Bar Batch - Cherry Pecan,False,1,,,0,
+BATCH-GRANOLA,0,BATCH:Batch - Granola,False,1,,,0,
+BATCH-JUST-PNUT,0,BATCH:BATCH-JUST-PNUT,True,1,Each,,0,
+BATCH-HOTP-INACTIVE,0,BATCH:Batch:Hot Peanut Batch,False,1,,,0,
+BATCH-BAR-FC,0,BATCH:BATCH-BAR-FC,True,1,,,0,
+BATCH-BAR-CC,0,BATCH:BATCH-BAR-CC,True,1,,,0,
+BATCH-BAR-AP,0,BATCH:BATCH-BAR-AP,True,1,,,0,
+BATCH-BAR-CP,0,BATCH:BATCH-BAR-CP,True,1,,,0,
+BATCH-CASH,0,BATCH:BATCH-CASH,True,1,,,0,
+BATCH-Peanut-INACTIVE,0,BATCH:BATCH-PNUT,False,1,,,0,
+BATCH-Peanut Pecan-INACTIVE,0,BATCH:BATCH-PPEC,False,1,,,0,
+BATCH-MAMBA,0,BATCH:BATCH-MAMBA,True,1,,,0,
+BATCH-Chai-INACTIVE,0,BATCH:BATCH-CHAI,False,1,,,0,
+BATCH-Maple Cinnamon-INACTIVE,0,BATCH:BATCH-MPC,False,1,,,0,
+BATCH-GGET,0,BATCH:BATCH-GGET,True,1,,,0,
+BATCH-ALM,0,BATCH:BATCH-ALM,True,1,,,0,
+BATCH-TCO,0,BATCH:BATCH-TCO,True,1,,,0,
+BATCH-CSS,0,BATCH:BATCH-CSS,True,1,,,0,
+BATCH-FGIN,0,BATCH:BATCH-FGIN,True,1,,,0,
+BATCH-LTD-PEP,0,BATCH:BATCH-LTD-PEP,False,1,,,0,
+BATCH-LTD-CCCG,0,BATCH:BATCH-LTD-CCCG,False,1,,,0,
+BATCH-JUST-ALM,0,BATCH:BATCH-JUST-ALM,True,1,,,0,
+BATCH-LTD-LCASH,0,BATCH:BATCH-LTD-LCASH,True,1,,,0,
+BATCH-PCO,0,BATCH:BATCH-PCO,False,1,,,0,
+BATCH-PCASH,0,BATCH:BATCH-PCASH,True,1,,,0,
+BATCH-WAG,0,BATCH:BATCH-WAG,True,1,,,0,
+NB-ALM,0,Almond Nut Butter,True,1,,,0,
+NB-ALM-13OZ,3.96,Almond Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-ALM-4LB,17.94,Almond Nut Butter:4# Bucket,False,1,4# Bucket,,6,lb
+NB-ALM-8LB,34.99,Almond Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-ALM-SCRAP,0,Almond Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-ALM-3OZ,0,Almond Nut Butter:3 oz Jar,True,12,3 oz jar,,0,
+NB-CASH,0,Cashew Nut Butter,True,1,,,0,
+NB-CASH-13OZ,5.18,Cashew Nut Butter:13 oz Jar,True,6,13 oz Jar,,1.5,lb
+NB-CASH-4LB,24.06,Cashew Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-CASH-8LB,47.23,Cashew Nut Butter:8# Bucket,True,1,8# Bucket,,0,
+NB-CASH-SCRAP,0,Cashew Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-CHAI,0,Chai Spice Nut Butter,True,1,,,0,
+NB-CHAI-13OZ,3.18,Chai Spice Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-CHAI-3OZ,1.23,Chai Spice Nut Butter:3 oz Jar,True,12,3 oz Jar,,0,
+NB-CHAI-4LB,14.24,Chai Spice Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-CHAI-8LB,27.59,Chai Spice Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-CHAI-SCRAP,0,Chai Spice Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-CSS,0,Chocolate Sea Salt Nut Butter,True,1,,,0,
+NB-CSS-13OZ,4.7,Chocolate Sea Salt Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-CSS-4LB,21.59,Chocolate Sea Salt Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-CSS-8LB,42.29,Chocolate Sea Salt Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-CSS-SCRAP,0,Chocolate Sea Salt Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-CSS-3OZ,0,Chocolate Sea Salt Nut Butter:3 oz Jar,True,12,3 oz jar,,0,
+NB-FGIN,0,Fiji Ginger Nut Butter,True,1,,,0,
+NB-FGIN-13OZ,4.37,Fiji Ginger Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-FGIN-3OZ,1.51,Fiji Ginger Nut Butter:3 oz Jar,True,12,3 oz Jar,,0.5,
+NB-FGIN-4LB,19.93,Fiji Ginger Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-FGIN-8LB,38.97,Fiji Ginger Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-FGIN-SCRAP,0,Fiji Ginger Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-GGET,0,GGet Espresso Nut Butter,True,1,,,0,
+NB-GGET-13OZ,4.69,GGet Espresso Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-GGET-4LB,21.65,GGet Espresso Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-GGET-8LB,42.41,GGet Espresso Nut Butter:8# Bucket,True,1,8# Bucket,,12,lb
+NB-GGET-SCRAP,0,GGet Espresso Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-JUSTALM,0,Just Almonds Nut Butter,True,1,,,0,
+NB-JUSTALM-8LB,36.11,Just Almonds Nut Butter:8# Bucket,True,1,8# Bucket,,12,lb
+NB-JUSTPNUT,0,Just Peanuts Nut Butter,True,1,,,0,
+NB-JUSTPNUT-1LB,3.03,Just Peanuts Nut Butter:40# Bucket,True,1,,,0,
+NB-LTD-PEP,0,Limited Batch - Pepperfest Peanut Nut Butter,True,1,,,0,
+NB-LTD-PEP-10OZ,0,Limited Batch - Pepperfest Peanut Nut Butter:10 oz Jar,False,1,10 oz Jar,,0,
+NB-MAMBA,0,Hot Mamba Nut Butter,True,1,,,0,
+NB-MAMBA-13OZ,2.78,Hot Mamba Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-MAMBA-4LB,12.15,Hot Mamba Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-MAMBA-8LB,23.41,Hot Mamba Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-MAMBA-SCRAP,0,Hot Mamba Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-MPC,0,Maple Cinnamon Nut Butter,True,1,,,0,
+NB-MPC-13OZ,3,Maple Cinnamon Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-MPC-3OZ,1.18,Maple Cinnamon Nut Butter:3 oz Jar,True,12,3 oz Jar,,0.5,
+NB-MPC-4LB,13.26,Maple Cinnamon Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-MPC-8LB,25.62,Maple Cinnamon Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-MPC-SCRAP,0,Maple Cinnamon Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-PNUT,0,Peanut Nut Butter,True,1,,,0,
+NB-PNUT-13OZ,2.69,Peanut Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-PNUT-1LB,2.93,Peanut Nut Butter:1# Bucket,True,1,1# Bucket,,1,lb
+NB-PNUT-3OZ,1.11,Peanut Nut Butter:3 oz Jar,True,12,3 oz Jar,,0.5,
+NB-PNUT-4LB,11.73,Peanut Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-PNUT-8LB,22.57,Peanut Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-PNUT-SCRAP,0,Peanut Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-PPEC,0,Peanut Pecan Nut Butter,True,1,,,0,
+NB-PPEC-13OZ,3.2,Peanut Pecan Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-PPEC-3OZ,1.23,Peanut Pecan Nut Butter:3 oz Jar,False,1,3 oz Jar,,0.5,
+NB-PPEC-4LB,14.25,Peanut Pecan Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-PPEC-8LB,27.6,Peanut Pecan Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-PPEC-SCRAP,0,Peanut Pecan Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-TCO,0,Toasted Coconut Nut Butter,True,1,,,0,
+NB-TCO-13OZ,4,Toasted Coconut Nut Butter:13 oz Jar,True,6,13 oz Jar,,17,oz
+NB-TCO-4LB,35.24,Toasted Coconut Nut Butter:4# Bucket,True,1,4# Bucket,,6,lb
+NB-TCO-8LB,36.11,Toasted Coconut Nut Butter:8# Bucket,True,1,8# Bucket,,11,lb
+NB-TCO-SCRAP,0,Toasted Coconut Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-TCO-3OZ,0,Toasted Coconut Nut Butter:3 oz Jar,True,12,3 oz jar,,0,
+NB-TWALK,0,Tigerwalk Espresso Nut Butter,True,1,,,0,
+NB-TWALK-10OZ,0,Tigerwalk Espresso Nut Butter:10 oz Jar,True,1,10 oz Jar,,1.42,lb
+NB-TWALK-SCRAP,0,Tigerwalk Espresso Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+BAR-AP,0,Apricot Pepita Nut Butter Bar,True,1,,,0,
+BAR-AP-CASE,0,Apricot Pepita Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,2,lb
+BAR-AP-SINGLE,0,Apricot Pepita Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,0.17,lb
+BAR-AP-SCRAP,0,Apricot Pepita Nut Butter Bar:Bar Scrap - 100g,True,1,100g,,100,gm
+BAR-CC,0,Cranberry Cashew Nut Butter Bar,True,1,,,0,
+BAR-CC-CASE,0,Cranberry Cashew Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,2,lb
+BAR-CC-SINGLE,0,Cranberry Cashew Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,0.17,lb
+BAR-CC-SCRAP,0,Cranberry Cashew Nut Butter Bar:Bar Scrap - 100g,True,1,100g,,100,gm
+BAR-CP,0,Cherry Pecan Nut Butter Bar,True,1,,,0,
+BAR-CP-CASE,0,Cherry Pecan Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,2,lb
+BAR-CP-SINGLE,0,Cherry Pecan Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,0.17,lb
+BAR-CP-SCRAP,0,Cherry Pecan Nut Butter Bar:Bar Scrap - 100g,True,1,,,100,gm
+BAR-FC,0,Figgy Chai Nut Butter Bar,True,1,,,0,
+BAR-FC-CASE,0,Figgy Chai Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,2,lb
+BAR-FC-SINGLE,0,Figgy Chai Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,0.17,lb
+BAR-FC-SCRAP,0,Figgy Chai Nut Butter Bar:Bar Scrap - 100g,True,1,100g,,100,gm
+BAR-VP,0,Bar Variety Pack,True,1,12/60 oz Bars,,0,
+BAR-VP-CASE,0,Bar Variety Pack:Bar Variety Pack - Case,True,1,12/60 g Bars,12.0,1.15,lb
+BAR-VP-GIFT,0,Bar Variety Pack:Bar Variety Pack - Gift Case,True,1,12/60 g Bars,12.0,1.15,lb
+BAR-MASTERCASE,0,Bar Master Case,True,1,28/12 bar Cases,,0,
+BAR-AP-MASTERCASE,0,Bar Master Case:Apricot Pepita,True,1,28/12 bar Cases,336.0,58,lb
+BAR-CC-MASTERCASE,0,Bar Master Case:Cranberry Cashew,True,1,28/12 bar Cases,336.0,58,lb
+BAR-CP-MASTERCASE,0,Bar Master Case:Cherry Pecan,True,1,28/12 bar Cases,336.0,58,lb
+BAR-FC-MASTERCASE,0,Bar Master Case:Figgy Chai,True,1,28/12 bar Cases,336.0,58,lb
+NB-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack",True,1,1/13oz Pack,,0,
+NB-ALM-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Almond Butter",True,1,1/13oz Pack,,2,
+NB-CASH-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Cashew Butter",False,1,1/13oz Pack,,2,
+NB-CHAI-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Chai Spice",True,1,1/13oz Pack,,2,
+NB-CSS-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Chocolate Sea Salt",True,1,1/13oz Pack,,2,
+NB-FGIN-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Fiji Ginger",True,1,1/13oz Pack,,2,
+NB-GGET-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:GGet Espresso",True,1,1/13oz Pack,,2,
+NB-MAMBA-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Hot Mamba",True,1,1/13oz Pack,,2,
+NB-MPC-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Maple Cinnamon",True,1,1/13oz Pack,,2,
+NB-PNUT-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Peanut Butter",True,1,1/13oz Pack,,2,
+NB-PPEC-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Peanut Pecan",True,1,1/13oz Pack,,2,
+NB-TCO-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Toasted Coconut",True,1,1/13oz Pack,,2,
+NB-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar",True,1,2/13oz Pack,,0,
+NB-ALM-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Almond Butter",True,1,2/13oz Pack,,3,
+NB-CASH-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Cashew Butter",False,1,2/13oz Pack,,3,
+NB-CHAI-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Chai Spice",True,1,2/13oz Pack,,3,
+NB-CSS-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Chocolate Sea Salt",True,1,2/13oz Pack,,3,
+NB-FGIN-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Fiji Ginger",True,1,2/13oz Pack,,3,
+NB-GGET-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:GGet Espresso",True,1,2/13oz Pack,,3,
+NB-MAMBA-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Hot Mamba",True,1,2/13oz Pack,,3,
+NB-MPC-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Maple Cinnamon",True,1,2/13oz Pack,,3,
+NB-PNUT-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Peanut Butter",True,1,2/13oz Pack,,3,
+NB-PPEC-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Peanut Pecan",True,1,2/13oz Pack,,3,
+NB-TCO-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-ABJ-2PACK,0,"Nut Butter, AB&J 2-Pack 13 oz Jar",True,1,2/13oz Pack,,0,
+NB-ABJ-OCT19,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-OCT19",False,1,2/13oz Pack,,0,
+NB-ABJ-OCT19-GIFT,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-OCT19-GIFT",False,1,2/13oz Pack,,0,
+NB-ABJ-NOV19,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-NOV19",False,1,2/13oz Pack,,0,
+NB-ABJ-NOV19-GIFT,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-NOV19-GIFT",False,1,2/13oz Pack,,0,
+NB-ABJ-DEC19,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-DEC19",False,1,2/13oz Pack,,2.5,lb
+NB-ABJ-DEC19-GIFT,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-DEC19-GIFT",False,1,2/13oz Pack,,0,
+NB-ABJ-JAN20,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-JAN20",False,1,2/13oz Pack,,2.5,lb
+NB-ABJ-JAN20-GIFT,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:AB&J-JAN20-GIFT",False,1,2/13oz Pack,,2.5,
+NB-ABJ-FEB20-GIFT,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-FEB20-GIFT",False,1,2/13oz Pack,,2.5,
+NB-ABJ-FEB20,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-FEB20",False,1,2/13oz Pack,,2.5,
+NB-ABJ-MAR20,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-MAR20",True,1,2/13oz Pack,,2.5,
+NB-ABJ-MAR20-GIFT,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-MAR20-GIFT",True,1,2/13oz Pack,,2.5,
+NB-ABJ-APR20,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-APR20",True,1,2/13oz Pack,,2.5,lb
+NB-ABJ-APR20-GIFT,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-APR20-GIFT",True,1,2/13oz Pack,,2.5,lb
+NB-PBJ-2PACK,0,"Nut Butter, PB&J 2-Pack 13 oz Jar",True,1,2/13oz Pack,,0,
+NB-PBJ-OCT19,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-OCT19",False,1,2/13oz Pack,,0,
+NB-PBJ-OCT19-GIFT,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-OCT19-GIFT",False,1,2/13oz Pack,,0,
+NB-PBJ-DEC19,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-DEC19",False,1,2/13oz Pack,,2.5,lb
+NB-PBJ-DEC19-GIFT,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-DEC19-GIFT",False,1,2/13oz Pack,,3,lb
+NB-PBJ-NOV19,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-NOV19",False,1,2/13oz Pack,,0,
+NB-PBJ-GIFT-NOV19,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-NOV19-GIFT",False,1,2/13oz Pack,,0,
+NB-PBJ-JAN20,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-JAN20",False,1,2/13oz Pack,,2.5,
+NB-PBJ-JAN20-GIFT,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-JAN20-GIFT",False,1,2/13oz Pack,,2.5,
+NB-PBJ-FEB20-GIFT,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-FEB20-GIFT",False,1,2/13oz Pack,,2.5,
+NB-PBJ-FEB20,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-FEB20",False,1,2/13oz Pack,,2.5,
+NB-PBJ-MAR20,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-MAR20",True,1,2/13oz Pack,,2.5,
+NB-PBJ-MAR20-GIFT,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-MAR20-GIFT",True,1,2/13oz Pack,,2.5,
+NB-PBJ-APR20,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-APR20",True,1,2/13oz Pack,,2.5,lb
+NB-PBJ-APR20-GIFT,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-APR20-GIFT",True,1,2/13oz Pack,,2.5,
+NB-130Z-3PACK,0,"Nut Butter, 3-Pack 13 oz",True,1,3/13oz Pack,,0,
+NB-TRIO-FW19,0,"Nut Butter, 3-Pack 13 oz:TRIO-FW19",True,1,3/13oz Pack,,5,lb
+NB-TRIO-SS20,0,"Nut Butter, 3-Pack 13 oz:TRIO-SS20",True,1,3/13oz Pack,,5,
+NB-3OZ-VP,0,"Nut Butter, Variety Pack 3oz",True,1,4/3oz Jars,,0,
+NB-3OZ-4PACK-GIFT,0,"Nut Butter, Variety Pack 3oz:3OZ-4PACK-GIFT",True,1,4/3oz Jars,,5,lb
+NB-3OZ-4PACK,5.1,"Nut Butter, Variety Pack 3oz:3OZ-4PACK",True,1,4/3oz Jars,,5,lb
+NB-3OZ-4PACK-AB,0,"Nut Butter, Variety Pack 3oz:AB-3OZ-4PACK",True,1,4/3oz Jars,,5,
+NB-3OZ-4PACK-AB-GIFT,0,"Nut Butter, Variety Pack 3oz:AB-3OZ-4PACK-GIFT",True,1,4/3oz Jars,,5,
+BAR-BUTTER,0,Bar Butters,True,1,,,0,
+BAR-BUTTER-PPEC,0,Bar Butters:Peanut Pec(less),True,1,,,0,
+BAR-BUTTER-PPEP,0,Bar Butters:Peanut Pepita,True,1,,,0,
+BAR-BUTTER-PALM,0,Bar Butters:Peanut Almond,True,1,,,0,
+BAR-BUTTER-PCASH,0,Bar Butters:Peanut Cashew,True,1,,,0,
+BAR-BUTTER-GALM,0,Bar Butters:Ginger Almond,True,1,,,0,
+BAR-DRYKIT,0,Bar Dry Kits,True,1,,,0,
+BAR-DRYKIT-AP,0,Bar Dry Kits:AP,True,1,,,0,
+BAR-DRYKIT-CP,0,Bar Dry Kits:CP,True,1,,,0,
+BAR-DRYKIT-CC,0,Bar Dry Kits:CC,True,1,,,0,
+BAR-DRYKIT-FC,0,Bar Dry Kits:FC,True,1,,,0,
+BAR-DRYKIT-GA,0,Bar Dry Kits:GA,True,1,,,0,
+NB-LTD-CCCG,0,Limited Batch - Chocolate Chocolate Chocolate Gianduja Nut Butter,True,1,,,0,
+NB-LTD-CCCG-10OZ,0,Limited Batch - Chocolate Chocolate Chocolate Gianduja Nut Butter:10 oz Jar,False,1,10 oz,,1.25,lb
+NB-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample",True,1,,,0,
+NB-ALM-130Z-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Almond Butter",True,1,,,1.38,lb
+NB-CASH-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Cashew Butter",True,1,,,1.38,lb
+NB-CHAI-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Chai Spice",True,1,,,1.38,lb
+NB-CSS-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Chocolate Sea Salt",True,1,,,1.38,lb
+NB-FGIN-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Fiji Ginger",True,1,,,1.38,lb
+NB-GGET-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:GGet Espresso",True,1,,,1.38,lb
+NB-MAMBA-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Hot Mamba",True,1,,,1.38,lb
+NB-MPC-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Maple Cinnamon",True,1,,,1.38,lb
+NB-PNUT-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Peanut Butter",True,1,,,1.38,lb
+NB-PPEC-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Peanut Pecan",True,1,,,1.38,lb
+NB-TCO-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Toasted Coconut",True,1,,,1.38,lb
+NB-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample",True,1,,,0,
+NB-CHAI-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Chai Spice",True,1,,,0,
+NB-MPC-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Maple Cinnamon",True,1,,,0,
+NB-FGIN-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Fiji Ginger",True,1,,,0,
+NB-PNUT-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Peanut Butter",True,1,,,0,
+BAR-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar",True,1,,,0,
+BAR-FC-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Figgy Chai",True,1,,,0.17,lb
+BAR-CC-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Cranberry Cashew",True,1,,,0.17,lb
+BAR-CP-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Cherry Pecan",True,1,,,0.17,lb
+BAR-AP-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Apricot Pepita",True,1,,,0.17,lb
+BAR-SUBSCR,0,"Nut Butter Bar, Subscriptions",True,1,,,0,
+BAR-AP-SUBSCR,0,"Nut Butter Bar, Subscriptions:Apricot Pepita",True,1,12/60g Bars,,0,
+BAR-CC-SUBSCR,0,"Nut Butter Bar, Subscriptions:Cranberry Cashew",True,1,12/60g Bars,,1.5,lb
+BAR-FC-SUBSCR,0,"Nut Butter Bar, Subscriptions:Figgy Chai",True,1,12/60g Bars,,0,
+BAR-CP-SUBSCR,0,"Nut Butter Bar, Subscriptions:Cherry Pecan",True,1,12/60g Bars,,0,
+BAR-VP-SUBSCR,0,"Nut Butter Bar, Subscriptions:Variety Pack",True,1,12/60g Bars,,0,
+NB-SUBSCR,0,"Nut Butter, Subscriptions",True,1,,,0,
+NB-RSTR-SUBSCR-NOV19,0,"Nut Butter, Subscriptions:RSTR-NOV19",False,1,13 oz Jar,,17,oz
+NB-PNUT-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-PNUT",True,1,13 oz Jar,,17,oz
+NB-PPEC-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-PPEC",True,1,13 oz Jar,,0,
+NB-CHAI-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-CHAI",True,1,13 oz Jar,,0,
+NB-GGET-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-GGET",True,1,13 oz Jar,,0,
+NB-ALM-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-ALM",True,1,13 oz Jar,,17,oz
+NB-CSS-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-CSS",True,1,13 oz Jar,,0,
+NB-FGIN-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-FGIN",True,1,13 oz Jar,,0,
+NB-TCO-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-TCO",True,1,13 oz Jar,,17,oz
+NB-MPC-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-MPC",True,1,13 oz Jar,,0,
+NB-MAMBA-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-MAMBA",True,1,13 oz Jar,,0,
+NB-CASH-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-CASH",True,1,13 oz Jar,,0,
+NB-PBJ-SUBSCR-NOV19,0,"Nut Butter, Subscriptions:PBJ-NOV19",False,1,13 oz Jar,,0,
+NB-ABJ-SUBSCR-NOV19,0,"Nut Butter, Subscriptions:ABJ-NOV19",False,1,13 oz Jar,,2.13,lb
+NB-PBJ-SUBSCR-DEC19,0,"Nut Butter, Subscriptions:PBJ-DEC19",False,1,13 oz jar,,2.13,lb
+NB-ABJ-SUBSCR-DEC19,0,"Nut Butter, Subscriptions:ABJ-DEC19",False,1,13 oz jar,,2.13,lb
+NB-RSTR-SUBSCR-DEC19,0,"Nut Butter, Subscriptions:RSTR-DEC19",False,1,13oz Jar,,17,oz
+NB-ABJ-SUBSCR-JAN20,0,"Nut Butter, Subscriptions:ABJ-JAN20",False,1,,,2.5,lb
+NB-PBJ-SUBSCR-JAN20,0,"Nut Butter, Subscriptions:PBJ-JAN20",False,1,,,2.5,
+NB-RSTR-SUBSCR-JAN20,0,"Nut Butter, Subscriptions:RSTR-JAN20",False,1,,,0,
+NB-ABJ-SUBSCR-FEB20,0,"Nut Butter, Subscriptions:ABJ-FEB20",False,1,2pack / 13oz jar,,2.14,
+NB-PBJ-SUBSCR-FEB20,0,"Nut Butter, Subscriptions:PBJ-FEB20",False,1,2pack / 13oz jar,,2.13,
+NB-RSTR-SUBSCR-FEB20,0,"Nut Butter, Subscriptions:RSTR-FEB20",False,1,13 oz jar,,0,
+NB-PBJ-SUBSCR-MAR20,0,"Nut Butter, Subscriptions:PBJ-MAR20-SUBSCR",True,1,2pack/13 oz Jar,,2.14,lb
+NB-ABJ-SUBSCR-MAR20,0,"Nut Butter, Subscriptions:ABJ-MAR20-SUBSCR",True,1,2pack / 13oz jar,,2.14,lb
+NB-RSTR-SUBSCR-MAR20,0,"Nut Butter, Subscriptions:RSTR-MAR20",True,1,,,0,
+NB-PBJ-SUBSCR-APR20,0,"Nut Butter, Subscriptions:PBJ-APR20-SUBSCR",True,1,2pack / 13oz jar,,2.14,lb
+NB-ABJ-SUBSCR-APR20,0,"Nut Butter, Subscriptions:ABJ-APR20-SUBSCR",True,1,2pack / 13oz jar,,2.14,lb
+NB-RSTR-SUBSCR-APR20,0,"Nut Butter, Subscriptions:RSTR-APR20",True,1,13 oz jar,,1.15,
+NB-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack",True,1,1/13oz Pack,,0,
+NB-ALM-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Almond Butter",True,1,1/13oz Pack,,2,
+NB-CASH-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Cashew Butter",True,1,1/13oz Pack,,2,
+NB-CHAI-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Chai Spice",True,1,1/13oz Pack,,2,
+NB-CSS-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Chocolate Sea Salt",True,1,1/13oz Pack,,2,
+NB-FGIN-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Fiji Ginger",True,1,1/13oz Pack,,2,
+NB-GGET-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:GGet Espresso",True,1,1/13oz Pack,,2,
+NB-MAMBA-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Hot Mamba",True,1,1/13oz Pack,,2,
+NB-MPC-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Maple Cinnamon",True,1,1/13oz Pack,,2,
+NB-PNUT-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Peanut Butter",True,1,1/13oz Pack,,2,
+NB-PPEC-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Peanut Pecan",True,1,1/13oz Pack,,2,
+NB-TCO-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Toasted Coconut",True,1,1/13oz Pack,,2,
+NB-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack",True,1,2/13oz Pack,,0,
+NB-ALM-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter",True,1,2/13oz Pack,,3,
+NB-CASH-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter",True,1,2/13oz Pack,,3,
+NB-CHAI-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice",True,1,2/13oz Pack,,3,
+NB-CSS-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt",True,1,2/13oz Pack,,3,
+NB-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger",True,1,2/13oz Pack,,3,
+NB-GGET-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:GGet Espresso",True,1,2/13oz Pack,,3,
+NB-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba",True,1,2/13oz Pack,,3,
+NB-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon",True,1,2/13oz Pack,,3,
+NB-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Butter",True,1,2/13oz Pack,,3,
+NB-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Pecan",True,1,2/13oz Pack,,3,
+NB-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-ALM-CASH-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Cashew Butter",True,1,2/13oz Pack,,3,
+NB-ALM-CHAI-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Chai Spice",True,1,2/13oz Pack,,3,
+NB-ALM-CSS-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Chocolate Sea Salt",True,1,2/13oz Pack,,3,lb
+NB-ALM-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Fiji Ginger",True,1,2/13oz Pack,,3,lb
+NB-ALM-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Hot Mamba",True,1,2/13oz Pack,,3,
+NB-ALM-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Maple Cinnamon",True,1,2/13oz Pack,,3,lb
+NB-ALM-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Peanut Butter",True,1,2/13oz Pack,,3,
+NB-ALM-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Peanut Pecan",True,1,2/13oz Pack,,3,lb
+NB-ALM-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-CASH-CHAI-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Chai Spice",True,1,2/13oz Pack,,3,
+NB-CASH-CSS-13OZ-2PACK-GIfT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Chocolate Sea Salt",True,1,2/13oz Pack,,3,
+NB-CASH-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Fiji Ginger",True,1,2/13oz Pack,,3,
+NB-CASH-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Hot Mamba",True,1,2/13oz Pack,,3,
+NB-CASH-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Maple Cinnamon",True,1,2/13oz Pack,,3,
+NB-CASH-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Peanut Butter",True,1,2/13oz Pack,,3,
+NB-CASH-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Peanut Pecan",True,1,2/13oz Pack,,3,
+NB-CASH-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-CHAI-CSS-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Chocolate Sea Salt",True,1,2/13oz Pack,,3,
+NB-CHAI-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Fiji Ginger",True,1,2/13oz Pack,,3,
+NB-CHAI-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Hot Mamba",True,1,2/13oz Pack,,3,
+NB-CHAI-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Maple Cinnamon",True,1,2/13oz Pack,,3,
+NB-CHAI-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Peanut Butter",True,1,2/13oz Pack,,3,lb
+NB-CHAI-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Peanut Pecan",True,1,2/13oz Pack,,3,lb
+NB-CHAI-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Toasted Coconut",True,1,2/13oz Pack,,3,lb
+NB-CSS-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Fiji Ginger",True,1,2/13oz Pack,,3,lb
+NB-CSS-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Hot Mamba",True,1,2/13oz Pack,,3,lb
+NB-CSS-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Maple Cinnamon",True,1,2/13oz Pack,,3,
+NB-CSS-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Peanut Butter",True,1,2/13oz Pack,,3,lb
+NB-CSS-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Peanut Pecan",True,1,2/13oz Pack,,3,lb
+NB-CSS-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-FGIN-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Fiji Ginger",True,1,2/13oz Pack,,3,
+NB-FGIN-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Maple Cinnamon",True,1,2/13oz Pack,,3,lb
+NB-FGIN-MPC-13OZ-2PACK-INACTIVE,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Fiji Ginger",False,1,2/13oz Pack,,3,
+NB-FGIN-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Peanut Butter",True,1,2/13oz Pack,,3,
+NB-FGIN-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Peanut Pecan",True,1,2/13oz Pack,,3,
+NB-FGIN-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-MAMBA-MPC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Maple Cinnamon",True,1,2/13oz Pack,,3,
+NB-MAMBA-PNUT-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Peanut Butter",True,1,2/13oz Pack,,3,lb
+NB-MAMBA-PPEC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Peanut Pecan",True,1,2/13oz Pack,,3,lb
+NB-MAMBA-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-MPC-PNUT-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Peanut Butter",True,1,2/13oz Pack,,3,
+NB-MPC-PPEC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Peanut Pecan",True,1,2/13oz Pack,,3,
+NB-MPC-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-PNUT-PPEC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Butter &  Peanut Pecan",True,1,2/13oz Pack,,3,
+NB-PNUT-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Butter & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-PPEC-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Pecan & Toasted Coconut",True,1,2/13oz Pack,,3,
+NB-WHOOPS-ESP,0,Whoops Tigerwalk Espresso Nut Butter,True,1,,,0,
+NB-WHOOPS-ESP-13OZ,3.69,Whoops Tigerwalk Espresso Nut Butter:13 oz Jar,False,1,13 oz jar,,17,oz
+NB-LTD-LCASH,0,Limited Batch - Lemon Cashew Nut Butter,True,1,,,0,
+NB-LTD-LCASH-10OZ,0,Limited Batch - Lemon Cashew Nut Butter:10 oz Jar,True,1,10 oz,,1.25,lb
+NB-LTD-LCASH-SCRAP,0,Limited Batch - Lemon Cashew Nut Butter:NB Scrap - 1 oz,True,1,1 oz,,1,oz
+NB-R&D,0,R&D Nut Butters,True,1,,,0,
+R&D-NB-CSS-ONYX,0,R&D Nut Butters:Guittard Onyx CSS,True,1,,,0,
+R&D-NB-CHAI,0,R&D Nut Butters:Chai Spice Mix Options,True,1,,,0,
+NB-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels",True,1,,,0,
+NB-LCASH-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Lemon Cashew",True,1,,,0,
+NB-PCO-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Peanut Cocoa",True,1,,,0,
+NB-BAR-BUTTER-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Bar Butters",True,1,,,0,
+NB-CHAI-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Chai Spice",True,1,,,0,
+NB-PPEC-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Peanut Pecan",True,1,,,0,
+NB-PNUT-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Peanut Butter",True,1,,,0,
+NB-TCO-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Toasted Coconut",True,1,,,0,
+NB-MPC-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Maple Cinnamon",True,1,,,0,
+NB-TWALK-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Tigerwalk Espresso",True,1,,,0,
+NB-MAMBA-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Hot Mamba",True,1,,,0,
+NB-GGET-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:GGet Espresso",True,1,,,0,
+NB-FGIN-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Fiji Ginger",True,1,,,0,
+NB-CSS-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Chocolate Sea Salt",True,1,,,0,
+NB-CASH-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Cashew Butter",True,1,,,0,
+NB-ALM-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Almond Butter",True,1,,,0,
+NB-PCASH-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Peanut Cashew",True,1,,,0,
+NB-LTD-CCAKE-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Carrot Cake Walnut",True,1,,,0,
+NB-LTD-PPIE-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Sorghum Pecan Pie",True,1,,,0,
+NB-LTD-FGPNUT-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Fiji Ginger Peanut",True,1,,,0,
+R&D-BATCH,0,R&D Batch,True,1,,,0,
+R&D-BT-CSS-ONYX,0,R&D Batch:Guittard Onyx CSS,True,1,,,0,
+R&D-BT-BAR-FC,0,R&D Batch:Figgy Chai,True,1,,,0,
+R&D-BT-CHAI,0,R&D Batch:Chai Spice Mix Options,True,1,,,0,
+MERCH-BSR-10OZ-JAR,0,BSR Labeled 10 oz Jar - Case,True,1,12 Jar Case,12.0,0,
+NB-PCASH,0,Peanut Cashew Butter,True,1,,,0,
+NB-PCASH-10OZ-1,0,Peanut Cashew Butter:10 oz Jar,True,1,,,0,
+NB-10OZ-CASE,0,"Nut Butter, 10 oz Case",True,1,12/10oz Case,,0,
+NB-PCO-10OZ-CASE,0,"Nut Butter, 10 oz Case:Peanut Cocoa",False,1,12/10oz Case,,12,lb
+NB-PCASH-10OZ-CASE,0,"Nut Butter, 10 oz Case:Peanut Cashew",False,1,12/10oz Case,,12,lb
+NB-WAG,0,Wag Butter,True,1,,,0,
+NB-WAG-13OZ,0,Wag Butter:13 oz Jar,True,6,13 oz jar,,17,oz
+NB-WAG-4LB,0,Wag Butter:4# Bucket,True,1,4# Bucket,,0,
+NB-WAG-8LB,0,Wag Butter:8# Bucket,True,1,8# Bucket,,0,
+NB-WAG-SCRAP,0,Wag Butter:NB Scrap - 1 oz,True,1,1 oz,,0,
+BAR-R&D,0,R&D Bars,True,1,,,0,
+R&D-BAR-FC,0,R&D Bars:Bar,True,1,,,0,
+NB-13OZ-6PACK,0,"Nut Butter, 6-Pack 13 oz",True,1,,,0,
+NB-GH-6PACK,0,"Nut Butter, 6-Pack 13 oz:GH-6PACK",True,1,,,0,
+MP-NB-BAR,0,Nut Butter & Bar Multi-packs,True,1,,,0,
+MP-PANTRY,0,Nut Butter & Bar Multi-packs:Pantry Pack,True,1,,,0,
+NB-LTD-CCAKE,0,Limited Batch - Carrot Cake Walnut Butter,True,1,,,0,
+NB-LTD-CCAKE-10OZ,0,Limited Batch - Carrot Cake Walnut Butter:10 oz Jar,True,1,10 oz,,1.25,

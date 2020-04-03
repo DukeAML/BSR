@@ -18,7 +18,7 @@ def jprint(obj):
 def main():
     # filter the csv so it contains purchases only ("Big Spoon Roasters Production Facility Quantity" > 0)
     PATH = pathlib.Path(__file__).parent
-    df = pd.read_csv(PATH.joinpath("Detail_Inventory_Report_2020-03-22.csv"), low_memory=False)
+    df = pd.read_csv(PATH.joinpath("Detail_Inventory_Report_2020-04-03.csv"), low_memory=False)
     
     dfP = df[(df["Big Spoon Roasters Production Facility Quantity"].isna()) | (df["Big Spoon Roasters Production Facility Quantity"] > 0)]
     dfP = dfP.drop(columns=["Transaction Type", "Number", "Customer / Reason", "Customer Type", "Big Spoon Roasters Production Facility QOH", "Quantity Total", "QOH Total"])
@@ -90,12 +90,10 @@ def main():
 
     # make a new dataframe that has only the date & money spent
     df = dfP[['date', 'money spent']].copy()
-    print(df.shape)
     # combine duplicate dates so it sums up their 'money spent' column
     df = df.groupby(['date'], as_index = False).sum()
-    #df = df.groupby(['date']).agg('sum')
-    #df = df.groupby(['date'], as_index = False).agg({'money spent': 'sum'})
-    print(df.shape)
+
+    # turn it into csv
     df.to_csv (r'expense_data.csv', index = False, header=True)
     
 if __name__ == '__main__':

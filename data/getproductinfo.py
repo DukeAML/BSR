@@ -38,7 +38,6 @@ def extractData(data):
             # make a list of all these values
             values = [sku, cost_price, fully_qualified_name, active, incremental_order_quantity, pack_size, pack_size_qty, weight, weight_units]
             allProducts.append(dict(zip(columns, values)))
-'''
 
 def jprint(obj):
     ''' 

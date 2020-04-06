@@ -184,7 +184,7 @@ app.layout = html.Div(
                             end_date=datetime.now()
                         ),
                         html.P(
-                            "Filter Products Factored:",
+                            "Filter Selected Products:",
                             className="control_label",
                             style={'margin-bottom':'10px'},
                         ),
@@ -256,7 +256,22 @@ app.layout = html.Div(
                 html.Div(
                     [dcc.Graph(id="predict_product")],
                     className="pretty_container twelve columns",
-                    id="predictGraphContainer"
+                    id="predictGraphContainer",
+                ),
+            ],
+            className="row flex-display"
+        ),
+        html.Div(
+            [
+                html.Div(
+                    [dcc.Graph(id="product_table")],
+                    className="pretty_container six columns",
+                    id="ptableGraphContainer",
+                ),
+                html.Div(
+                    [dcc.Graph(id="ingredient_table")],
+                    className="pretty_container six columns",
+                    id="itableGraphContainer",
                 ),
             ],
             className="row flex-display"
@@ -293,7 +308,8 @@ app.clientside_callback(
     ClientsideFunction(namespace="clientside", function_name="resize"),
     Output("output-clientside", "children"),
     [Input("fcf_lineplot", "figure"), Input("fcf_lineplot_weekly", "figure"),
-    Input("fcf_lineplot_daily", "figure"), Input("predict_product", "figure")],
+    Input("fcf_lineplot_daily", "figure"), Input("predict_product", "figure"),
+    Input("product_table", "figure"), Input("ingredient_table", "figure")],
 )
 
 
@@ -317,6 +333,71 @@ def update_output(value):
     str1 = date1.strftime(SLIDER_FORMAT)
     str2 = date2.strftime(SLIDER_FORMAT)
     return "{} - {}".format(str1, str2)
+
+
+@app.callback(
+    Output('ingredient_table', 'figure'),
+    [
+        Input('products_chosen', 'value'),
+        Input('growth_percentage', 'value')
+        #Input('none', 'children')
+    ]
+)
+def create_ingredient_table(products_chosen, growth_adjustment):
+
+    fdf = pd.DataFrame(np.random.randn(len(productsales.keys()),3),
+                        columns=["made", "ordered", "needed"],
+                        index=productsales.keys())
+
+    layout = go.Layout(
+        title="Selected Ingredients Information",
+        autosize=True,
+    )
+
+    fig = go.Figure(data=[go.Table(
+    header=dict(values=["Ingredient", "Quantity<br>Made",
+                "Quantity<br>Ordered", "Quantity<br>Needed"],
+                #fill_color='paleturquoise',
+                align='left'),
+    cells=dict(values=[fdf.index, fdf.made, fdf.ordered, fdf.needed],
+               #fill_color='lavender',
+               align='left'))
+    ], layout=layout)
+
+    return fig
+
+
+@app.callback(
+    Output('product_table', 'figure'),
+    [
+        Input('products_chosen', 'value'),
+        Input('growth_percentage', 'value')
+        #Input('none', 'children')
+    ]
+)
+def create_product_table(products_chosen, growth_adjustment):
+
+    fdf = pd.DataFrame(np.random.randn(len(productsales.keys()),3),
+                        columns=["made", "ordered", "needed"],
+                        index=productsales.keys())
+    fdf = fdf.loc[products_chosen].copy()
+
+    layout = go.Layout(
+        title="Selected Products Information",
+        autosize=True,
+    )
+
+    fig = go.Figure(data=[go.Table(
+    header=dict(values=["Product", "Quantity<br>Made",
+                "Quantity<br>Ordered", "Quantity<br>Needed"],
+                #fill_color='paleturquoise',
+                align='left'),
+    cells=dict(values=[fdf.index, fdf.made, fdf.ordered, fdf.needed],
+               #fill_color='lavender',
+               align='left'))
+    ], layout=layout)
+
+    return fig
 
 
 @app.callback(
@@ -368,7 +449,7 @@ def create_predict_product(products_chosen, growth_adjustment):
         gm_prophet.fit(gm)
 
         # Create forecast on transformed data
-        gm_forecast = gm_prophet.make_future_dataframe(periods=30*2, freq='D')
+        gm_forecast = gm_prophet.make_future_dataframe(periods=int(30*1.5), freq='D')
         gm_forecast = gm_prophet.predict(gm_forecast)
 
         # Apply inverse of transform to forecast to get actual results
@@ -445,6 +526,22 @@ def create_predict_product(products_chosen, growth_adjustment):
             marker_color='black',
             marker_size=3,
         ))
+
+    fig.update_xaxes(
+    #rangeslider_visible=True,
+    rangeselector=dict(
+        buttons=list([
+            dict(count=1, label="1m", step="month", stepmode="backward"),
+            dict(count=3, label="3m", step="month", stepmode="backward"),
+            #dict(count=6, label="6m", step="month", stepmode="backward"),
+            dict(count=1, label="YTD", step="year", stepmode="todate"),
+            #dict(count=1, label="1y", step="year", stepmode="backward"),
+            dict(step="all")
+            ]),
+        ),
+    range=[datetime.now() - timedelta(days=60),
+                datetime.now() + timedelta(days=30)],
+    )
 
     return fig
 

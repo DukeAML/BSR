@@ -63,7 +63,6 @@ for sku in pr_13['sku']:
 df_13oz = pd.DataFrame()
 df_13oz['sku'] = helper.keys()
 df_13oz['Level Down'] = helper.values()
-print(df_13oz)
 
 keys1 =["ALERT Needs ALM Label-1PACK", "ALERT Needs CASH Label-1PACK", "ALERT Needs CHAI Label-1PACK", "ALERT Needs CSS Label-1PACK", "ALERT Needs FGIN Label-1PACK", "ALERT Needs GGET Label-1PACK", "ALERT Needs MAMBA Label-1PACK","ALERT Needs MPC Label-1PACK", "ALERT Needs PNUT Label-1PACK", "ALERT Needs PPEC Label-1PACK", "ALERT Needs TCO Label-1PACK"]
 values1 = [("WT158151CF",1), ("CASH 1PACK label missing",1),("WT157272CF",1), ("WT159032CF",1),("WT157276CF",1),("WT159029CF",1),("WT158147CF",1),("WT157274CF",1),("WT157270CF",1),("WT158149CF",1),("WT158153CF",1)]
@@ -89,5 +88,51 @@ for ii in range(len(df_13oz["Level Down"])):
                 df_13oz["Level Down"].iloc[ii][jj] = labels2[df_13oz["Level Down"].iloc[ii][jj]]
 
 
-df_13oz.to_csv('products_to_base.csv', index = False)
+pr3= pd.read_csv('3oz_products.csv')  
+pr_3 = pd.DataFrame(pr3)
 
+helper2= {}
+for sku in pr_3['sku']:
+    
+    lst = sku.split("-")
+    nb = lst[1]
+
+    if '4PACK' in lst:
+        if 'AB' in lst:
+            if 'GIFT' in lst:
+                helper2[sku] = [('NB-TCO-3OZ', 1),('NB-FGIN-3OZ', 1),('NB-CSS-3OZ', 1),('NB-ALM-3OZ', 1),("PKG-BOX-2PK-4PK",1),("S-13166",1), ("NB-LABEL-GIFT4U",1)] 
+            else:
+                helper2[sku] = [('NB-TCO-3OZ', 1),('NB-FGIN-3OZ', 1),('NB-CSS-3OZ', 1),('NB-ALM-3OZ', 1),("PKG-BOX-2PK-4PK",1),("S-13166",1), "ALERT Needs Label-4PACK AB"] 
+
+        else:
+            if 'GIFT' in lst:
+                helper2[sku] = [('NB-CHAI-3OZ', 1),('NB-FGIN-3OZ', 1),('NB-MPC-3OZ', 1),('NB-PNUT-3OZ', 1),("PKG-BOX-2PK-4PK",1),("S-13166",1), ("NB-LABEL-GIFT4U",1)] 
+            else:
+                helper2[sku] = [('NB-CHAI-3OZ', 1),('NB-FGIN-3OZ', 1),('NB-MPC-3OZ', 1),('NB-PNUT-3OZ', 1),("PKG-BOX-2PK-4PK",1),("S-13166",1), "ALERT Needs Label-4PACK"] 
+
+    elif 'CASE' in lst:
+        helper2[sku] = [('NB-%s-13OZ' %nb, 12)]
+
+    elif "SAMPLE" in lst:
+        helper2[sku] = [('NB-%s-13OZ' %nb, 1)]
+
+df_3oz = pd.DataFrame()
+df_3oz['sku'] = helper2.keys()
+df_3oz['Level Down'] = helper2.values()
+
+labels3 ={}
+labels3["ALERT Needs Label-4PACK AB"] = ("WT157431CF",1)
+labels3["ALERT Needs Label-4PACK"] = ("WT157224CF",1)
+
+for ii in range(len(df_3oz["Level Down"])): 
+    for jj in range(len(df_3oz["Level Down"].iloc[ii])):
+        if "ALERT" in df_3oz["Level Down"].iloc[ii][jj]:
+            print(labels3[df_3oz["Level Down"].iloc[ii][jj]])
+            df_3oz["Level Down"].iloc[ii][jj] = labels3[df_3oz["Level Down"].iloc[ii][jj]]
+
+df = df_13oz.append(df_3oz, ignore_index=True)
+
+df.to_csv('products_to_base.csv', index = False)
+
+
+           

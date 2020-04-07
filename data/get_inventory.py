@@ -17,9 +17,7 @@ def extractData(data):
 
     products = data["products"]   #orders is a list of every order
 
-    for product in products: 
-        print(product.components)
-               # order is a dict
+    for product in products: # order is a dict
         variants = product["variants"]
         # print(variants)
         for variant in variants:
@@ -71,7 +69,7 @@ def main():
     df = pd.DataFrame(allProducts)
 
     # write to csv
-    df.to_csv (r'inventory2.csv', index = False, header=True)
+    df.to_csv (r'inventory3.csv', index = False, header=True)
     
 
 if __name__ == '__main__':

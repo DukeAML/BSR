@@ -1,0 +1,35 @@
+﻿
+sku,cost_price,fully_qualified_name,active,incremental_order_quantity,pack_size, stock,weight,weight_units
+
+
+NB-LABEL-GIFT4U,0.44,Label-NB-Other:Gift,True,1,Each,"[{'id': 198534, 'on_hand': '601', 'available': '601', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+
+PKG-BOX-2PK-4PK,0.49,NB Packaging:2-4-Pack Box,True,1,Each,"[{'id': 198550, 'on_hand': '823', 'available': '823', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+S-13166,0.01,Label-NB-Other:Best by,True,1,Each,"[{'id': 198533, 'on_hand': '119017', 'available': '119017', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+
+
+NB-ALM-3OZ,0,Almond Nut Butter:3 oz Jar,True,12,3 oz jar,"[{'id': 202273, 'on_hand': '155', 'available': '155', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+NB-CHAI-3OZ,1.23,Chai Spice Nut Butter:3 oz Jar,True,12,3 oz Jar,"[{'id': 198437, 'on_hand': '8', 'available': '8', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+NB-CSS-3OZ,0,Chocolate Sea Salt Nut Butter:3 oz Jar,True,12,3 oz jar,"[{'id': 202271, 'on_hand': '95', 'available': '95', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+NB-FGIN-3OZ,1.51,Fiji Ginger Nut Butter:3 oz Jar,True,12,3 oz Jar,"[{'id': 198446, 'on_hand': '62', 'available': '62', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.5,
+NB-MPC-3OZ,1.18,Maple Cinnamon Nut Butter:3 oz Jar,True,12,3 oz Jar,"[{'id': 198465, 'on_hand': '104', 'available': '104', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.5,
+NB-PNUT-3OZ,1.11,Peanut Nut Butter:3 oz Jar,True,12,3 oz Jar,"[{'id': 198471, 'on_hand': '80', 'available': '80', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.5,
+NB-PPEC-3OZ,1.23,Peanut Pecan Nut Butter:3 oz Jar,False,1,3 oz Jar,"[{'id': 198476, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.5,
+NB-TCO-3OZ,0,Toasted Coconut Nut Butter:3 oz Jar,True,12,3 oz jar,"[{'id': 202275, 'on_hand': '81', 'available': '81', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+
+WT156081CF,0.16,Label-NB-3oz:Chai Spice,True,1,Each,"[{'id': 198506, 'on_hand': '3950.00024', 'available': '3950.00024', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+WT156083CF,0.16,Label-NB-3oz:Fiji Ginger,True,1,Each,"[{'id': 198507, 'on_hand': '3265.0006', 'available': '3265.0006', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+WT156082CF,0.16,Label-NB-3oz:Maple Cinnamon,True,1,Each,"[{'id': 198508, 'on_hand': '3049.58371', 'available': '3049.58371', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+WT156080CF,0.16,Label-NB-3oz:Peanut Butter,True,1,Each,"[{'id': 198509, 'on_hand': '3318.00036', 'available': '3318.00036', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+WT156085CF,0.16,Label-NB-3oz:Chocolate Sea Salt,True,1,Each,"[{'id': 201239, 'on_hand': '2735.5001', 'available': '2735.5001', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+WT156084CF,0.16,Label-NB-3oz:Almond Butter,True,1,Each,"[{'id': 201240, 'on_hand': '2680.00032', 'available': '2680.00032', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+WT156086CF,0.16,Label-NB-3oz:Toasted Coconut,True,1,Each,"[{'id': 201241, 'on_hand': '2713.41681', 'available': '2713.41681', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+
+NB-3OZ-4PACK-GIFT,0,"Nut Butter, Variety Pack 3oz:3OZ-4PACK-GIFT",True,1,4/3oz Jars,"[{'id': 198668, 'on_hand': '1', 'available': '-1', 'committed': '2', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",5,lb
+NB-3OZ-4PACK,5.1,"Nut Butter, Variety Pack 3oz:3OZ-4PACK",True,1,4/3oz Jars,"[{'id': 198669, 'on_hand': '0', 'available': '-27', 'committed': '27', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",5,lb
+NB-3OZ-4PACK-AB,0,"Nut Butter, Variety Pack 3oz:AB-3OZ-4PACK",True,1,4/3oz Jars,"[{'id': 202277, 'on_hand': '3', 'available': '-7', 'committed': '10', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",5,
+NB-3OZ-4PACK-AB-GIFT,0,"Nut Butter, Variety Pack 3oz:AB-3OZ-4PACK-GIFT",True,1,4/3oz Jars,"[{'id': 202278, 'on_hand': '1', 'available': '-5', 'committed': '6', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",5,
+NB-CHAI-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Chai Spice",True,1,,"[{'id': 199046, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+NB-MPC-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Maple Cinnamon",True,1,,"[{'id': 199047, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+NB-FGIN-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Fiji Ginger",True,1,,"[{'id': 199048, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+NB-PNUT-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Peanut Butter",True,1,,"[{'id': 199049, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,

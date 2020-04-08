@@ -49,6 +49,11 @@ for sku in pr_13['sku']:
     elif '6PACK' in lst:
         if "GH" in lst:
             helper[sku] = [('NB-CHAI-13OZ',1),('NB-CSS-13OZ',1),('NB-FGIN-13OZ',1),('NB-MPC-13OZ',1),('NB-PPEC-13OZ',1),('NB-TCO-13OZ',1)] 
+    elif 'WAG' in lst:
+        helper[sku] = [('BATCH-WAG',1),('WT161820CF',1),("WT161823CF",1),('S-13166',1),('G12-70-450ECO02-2',1),('C70G-450GGMLP-5',1)] 
+        #this skips a level 
+    elif 'VP' in lst:
+        helper[sku] = [('NB-ALM-13OZ', 1), ('NB-CASH-13OZ',1), ('NB-CHAI-13OZ',1),('NB-CSS-13OZ', 1), ('NB-FGIN-13OZ',1), ('NB-GGET-13OZ',1),('NB-MAMBA-13OZ', 1), ('NB-MPC-13OZ',1), ('NB-PNUT-13OZ',1),('NB-PPEC-13OZ', 1), ('NB-TCO-13OZ',1), ('NB-LTD-CCAKE-10OZ',1)]
 
     elif 'TRIO' in lst:
         if 'FW19' in lst:
@@ -132,7 +137,111 @@ for ii in range(len(df_3oz["Level Down"])):
 
 df = df_13oz.append(df_3oz, ignore_index=True)
 
-df.to_csv('products_to_base.csv', index = False)
+# df.to_csv('products_to_base.csv', index = False)
+
+
+
+pr_J= pd.read_csv('jam_products.csv')  
+prJ = pd.DataFrame(pr_J,)
+print(prJ)
+helper3= {}
+for sku in prJ['sku']:
+    lst = sku.split("-")
+
+    if 'SUBSCR' not in lst:
+        month = lst[2]
+        name = lst[1]
+        name = list(name)
+        nb = name[0]
+        jam = ("MERCH-JAM-%s" %month)
+
+        if nb == "A":
+           
+            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                if 'GIFT':
+                    helper3[sku] = [jam, "unsure ab",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    helper3[sku] = [jam, "unsure ab"]
+            
+            elif month == "MAR20":
+                if 'GIFT':
+                    helper3[sku] = [("MERCH-JAM-MAR20",1),("NB-FGIN-13OZ",1)]
+                else:
+                    helper3[sku] = [("MERCH-JAM-MAR20",1),("NB-FGIN-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+
+            elif month == "APR20":
+                if 'GIFT':
+                    helper3[sku] = [("MERCH-JAM-APRIL20",1),("NB-TCO-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    [("MERCH-JAM-APRIL20",1),("NB-TCO-13OZ",1)]
+                    
+        
+        elif nb == "P":
+    
+            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                if 'GIFT':
+                    helper3[sku] = [jam, "unsure pb",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    helper3[sku] = [jam, "unsure pb"]
+            
+            elif month == "MAR20":
+                if 'GIFT':
+                    helper3[sku] = [("MERCH-JAM-MAR20",1),("NB-PNUT-13OZ",1)]
+                else:
+                    helper3[sku] = [("MERCH-JAM-MAR20",1),("NB-PNUT-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+
+            elif month == "APR20":
+                if 'GIFT':
+                    helper3[sku] = [("MERCH-JAM-APRIL20",1),("NB-PPEC-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    [("MERCH-JAM-APRIL20",1),("NB-PPEC-13OZ",1)]
+        
+    elif 'SUBSCR' in lst:
+        month = lst[3]
+        name = lst[1]
+        name = list(name)
+        nb = name[0]
+        jam = ("MERCH-JAM-%s" %month)
+
+        if nb == "A":
+            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                helper3[sku] = [jam, "unsure ab"]
+            elif month == "MAR20":
+                helper3[sku] = [jam, ("NB-FGIN-13OZ",1)]
+
+            elif month == "APR20":
+                helper3[sku] = [jam, ("NB-TCO-13OZ",1)]
+
+        elif nb == "P":
+            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                helper3[sku] = [jam, "unsure pb"]
+            elif month == "MAR20":
+                helper3[sku] = [jam, ("NB-PNUT-13OZ",1)]
+            elif month == "APR20":
+                helper3[sku] = [jam, ("NB-PPEC-13OZ",1)]
+           
+
+        elif nb == "R":
+            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                helper3[sku] = ["unsure nb"]
+            elif month == "MAR20":
+                helper3[sku] = [("NB-PNUT-13OZ",1)]
+            elif month == "APR20":
+                helper3[sku] = [("NB-LTD-CCAKE-10OZ",1)]
+
+dfJoz = pd.DataFrame()
+dfJoz['sku'] = helper3.keys()
+dfJoz['Level Down'] = helper3.values()
+
+df = dfJoz.append(df, ignore_index=True)
+
+print(df)
+
+#10 oz
+# subscriptions
+# bars
+# merch 
+
 
 
            

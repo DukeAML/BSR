@@ -1,0 +1,77 @@
+sku,available,prev committed,updated committed,left over,name
+MERCH-JAM-OCT19,0.0,0.0,0.0,0.0,Featured Jam:Lemon Bird Preserves Bourbon Figs with Vanilla & Smoked Salt
+MERCH-JAM-DEC19,0.0,0.0,0.0,0.0,Featured Jam:Girl Meets Dirt Pear Balsamic
+MERCH-JAM-BLENAPRICOT,0.0,0.0,0.0,0.0,Featured Jam:Lemon Bird Preserves Blenheim Apricot
+MERCH-JAM-FLAVPLUMCOT,0.0,0.0,0.0,0.0,Featured Jam:Lemon Bird Preserves Flavorella Plumcot
+MERCH-JAM-PEARGINGER,0.0,0.0,0.0,0.0,Featured Jam:Lemon Bird Preserves Pear Ginger
+MERCH-JAM-FIDDLEHEAD,0.0,0.0,0.0,0.0,Featured Jam:Fiddlehead Farm Jams
+MERCH-JAM-NOV19,0.0,0.0,0.0,0.0,Featured Jam:Urban Canning Co. Spiced Apple
+MERCH-JAM-JAN20,0.0,0.0,0.0,0.0,Featured Jam:Brins Strawberry Lemongrass
+MERCH-JAM-FEB20,1.0,0.0,0.0,1.0,Featured Jam:Frog Hollow Farm Organic Blood Orange & Strawberry Marmalade
+MERCH-JAM-MAR20,1.0,0.0,0.0,1.0,Featured Jam:V Smiley Preserves Black Currant Shiro Plum
+MERCH-JAM-APRIL20,170.0,16.0,16.0,154.0,Featured Jam:Potlicker Kitchen Pear Ginger Jam
+MERCH-JAM-MAY20,0.0,0.0,0.0,0.0,Featured Jam:Regina's Farm Kitchen Peach Vanilla Bean
+BAR-AP-CASE,284.0,81.0,81.0,203.0,Apricot Pepita Nut Butter Bar:Case
+BAR-AP-SINGLE,16.0,0.0,0.0,16.0,Apricot Pepita Nut Butter Bar:Bar
+BAR-AP-SCRAP,0.0,0.0,0.0,0.0,Apricot Pepita Nut Butter Bar:Bar Scrap - 100g
+BAR-CC-CASE,58.0,65.0,65.0,-7.0,Cranberry Cashew Nut Butter Bar:Case
+BAR-CC-SINGLE,3.0,0.0,0.0,3.0,Cranberry Cashew Nut Butter Bar:Bar
+BAR-CC-SCRAP,0.0,0.0,0.0,0.0,Cranberry Cashew Nut Butter Bar:Bar Scrap - 100g
+BAR-CP-CASE,323.0,109.0,109.0,214.0,Cherry Pecan Nut Butter Bar:Case
+BAR-CP-SINGLE,10.0,0.0,0.0,10.0,Cherry Pecan Nut Butter Bar:Bar
+BAR-CP-SCRAP,0.0,0.0,0.0,0.0,Cherry Pecan Nut Butter Bar:Bar Scrap - 100g
+BAR-FC-CASE,152.0,62.0,62.0,90.0,Figgy Chai Nut Butter Bar:Case
+BAR-FC-SINGLE,11.0,0.0,0.0,11.0,Figgy Chai Nut Butter Bar:Bar
+BAR-FC-SCRAP,16.0,0.0,0.0,16.0,Figgy Chai Nut Butter Bar:Bar Scrap - 100g
+NB-ALM-3OZ,155.0,0.0,0.0,155.0,Almond Nut Butter:3 oz Jar
+NB-CHAI-3OZ,8.0,0.0,0.0,8.0,Chai Spice Nut Butter:3 oz Jar
+NB-CSS-3OZ,95.0,0.0,0.0,95.0,Chocolate Sea Salt Nut Butter:3 oz Jar
+NB-FGIN-3OZ,62.0,0.0,0.0,62.0,Fiji Ginger Nut Butter:3 oz Jar
+NB-MPC-3OZ,104.0,0.0,0.0,104.0,Maple Cinnamon Nut Butter:3 oz Jar
+NB-PNUT-3OZ,80.0,0.0,0.0,80.0,Peanut Nut Butter:3 oz Jar
+NB-PPEC-3OZ,0.0,0.0,0.0,0.0,Peanut Pecan Nut Butter:3 oz Jar
+NB-TCO-3OZ,81.0,0.0,0.0,81.0,Toasted Coconut Nut Butter:3 oz Jar
+NB-ALM-13OZ,48.0,29.0,29.0,19.0,Almond Nut Butter:13 oz Jar
+NB-CASH-13OZ,256.0,56.0,56.0,200.0,Cashew Nut Butter:13 oz Jar
+NB-CHAI-13OZ,137.0,413.0,413.0,-276.0,Chai Spice Nut Butter:13 oz Jar
+NB-CSS-13OZ,93.0,385.0,385.0,-292.0,Chocolate Sea Salt Nut Butter:13 oz Jar
+NB-FGIN-13OZ,52.0,336.0,336.0,-284.0,Fiji Ginger Nut Butter:13 oz Jar
+NB-GGET-13OZ,110.0,52.0,52.0,58.0,GGet Espresso Nut Butter:13 oz Jar
+NB-MAMBA-13OZ,160.0,33.0,33.0,127.0,Hot Mamba Nut Butter:13 oz Jar
+NB-MPC-13OZ,375.0,128.0,128.0,247.0,Maple Cinnamon Nut Butter:13 oz Jar
+NB-PNUT-13OZ,227.0,98.0,98.0,129.0,Peanut Nut Butter:13 oz Jar
+NB-PPEC-13OZ,134.0,402.0,402.0,-268.0,Peanut Pecan Nut Butter:13 oz Jar
+NB-TCO-13OZ,263.0,336.0,336.0,-73.0,Toasted Coconut Nut Butter:13 oz Jar
+WT158151CF,1150.0,0.0,0.0,1150.0,Label-NB-1Pack:Almond Butter
+WT157272CF,1050.0,0.0,0.0,1050.0,Label-NB-1Pack:Chai
+WT159032CF,1250.0,0.0,0.0,1250.0,Label-NB-1Pack:Chocolate Sea Salt
+WT159029CF,1988.0,0.0,0.0,1988.0,Label-NB-1Pack:GGet Espresso
+WT157276CF,1225.0,0.0,0.0,1225.0,Label-NB-1Pack:Fiji Ginger
+WT158147CF,1015.0,0.0,0.0,1015.0,Label-NB-1Pack:Hot Mamba
+WT157274CF,775.0,0.0,0.0,775.0,Label-NB-1Pack:Maple Cinnamon
+WT157270CF,975.0,0.0,0.0,975.0,Label-NB-1Pack:Peanut Butter
+WT158149CF,975.0,0.0,0.0,975.0,Label-NB-1Pack:Peanut Pecan
+WT158153CF,1025.0,0.0,0.0,1025.0,Label-NB-1Pack:Toasted Coconut
+WT158152CF,1270.0,0.0,0.0,1270.0,Label-NB-2Pack:Almond Butter
+WT157273CF,1360.0,0.0,0.0,1360.0,Label-NB-2Pack:Chai
+WT159033CF,2935.0,0.0,0.0,2935.0,Label-NB-2Pack:Chocolate Sea Salt
+WT159030CF,2153.0,0.0,0.0,2153.0,Label-NB-2Pack:GGet Espresso
+WT157277CF,1360.0,0.0,0.0,1360.0,Label-NB-2Pack:Fiji Ginger
+WT158148CF,1085.0,0.0,0.0,1085.0,Label-NB-2Pack:Hot Mamba
+WT157275CF,1075.0,0.0,0.0,1075.0,Label-NB-2Pack:Maple Cinnamon
+WT157271CF,1110.0,0.0,0.0,1110.0,Label-NB-2Pack:Peanut Butter
+WT158150CF,1080.0,0.0,0.0,1080.0,Label-NB-2Pack:Peanut Pecan
+WT158154CF,1355.0,0.0,0.0,1355.0,Label-NB-2Pack:Toasted Coconut
+WT156081CF,3950.00024,0.0,0.0,3950.00024,Label-NB-3oz:Chai Spice
+WT156083CF,3265.0006,0.0,0.0,3265.0006,Label-NB-3oz:Fiji Ginger
+WT156082CF,3049.58371,0.0,0.0,3049.58371,Label-NB-3oz:Maple Cinnamon
+WT156080CF,3318.00036,0.0,0.0,3318.00036,Label-NB-3oz:Peanut Butter
+WT156085CF,2735.5001,0.0,0.0,2735.5001,Label-NB-3oz:Chocolate Sea Salt
+WT156084CF,2680.00032,0.0,0.0,2680.00032,Label-NB-3oz:Almond Butter
+WT156086CF,2713.41681,0.0,0.0,2713.41681,Label-NB-3oz:Toasted Coconut
+15239,965.0,0.0,0.0,965.0,Shipping Packaging:Shipping Box 3-4 Level
+PKG-BAR-BOX,3078.0,0.0,0.0,3078.0,Bar Packaging:Bar Box
+PKG-BOX-2PK-4PK,823.0,0.0,0.0,823.0,NB Packaging:2-4-Pack Box
+NB-LABEL-GIFT4U,601.0,0.0,0.0,601.0,Label-NB-Other:Gift
+LABEL-BAR-BOX-VP,6744.0,0.0,0.0,6744.0,Label-Bar:VP Box
+S-13166,119017.0,0.0,0.0,119017.0,Label-NB-Other:Best by

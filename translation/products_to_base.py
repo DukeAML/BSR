@@ -1,6 +1,6 @@
 import pandas as pd 
 
-temp = pd.read_csv('products_to_base.csv')  
+temp = pd.read_csv('base.csv')  
 products = pd.DataFrame(temp)
 
 class Order:
@@ -26,17 +26,23 @@ class Order:
         base = {}
         for sku in self.order: # for product in order get base products
             bp = products.loc[products['sku'] == sku]["Level Down"]
-            bp = bp.to_list()
-            
-            #accumulate all base products needed and amt 
-            for product in bp:
-                tmp = product.split(" () ")
-                tmp2 = tmp[0]
-                tmp3 = tmp2.strip("[,],(,)")
-                tmp4 = tmp3.split(',')
+            bp = bp.reset_index().drop(columns = ["index"])
+            bp = bp.lookup(row_labels =[0], col_labels=["Level Down"])
+            temp = str(bp)
+            a = temp.strip(' [] ').strip(' " ')
+            b = a.strip('[]')
+            c = b.split(",")
 
-                sku = tmp4[0].strip("''")
-                num = int(tmp4[1].strip('""'))
+            l = len(c) 
+            r = l //2  
+            n=0
+
+            for ii in range(r):
+                t = c[n:(2*ii)+2]
+                print(t)
+                sku = t[0].strip(' () ')
+                num = int(t[1].strip(' () '))
+                n +=2
 
                 if sku not in base:
                     base[sku] = num #add to dict
@@ -55,3 +61,12 @@ implied_base = pd.DataFrame()
 implied_base["sku"] = base.keys()
 implied_base["amt"] = base.values()
 print(implied_base)
+
+for sku in implied_base["sku"]:
+    #look up in csv with their current stock -- make this analogous to products.csv
+    #get col of how many we have
+    #subtract from amt col here make a new col --> amt we have left 
+
+    #final df
+    #sku  amt_need  amt_have  amt_left
+

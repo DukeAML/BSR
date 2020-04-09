@@ -1,0 +1,26 @@
+﻿
+
+sku,cost_price,fully_qualified_name,active,incremental_order_quantity,pack_size, stock,weight,weight_units,0
+
+BAR-AP,0,Apricot Pepita Nut Butter Bar,True,1,,,"[{'id': 198581, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+BAR-AP-CASE,0,Apricot Pepita Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,"[{'id': 198582, 'on_hand': '284', 'available': '203', 'committed': '81', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",2,lb
+BAR-AP-SINGLE,0,Apricot Pepita Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,"[{'id': 198583, 'on_hand': '16', 'available': '16', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.17,lb
+BAR-AP-SCRAP,0,Apricot Pepita Nut Butter Bar:Bar Scrap - 100g,True,1,100g,,"[{'id': 198884, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",100,gm
+BAR-CC,0,Cranberry Cashew Nut Butter Bar,True,1,,,"[{'id': 198584, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+BAR-CC-CASE,0,Cranberry Cashew Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,"[{'id': 198585, 'on_hand': '58', 'available': '-7', 'committed': '65', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",2,lb
+BAR-CC-SINGLE,0,Cranberry Cashew Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,"[{'id': 198586, 'on_hand': '3', 'available': '3', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.17,lb
+BAR-CC-SCRAP,0,Cranberry Cashew Nut Butter Bar:Bar Scrap - 100g,True,1,100g,,"[{'id': 198885, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",100,gm
+BAR-CP,0,Cherry Pecan Nut Butter Bar,True,1,,,"[{'id': 198587, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+BAR-CP-CASE,0,Cherry Pecan Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,"[{'id': 198588, 'on_hand': '323', 'available': '214', 'committed': '109', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",2,lb
+BAR-CP-SINGLE,0,Cherry Pecan Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,"[{'id': 198589, 'on_hand': '10', 'available': '10', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.17,lb
+BAR-CP-SCRAP,0,Cherry Pecan Nut Butter Bar:Bar Scrap - 100g,True,1,,,"[{'id': 198883, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",100,gm
+BAR-FC,0,Figgy Chai Nut Butter Bar,True,1,,,"[{'id': 198590, 'on_hand': '0', 'available': '0', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+BAR-FC-CASE,0,Figgy Chai Nut Butter Bar:Case,True,1,12/60 g Bars,12.0,"[{'id': 198591, 'on_hand': '152', 'available': '90', 'committed': '62', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",2,lb
+BAR-FC-SINGLE,0,Figgy Chai Nut Butter Bar:Bar,True,1,1/60g Bar,1.0,"[{'id': 198592, 'on_hand': '11', 'available': '11', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0.17,lb
+BAR-FC-SCRAP,0,Figgy Chai Nut Butter Bar:Bar Scrap - 100g,True,1,100g,,"[{'id': 198886, 'on_hand': '16', 'available': '16', 'committed': '0', 'backorderable': True, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",100,gm
+
+15239,1.84,Shipping Packaging:Shipping Box 3-4 Level,True,1,Each,,"[{'id': 198578, 'on_hand': '965', 'available': '965', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+PKG-BAR-BOX,0.52,Bar Packaging:Bar Box,True,1,Each,,"[{'id': 198562, 'on_hand': '3078', 'available': '3078', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+LABEL-BAR-BOX-VP,0.04,Label-Bar:VP Box,True,1,Each,,"[{'id': 198560, 'on_hand': '6744', 'available': '6744', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+PKG-BOX-2PK-4PK,0.49,NB Packaging:2-4-Pack Box,True,1,Each,,"[{'id': 198550, 'on_hand': '823', 'available': '823', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,
+NB-LABEL-GIFT4U,0.44,Label-NB-Other:Gift,True,1,Each,,"[{'id': 198534, 'on_hand': '601', 'available': '601', 'committed': '0', 'backorderable': False, 'stock_location_name': 'Big Spoon Roasters Production Facility'}]",0,

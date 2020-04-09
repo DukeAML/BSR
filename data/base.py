@@ -92,6 +92,99 @@ for sku in all_products['sku']:
                 helper[sku] = [('NB-CASH-13OZ', 1), ('NB-PNUT-13OZ',1), ('NB-TCO-13OZ',1)]
             else:
                 print('found unknown trio: %s' %sku)
+        
+        elif "SUBSCR" in lst and len(lst) == 3:
+            nb = lst[1]
+            helper[sku] = [('NB-%s-13OZ' %nb, 1)] 
+        
+        elif "SUBSCR" in lst and len(lst) == 4:
+
+            month = lst[3]
+            name = lst[1]
+            name = list(name)
+            nb = name[0]
+            jam = ("MERCH-JAM-%s" %month)
+
+            # NB-ABJ-SUBSCR-month
+            if nb == "A":
+                if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                    helper[sku] = [jam, "unsure ab"]
+                elif month == "MAR20":
+                    helper[sku] = [jam, ("NB-FGIN-13OZ",1)]
+
+                elif month == "APR20":
+                    helper[sku] = [jam, ("NB-TCO-13OZ",1)]
+        
+            # NB-PBJ-SUBSCR-month
+            elif nb == "P":
+                if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                    helper[sku] = [jam, "unsure pb"]
+                elif month == "MAR20":
+                    helper[sku] = [jam, ("NB-PNUT-13OZ",1)]
+                elif month == "APR20":
+                    helper[sku] = [jam, ("NB-PPEC-13OZ",1)]
+            
+            # NB-RSTR-SUBSCR-month
+            elif nb == "R":
+                if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                    helper[sku] = ["unsure nb"]
+                elif month == "MAR20":
+                    helper[sku] = [("NB-PNUT-13OZ",1)]
+                elif month == "APR20":
+                    helper[sku] = [("NB-LTD-CCAKE-10OZ",1)]
+        
+        # NB-ABJ -month
+        elif "ABJ" in lst and "SUBCR" not in lst:
+            month = lst[2]
+            name = lst[1]
+            name = list(name)
+            nb = name[0]
+            jam = ("MERCH-JAM-%s" %month)
+    
+            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                if 'GIFT':
+                    helper[sku] = [jam, "unsure ab",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    helper[sku] = [jam, "unsure ab"]
+                
+            elif month == "MAR20":
+                if 'GIFT':
+                    helper[sku] = [("MERCH-JAM-MAR20",1),("NB-FGIN-13OZ",1)]
+                else:
+                    helper[sku] = [("MERCH-JAM-MAR20",1),("NB-FGIN-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+
+            elif month == "APR20":
+                if 'GIFT':
+                    helper[sku] = [("MERCH-JAM-APRIL20",1),("NB-TCO-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    helper[sku]= [("MERCH-JAM-APRIL20",1),("NB-TCO-13OZ",1)]
+        
+        # NB-PBJ -month
+        elif "PBJ" in lst and "SUBCR" not in lst:
+            month = lst[2]
+            name = lst[1]
+            name = list(name)
+            nb = name[0]
+            jam = ("MERCH-JAM-%s" %month)
+            
+            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
+                if 'GIFT':
+                    helper[sku] = [jam, "unsure pb",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    helper[sku] = [jam, "unsure pb"]
+                
+            elif month == "MAR20":
+                if 'GIFT':
+                    helper[sku] = [("MERCH-JAM-MAR20",1),("NB-PNUT-13OZ",1)]
+                else:
+                    helper[sku] = [("MERCH-JAM-MAR20",1),("NB-PNUT-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+
+            elif month == "APR20":
+                if 'GIFT':
+                    helper[sku] = [("MERCH-JAM-APRIL20",1),("NB-PPEC-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                else:
+                    helper[sku] =[("MERCH-JAM-APRIL20",1),("NB-PPEC-13OZ",1)]
+        
     #BARS 
     elif "BAR" in lst:
         lst = sku.split("-")
@@ -111,93 +204,6 @@ for sku in all_products['sku']:
                 helper[sku] = [("BAR-AP-SINGLE",1),("PKG-BAR-BOX",1),("BAR-CP-SINGLE",1),("BAR-CC-SINGLE",1),("BAR-FC-SINGLE",1),("LABEL-BAR-BOX-VP",1)]
             elif "GIFT" in lst:
                 helper[sku] = [("BAR-AP-SINGLE",1),("BAR-CP-SINGLE",1),("BAR-CC-SINGLE",1),("BAR-FC-SINGLE",1),("NB-LABEL-GIFT4U",1),("PKG-BOX-2PK-4PK",1)]
-    
-        
-        
-    elif "SUBCR" in lst and len(lst) == 3:
-        nb = lst[1]
-        helper[sku] = [('NB-%s-13OZ' %nb, 1)] 
-        
-    elif "SUBCR" in lst and len(lst) == 4:
-        month = lst[3]
-        name = lst[1]
-        name = list(name)
-        nb = name[0]
-        jam = ("MERCH-JAM-%s" %month)
-
-        # NB-ABJ-SUBSCR-month
-        if nb == "A":
-            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-                helper[sku] = [jam, "unsure ab"]
-            elif month == "MAR20":
-                helper[sku] = [jam, ("NB-FGIN-13OZ",1)]
-
-            elif month == "APR20":
-                helper[sku] = [jam, ("NB-TCO-13OZ",1)]
-       
-        # NB-PBJ-SUBSCR-month
-        elif nb == "P":
-            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-                helper[sku] = [jam, "unsure pb"]
-            elif month == "MAR20":
-                helper[sku] = [jam, ("NB-PNUT-13OZ",1)]
-            elif month == "APR20":
-                helper[sku] = [jam, ("NB-PPEC-13OZ",1)]
-           
-        # NB-RSTR-SUBSCR-month
-        elif nb == "R":
-            if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-                helper[sku] = ["unsure nb"]
-            elif month == "MAR20":
-                helper[sku] = [("NB-PNUT-13OZ",1)]
-            elif month == "APR20":
-                helper[sku] = [("NB-LTD-CCAKE-10OZ",1)]
-    
-    # NB-ABJ -month
-    elif "ABJ" in lst and "SUBCR" not in lst:
-        month = lst[2]
-        name = lst[1]
-        name = list(name)
-        nb = name[0]
-        jam = ("MERCH-JAM-%s" %month)
- 
-        if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-            if 'GIFT':
-                helper[sku] = [jam, "unsure ab",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
-            else:
-                helper[sku] = [jam, "unsure ab"]
-            
-        elif month == "MAR20":
-            if 'GIFT':
-                helper[sku] = [("MERCH-JAM-MAR20",1),("NB-FGIN-13OZ",1)]
-            else:
-                helper[sku] = [("MERCH-JAM-MAR20",1),("NB-FGIN-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
-
-        elif month == "APR20":
-            if 'GIFT':
-                helper[sku] = [("MERCH-JAM-APRIL20",1),("NB-TCO-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
-            else:
-                [("MERCH-JAM-APRIL20",1),("NB-TCO-13OZ",1)]
-    
-    # NB-PBJ -month
-    elif "PBJ" in lst and "SUBCR" not in lst:
-        if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-            if 'GIFT':
-                helper[sku] = [jam, "unsure pb",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
-            else:
-                helper[sku] = [jam, "unsure pb"]
-            
-        elif month == "MAR20":
-            if 'GIFT':
-                helper[sku] = [("MERCH-JAM-MAR20",1),("NB-PNUT-13OZ",1)]
-            else:
-                helper[sku] = [("MERCH-JAM-MAR20",1),("NB-PNUT-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
-
-        elif month == "APR20":
-            if 'GIFT':
-                helper[sku] = [("MERCH-JAM-APRIL20",1),("NB-PPEC-13OZ",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
-            else:
-                [("MERCH-JAM-APRIL20",1),("NB-PPEC-13OZ",1)]
         
     else:
         print('found unknown sku: %s' %sku)
@@ -225,5 +231,7 @@ for ii in range(len(df["Level Down"])):
 
 
 df.to_csv('base.csv', index = False)
+
+
 
 

@@ -13,9 +13,6 @@ headers = {'Content-Type': 'application/json'}
 #productID = '161955'
 #URL = 'https://app.getsweet.com/api/v1/variants/' + productID
 #payload = {'token': API_KEY, 'page': 1, 'line_item[variant_id]': '161944', 'line_item[quantity]': '3.0'}
-#payload = {'token': API_KEY, 'page': 1}
-#r = requests.get(URL, headers=headers, params=payload)
-#data = r.json()
 
 columns = ["Order Date", "Due Date", "Invoice Date", "Order #", "Company Name", "Company ID", "Money Paid", "Items"]
 allOrders = []
@@ -47,50 +44,76 @@ def extractData(data):
         values = [order_date, due_date, invoice_date, order_num, company_name, company_id, payment_total, items]
         allOrders.append(dict(zip(columns, values)))
 
+def append_list_as_row(file_name, list_of_elem):
+    ''' Add a new row of data to the csv '''
+    with open(file_name, 'a+', newline='') as write_obj:
+        csv_writer = writer(write_obj)
+        csv_writer.writerow(list_of_elem)
+
 def apiCall(productID, pageNum=1):
     ''' Returns the product with specified ID '''
-    URL = 'https://app.getsweet.com/api/v1/variants/' + productID
-    #URL = 'https://app.getsweet.com/api/v1/products.json' 
-    #URL = 'https://app.getsweet.com/api/v1/variants.json'
-    payload = {'token': API_KEY, 'page':pageNum}
+    #URL = 'https://app.getsweet.com/api/v1/products' + productID
     #payload = {'token': API_KEY, 'page':pageNum, 'q[variants_id_eq]': '161955'}
+    URL = 'https://app.getsweet.com/api/v1/variants/' + productID
+    payload = {'token': API_KEY, 'page':pageNum}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
 
+def read_in_IDtoSKU(option=1):
+    ''' Reads in the ID to SKU dictionary
+        Parameters:     option : 1 {id:sku} or 2 {sku:id} '''
+    # read in csv of id_to_sku to create a dataframe
+    PATH = pathlib.Path(__file__).parent
+    df = pd.read_csv(PATH.joinpath("id_to_sku.csv"), low_memory=False)
+
+    # convert everything to strings & turn into list
+    df = df.astype(str)
+    IDs = df['id'].tolist()
+    SKUs = df['sku'].tolist()
+
+    # zip together the 2 lists & turn it into a dictionary
+    if option == 1:
+        return dict(zip(IDs, SKUs))
+    else:
+        return dict(zip(SKUs, IDs))
+
 def readInNikoPredictions():
-    # read in csv of predictions to create a dataframe
+    #jprint(apiCall('161955'))
+    # read in the id to sku dictionary
+    id_to_sku = read_in_IDtoSKU()
+    
+    # read in Niko's csv of predictions to create a dataframe
     PATH = pathlib.Path(__file__).parent
     df = pd.read_csv(PATH.joinpath("../two-week-predictions.csv"), low_memory=False)
 
-    # convert ID's to strings
-    df['Unnamed: 0'] = df['Unnamed: 0'].astype(str)
+    # rename Niko's ID's column, convert to strings, & turn to list of id's
+    df = df.rename(columns = {'Unnamed: 0' : 'id'}) 
+    df['id'] = df['id'].astype(str)
+    prediction_ids = df['id'].tolist()
     
-    # from the predictions, get a list of all the product id's
-    product_ids = df['Unnamed: 0'].tolist()
-    #product_ids.append('13718')
+    # go through each prediction id & match up it's sku & predicted amount
+    prediction_skus = []
+    invalid = []
+    for ID in prediction_ids:
+        if ID in id_to_sku:
+            sku = id_to_sku[ID]
+            prediction_skus.append(sku)
+        else: # if ID is not in the dictionary, make an API call to variants to get the sku instead
+            invalid.append(ID)
+            data = apiCall(ID)
+            if 'variant' in data:
+                sku = data['variant']["sku"]
+                prediction_skus.append(sku)
+                # write it to the csv containing ID -> sku dictionary
+                append_list_as_row('id_to_sku.csv', [ID, sku])
+    print(invalid)
 
-    id_to_sku = dict()
-
-    # make API call
-    data = apiCall('13718')
-    data = apiCall('19140')
-    jprint(data)
-
-    
-    # go through each id, make an API call to get the product info, & get sku from that
-    '''
-    for ID in product_ids:
-        # make the API call to get data about product with this ID
-        data = apiCall(ID)
-
-        print(ID)
-        jprint(data)
-        sku = str(data['variant']['sku'])
-        id_to_sku[ID] = sku
-        
-    print(id_to_sku)
-    '''
+    # make new dataframe with sku, id, & projected sales for next 2 weeks
+    data = {'sku':prediction_skus, 'id':prediction_ids, '2_week_proj_sales':df['yhat'].tolist()}
+    df = pd.DataFrame(data)
+    df.sort_values(by=['sku'], inplace=True)
+    df.to_csv (r'two_week_proj_withSKU.csv', index = False, header=True)
 
 
 #extractData(data)
@@ -101,10 +124,30 @@ readInNikoPredictions()
 
 
 
+'162123'
+'162124'
+'162125'
+'162126'
+'162127'
+'162128'
+'162129'
+'162130'
+'162131'
+'162132'
+'162133'
+'162135'
+'162136'
+'162138'
 
+'163752'
 
-
-
+'164232'
+'164234'
+'164236'
+#---------
+'162124'
+'162127'
+'162138'
 
 
 

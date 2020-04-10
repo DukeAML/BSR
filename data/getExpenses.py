@@ -16,10 +16,11 @@ def jprint(obj):
     print(text)
 
 def main():
-    # filter the csv so it contains purchases only ("Big Spoon Roasters Production Facility Quantity" > 0)
+    # read in the csv to create a datapath
     PATH = pathlib.Path(__file__).parent
     df = pd.read_csv(PATH.joinpath("Detail_Inventory_Report_2020-04-03.csv"), low_memory=False)
-    
+
+    # filter the csv so it contains purchases only ("Big Spoon Roasters Production Facility Quantity" > 0)
     dfP = df[(df["Big Spoon Roasters Production Facility Quantity"].isna()) | (df["Big Spoon Roasters Production Facility Quantity"] > 0)]
     dfP = dfP.drop(columns=["Transaction Type", "Number", "Customer / Reason", "Customer Type", "Big Spoon Roasters Production Facility QOH", "Quantity Total", "QOH Total"])
     

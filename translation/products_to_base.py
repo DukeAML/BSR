@@ -1,7 +1,7 @@
 import pandas as pd 
 import ast
 
-temp = pd.read_csv('base.csv')  
+temp = pd.read_csv('base-map.csv')  
 products = pd.DataFrame(temp)
 
 class Order:
@@ -81,7 +81,7 @@ for sku in skus:
     stock = stock.strip("[]")
     stock = ast.literal_eval(stock)
 
-    have = float(stock["on_hand"]) #should this be available or on hand?
+    have = float(stock["on_hand"]) 
     committed = float(stock["committed"])
 
     helperA[sku] = have

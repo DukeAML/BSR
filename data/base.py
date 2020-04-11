@@ -57,6 +57,10 @@ for sku in all_products['sku']:
                 helper[sku] = [('BATCH-WAG',1),('WT161820CF',1),("WT161823CF",1),('S-13166',1),('G12-70-450ECO02-2',1),('C70G-450GGMLP-5',1)] 
                 #this skips a level 
             
+            elif len(lst) == 3:
+                helper[sku] = [('NB-%s-13OZ' %nb, 1)]
+
+            
         #3 0z
         elif "3OZ" in lst or "30Z" in lst:
             lst = sku.split("-")

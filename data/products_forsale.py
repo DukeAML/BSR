@@ -11,9 +11,7 @@ API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
 URL = 'https://app.getsweet.com/api/v1/products.json'
 
-#columns = ["Due Date", "Invoice Date", "Order #", "Company Name", "Company ID", "Money Paid", "Items"]
-columns = ["sku", "cost_price", "fully_qualified_name", "active", "incremental_order_quantity", "pack_size", "pack_size_qty", "weight", "weight_units"]
-#columns = ["sku", "cost_price", "pack_size"] 
+columns = ["sku", "price", "fully_qualified_name", "active", "incremental_order_quantity", "pack_size", "pack_size_qty", "weight", "weight_units"]
 allProducts = []
 
 def extractData(data):

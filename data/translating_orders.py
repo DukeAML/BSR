@@ -4,18 +4,15 @@ import pandas as pd
 from csv import writer
 import pathlib
 import numpy as np
+import ast
 
-#URL = 'https://app.getsweet.com/api/v1/products/:product_id/variants/:id'
-#URL = 'https://app.getsweet.com/api/v1/orders/:order_id/line_items'
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
-#URL = 'https://app.getsweet.com/api/v1/orders/214153/line_items' #R26418
 #productID = '161955'
 #URL = 'https://app.getsweet.com/api/v1/variants/' + productID
 #payload = {'token': API_KEY, 'page': 1, 'line_item[variant_id]': '161944', 'line_item[quantity]': '3.0'}
 
 columns = ["Order Date", "Due Date", "Invoice Date", "Order #", "Company Name", "Company ID", "Money Paid", "Items"]
-allOrders = []
 
 def jprint(obj):
     ''' Converts retrieved json files into legible print format '''
@@ -78,44 +75,47 @@ def read_in_IDtoSKU(option=1):
     else:
         return dict(zip(SKUs, IDs))
 
-def readInNikoPredictions():
+def readInOrders():
+    #jprint(apiCall('171549'))
     # read in the id to sku dictionary
     id_to_sku = read_in_IDtoSKU()
     
-    # read in Niko's csv of predictions to create a dataframe
+    # read in orders csv to create a dataframe
     PATH = pathlib.Path(__file__).parent
-    df = pd.read_csv(PATH.joinpath("../two-week-predictions.csv"), low_memory=False)
+    df = pd.read_csv(PATH.joinpath("income_data.csv"), low_memory=False)
 
-    # rename Niko's ID's column, convert to strings, & turn to list of id's
-    df = df.rename(columns = {'Unnamed: 0' : 'id'}) 
-    df['id'] = df['id'].astype(str)
-    prediction_ids = df['id'].tolist()
-    
-    # go through each prediction id & match up it's sku & predicted amount
-    prediction_skus = []
+    # rename orders ID's column, convert to strings, & turn to list of id's
+    orders_skus = []
     invalid = []
-    for ID in prediction_ids:
-        if ID in id_to_sku:
-            sku = id_to_sku[ID]
-            prediction_skus.append(sku)
-        else: # if ID is not in the dictionary, make an API call to variants to get the sku instead
-            invalid.append(ID)
-            data = apiCall(ID)
-            if 'variant' in data:
-                sku = data['variant']["sku"]
-                prediction_skus.append(sku)
-                # write it to the csv containing ID -> sku dictionary
-                append_list_as_row('id_to_sku.csv', [ID, sku])
-    print(invalid)
+    orders = df['Items'].tolist()
+    for order in orders:
+        orderList = ast.literal_eval(order)
+        orderListSku = []
+        for item in orderList:
+            ID = str(item[1])
+            quantity = item[3]
+            if ID in id_to_sku:
+                sku = id_to_sku[ID]
+                #orderListSku.append(sku)
+            else: # if ID is not in the dictionary, make an API call to variants to get the sku instead
+                invalid.append(ID)
+                data = apiCall(ID)
+                if 'variant' in data:
+                    sku = data['variant']["sku"]
+            orders_skus.append([sku, quantity])
 
-    # make new dataframe with sku, id, & projected sales for next 2 weeks
-    data = {'sku':prediction_skus, 'id':prediction_ids, 'proj_sales':df['yhat'].tolist()}
-    df = pd.DataFrame(data)
-    df.sort_values(by=['sku'], inplace=True)
-    df.to_csv (r'two_week_proj_withSKU.csv', index = False, header=True)
+    # make dataframe for orders
+    df = pd.DataFrame(orders_skus, columns=['sku', 'qty'])
+    # combine duplicate dates so it sums up their 'money spent' column
+    df = df.groupby(['sku'], as_index = False).sum()
+    df.to_csv (r'orders_withSKU.csv', index = False, header=True)
 
 
-readInNikoPredictions()
+#extractData(data)
+
+#jprint(data)
+
+readInOrders()
 
 
 

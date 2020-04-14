@@ -16,6 +16,11 @@ import fbprophet
 from scipy.stats import boxcox
 from scipy.special import inv_boxcox
 
+# import data management and instantiation tools
+from data.retrievedata import read_in_IDtoSKU, append_list_as_row #BUG: think this is outputting a list in cmd terminal?
+from data.retrievedata import apiCall as pullSKU
+
+
 # Stuff that will likely be moved to a seperate file
 #
 #
@@ -47,6 +52,26 @@ def convert_to_dt(time):
     """
     return datetime.strptime(time, "%Y-%m-%d")
 
+def update_sku_mapper(productids, mapper):
+    """Update SKU mapper to ensure no products are left out
+    """
+    mapkeys = [int(x) for x in mapper.keys()]
+    if (not set(productids).issubset(set(mapkeys))):
+        print("Data Missing from SKU Mapper, updating...")
+        missing_ids = []
+        missing_skus = []
+        for num_id in productids:
+            if str(num_id) in mapper.keys(): continue
+            missing_ids.append(num_id)
+            data = pullSKU(str(num_id))
+            if 'variant' in data: sku = data['variant']['sku']
+            else:
+                sku = "missing"
+                print(str(num_id))
+                print(data)
+            missing_skus.append(sku)
+            append_list_as_row('data\sold_id_to_sku.csv', [num_id, sku])
+
 #
 #
 #
@@ -73,10 +98,16 @@ productsales = predict.createproductdict(predictdf)
 productpredictions = dict()
 
 
+# Update all data
+update_sku_mapper(list(productsales.keys()),
+                  read_in_IDtoSKU(csvname="sold_id_to_sku.csv"))
+
+
 # Create controls
+PRODUCT_SKU = read_in_IDtoSKU(csvname="sold_id_to_sku.csv")
 products_options = [
-    {"label": str(id_num), "value": id_num}
-    for id_num in productsales.keys()
+    {"label": str(sku), "value": int(id_num)}
+    for id_num, sku in PRODUCT_SKU.items()
 ]
 
 
@@ -319,7 +350,7 @@ app.clientside_callback(
 )
 def display_products(selector):
     if selector=="all":
-        return list(productsales.keys())
+        return list(PRODUCT_SKU.keys())
     return []
 
 
@@ -441,7 +472,7 @@ def create_predict_product(products_chosen, growth_adjustment):
             gm['y_orig'] = gm['y']
             gm['y'], lam = boxcox(gm['y'].replace(0,1))
         except:
-            print("productid:", product_id)
+            print("Zero Sales for Product ID:", product_id)
             continue
 
         # Create time series model and fit
@@ -471,7 +502,10 @@ def create_predict_product(products_chosen, growth_adjustment):
         else: aggregate_df[cols] =  aggregate_df[cols]\
                         .add(forecast_data_orig[cols], fill_value=0)
 
-
+    if(aggregate_df.empty):
+        fig = go.Figure()
+        fig.update_layout(title="No Sales Recorded for Selected Product(s)")
+        return fig
     # Adjust overall data for growth rate input
     aggregate_df[['yhat','yhat_upper','yhat_lower']] = aggregate_df[['yhat','yhat_upper','yhat_lower']].apply(lambda x: x*(growth_adjustment/100))
 

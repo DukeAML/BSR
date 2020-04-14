@@ -60,12 +60,12 @@ def apiCall(productID, pageNum=1):
     data = r.json()
     return data
 
-def read_in_IDtoSKU(option=1):
+def read_in_IDtoSKU(option=1, csvname="id_to_sku.csv"):
     ''' Reads in the ID to SKU dictionary
         Parameters:     option : 1 {id:sku} or 2 {sku:id} '''
     # read in csv of id_to_sku to create a dataframe
     PATH = pathlib.Path(__file__).parent
-    df = pd.read_csv(PATH.joinpath("id_to_sku.csv"), low_memory=False)
+    df = pd.read_csv(PATH.joinpath(csvname), low_memory=False)
 
     # convert everything to strings & turn into list
     df = df.astype(str)
@@ -81,16 +81,16 @@ def read_in_IDtoSKU(option=1):
 def readInNikoPredictions():
     # read in the id to sku dictionary
     id_to_sku = read_in_IDtoSKU()
-    
+
     # read in Niko's csv of predictions to create a dataframe
     PATH = pathlib.Path(__file__).parent
     df = pd.read_csv(PATH.joinpath("../two-week-predictions.csv"), low_memory=False)
 
     # rename Niko's ID's column, convert to strings, & turn to list of id's
-    df = df.rename(columns = {'Unnamed: 0' : 'id'}) 
+    df = df.rename(columns = {'Unnamed: 0' : 'id'})
     df['id'] = df['id'].astype(str)
     prediction_ids = df['id'].tolist()
-    
+
     # go through each prediction id & match up it's sku & predicted amount
     prediction_skus = []
     invalid = []
@@ -115,7 +115,8 @@ def readInNikoPredictions():
     df.to_csv (r'two_week_proj_withSKU.csv', index = False, header=True)
 
 
-readInNikoPredictions()
+if __name__=="__main__":
+    readInNikoPredictions()
 
 
 

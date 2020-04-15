@@ -11,7 +11,6 @@ from scipy.stats import boxcox
 from scipy.special import inv_boxcox
 
 import plotly.express as px
-import matplotlib.pyplot as plt
 
 
 OLDEST_DATE = datetime(2019,11,1)

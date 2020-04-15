@@ -3,12 +3,10 @@ import json
 import pandas as pd
 import time
 
+
 # Constants for API call
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
-
-
-#URL = 'https://app.getsweet.com/api/v1/customers/' + CUSTID
 
 
 def callCustomers(pageNum):
@@ -19,6 +17,7 @@ def callCustomers(pageNum):
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
+
 
 def initCTypeMapping():
     """Create initial CSV for Customer To Customer Type mapping
@@ -57,15 +56,30 @@ def initCTypeMapping():
 
     print("--- %s seconds ---" % (time.time() - start_time))
 
-def addCMap(customerid):
-    """Adds a customer to mapping CSV
-    """
-    return
 
-def updateCMap():
+def addCMap(customerid, pageNum=1):
+    """Adds a customer with customerid to mapping CSV
+    """
+    URL = 'https://app.getsweet.com/api/v1/customers/' + str(customerid)
+    payload = {'token': API_KEY, 'page':pageNum}
+    r = requests.get(url=URL, headers=headers, params=payload)
+    data = r.json()
+    return data
+
+
+def updateCMap(newOrdersdf, date_since_last_update):
     """Cross-checks orders csv to determine if there exist any new customers, if so, add them to the mapping CSV
     """
+
     return
+
+# def add_new_row(file_name, elements):
+#     ''' Appends a list that contains a new order to the csv file '''
+#     with open(file_name, 'a+', newline='') as write_obj:
+#         # Create a writer object from csv module
+#         csv_writer = writer(write_obj)
+#         csv_writer.writerow(elements)
+
 
 def callCType(pageNum):
     """API call for customer types
@@ -75,6 +89,7 @@ def callCType(pageNum):
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
+
 
 def getCustomerTypes():
     """Get customer types and convert into dictionary
@@ -94,6 +109,7 @@ def getCustomerTypes():
             ctypes[CID] = label
 
     return ctypes
+
 
 def main():
     ctypes = getCustomerTypes()

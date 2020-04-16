@@ -112,7 +112,7 @@ for sku in all_products['sku']:
             # NB-ABJ-SUBSCR-month
             if nb == "A":
                 if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-                    helper[sku] = [(jam,1), "unsure ab"]
+                    helper[sku] = [(jam,1), ("unsure ab",1)]
                 elif month == "MAR20":
                     helper[sku] = [(jam,1), ("NB-FGIN-13OZ",1)]
 
@@ -122,7 +122,7 @@ for sku in all_products['sku']:
             # NB-PBJ-SUBSCR-month
             elif nb == "P":
                 if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-                    helper[sku] = [(jam,1), "unsure pb"]
+                    helper[sku] = [(jam,1), ("unsure pb",1)]
                 elif month == "MAR20":
                     helper[sku] = [(jam,1), ("NB-PNUT-13OZ",1)]
                 elif month == "APR20":
@@ -131,7 +131,7 @@ for sku in all_products['sku']:
             # NB-RSTR-SUBSCR-month
             elif nb == "R":
                 if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
-                    helper[sku] = ["unsure nb"]
+                    helper[sku] = [("unsure nb",1)]
                 elif month == "MAR20":
                     helper[sku] = [("NB-PNUT-13OZ",1)]
                 elif month == "APR20":
@@ -147,9 +147,9 @@ for sku in all_products['sku']:
     
             if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
                 if 'GIFT':
-                    helper[sku] = [(jam,1), "unsure ab",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                    helper[sku] = [(jam,1), ("unsure ab",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
                 else:
-                    helper[sku] = [(jam,1), "unsure ab"]
+                    helper[sku] = [(jam,1), ("unsure ab",1)]
                 
             elif month == "MAR20":
                 if 'GIFT':
@@ -173,9 +173,9 @@ for sku in all_products['sku']:
             
             if month == "OCT19" or month == "NOV19" or month == "DEC19" or month == "JAN20" or month == "FEB20":
                 if 'GIFT':
-                    helper[sku] = [(jam,1), "unsure pb",("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
+                    helper[sku] = [(jam,1), ("unsure pb",1),("NB-LABEL-GIFT4U",1), ("S-13166",1),("PKG-BOX-2PK-4PK",1)]
                 else:
-                    helper[sku] = [(jam,1), "unsure pb"]
+                    helper[sku] = [(jam,1), ("unsure pb",1)]
                 
             elif month == "MAR20":
                 if 'GIFT':

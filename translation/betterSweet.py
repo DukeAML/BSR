@@ -1,20 +1,20 @@
 from products_to_base import Order
 import pandas as pd
 
-def order_translation(orders):
+def data_translation(data):
     '''
-    order: csv of forecasted orders in format given by "two_week_proj_withSKU.csv"
+    order: csv of current sweet daat in format sku - available
     returns df of   
     '''
 
-    order = pd.read_csv(orders)  #get niko's projections
+    order = pd.read_csv(orders)  
     order = pd.DataFrame(order)
 
     lst = {}
     for sku in order["sku"]:
-        amt = order.loc[order['sku'] == sku]["proj_sales"]
+        amt = order.loc[order['sku'] == sku]["available"]
         amt = amt.reset_index().drop(columns = ["index"])
-        amt = amt.lookup(row_labels =[0], col_labels=["proj_sales"])
+        amt = amt.lookup(row_labels =[0], col_labels=["available"])
         amt  = float(amt[0])
 
         if sku not in lst:
@@ -76,3 +76,9 @@ def order_translation(orders):
 
     return df
 
+
+temp = pd.read_csv('products.csv')  
+products = pd.DataFrame(temp)
+
+#get sku and "on hand"
+#try running translate_orders(products)

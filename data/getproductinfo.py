@@ -6,8 +6,6 @@ import time
 '''
     - generates product_info.csv, which contains inventory items (all the items BSR is
         purchasing from vendors)
-        
-    - for pack_size, if == "Each", really means 1
 '''
 
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'

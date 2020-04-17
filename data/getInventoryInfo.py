@@ -4,7 +4,7 @@ import pandas as pd
 import time
 
 '''
-    for pack_size, if == "Each", really means 1
+    Generate a dataframe with ALL products
 '''
 
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'

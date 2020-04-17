@@ -22,9 +22,9 @@ def jprint(obj):
     text = json.dumps(obj, sort_keys=True, indent=4)
     print(text)
 
-def apiCall(url_end='variants', pageNum=1):
+def apiCall(url_end='products', pageNum=1):
     ''' Returns ALL products '''
-    payload = {'token': API_KEY, 'page':pageNum}
+    payload = {'token': API_KEY, 'page':pageNum, 'q[active_true]':'True'}
     r = requests.get(url=URL+url_end, headers=headers, params=payload)
     data = r.json()
     return data
@@ -33,13 +33,16 @@ def generateUsingProducts(pairs):
     # make one call to API to find how many total pages there are
     data = apiCall('products')
     totalPages = data['meta']['total_pages']
-    
+    print(data['meta']['total_count'])
+    #jprint(data)
+    '''
     # go through every page, where each page contains a list of variants
     for page in range(1, totalPages+1):
         data = apiCall('products', page)
         
         products = data['products']
         pairs += [[variant['id'], variant['sku']] for product in products for variant in product['variants']]
+    '''
     return pairs
 
 
@@ -54,14 +57,13 @@ def generateUsingVariants(pairs):
         
         variants = data['variants']
         pairs += [[variant['id'], variant['sku']] for variant in variants]
-    return pairs
-        
+    #return pairs
 
 def main():    
     pairs = []
     pairs = generateUsingProducts(pairs)
-    pairs = generateUsingVariants(pairs)
-    
+    #pairs = generateUsingVariants(pairs)
+    '''
     # create pandas dataframe
     df = pd.DataFrame(pairs, columns=['id', 'sku'])
 
@@ -71,8 +73,9 @@ def main():
     df.sort_values(by=['id'], inplace=True)
 
     # write to csv
+    df.to_csv (r'id_to_sku.csv', index = False, header=True)
     #df.to_csv (r'id_to_sku.csv', index = False, header=True)
-    
+    '''
 main()
 
 

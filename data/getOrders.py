@@ -52,7 +52,9 @@ def jprint(obj):
 
 
 def apiCall(pageNum, date):
-    payload = {'token': API_KEY, 'page':pageNum, 'q[invoice_date_gteq]': date}
+    ''' Return all the orders placed after October 31 that were nto cancelled '''
+    # 'q[number_cont]':'20616'
+    payload = {'token': API_KEY, 'page':pageNum, 'q[invoice_date_gteq]':date, 'q[state_not_eq]':'canceled'}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
@@ -63,17 +65,20 @@ def main():
     start_time = time.time()
 
     # make an API call to the first page of results in order to get # of total pages
-    oct31 = date(2019, 10, 31)
-    oct31str = october31.strftime("%Y-%m-%d")
+    oct31 = date(2019, 10, 31).strftime("%Y-%m-%d")
     
-    data = apiCall(1, oct31str)
+    data = apiCall(1, oct31)
     totalPages = data['meta']['total_pages']
-
-    #totalPages = 1
 
     # loop thru every page, making a new API call every time
     for pageNum in range(1, totalPages+1):
-        data = apiCall(pageNum)
+        data = apiCall(pageNum, oct31)
+        
+        while ('orders' not in data):
+            print("Pausing execution for API time delay...")
+            time.sleep(10)
+            data = apiCall(pageNum, oct31)
+        
         extractData(data)
 
     # create pandas dataframe
@@ -82,7 +87,7 @@ def main():
     # sort the dataframe by the order date
     df['Submitted At'] = pd.to_datetime(df['Submitted At'])
     df['Money Paid'] = pd.to_numeric(df['Money Paid'])
-    df.sort_values(by=['Order Date', 'Money Paid'], inplace=True, ascending=False)
+    df.sort_values(by=['Submitted At', 'Money Paid'], inplace=True, ascending=False)
 
     # turn dataframe into a csv
     df.to_csv (r'order_data.csv', index=False, header=True)

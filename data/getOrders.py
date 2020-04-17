@@ -2,13 +2,20 @@ import requests
 import json
 import pandas as pd
 import time
+from datetime import date
+
+'''
+    Generate a dataframe containing all orders placed after Oct. 31
+        - "submitted_at" > "2019-10-31T11:51:59Z" (I'd have to add on T%H:%M:%SZ to do
+            submitted_at date rather than invoice_date)
+'''
 
 # Constants for API call
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
 URL = 'https://app.getsweet.com/api/v1/orders.json'
 
-columns = ["Order Date", "Due Date", "Invoice Date", "Order #", "Company Name", "Company ID", "Money Paid", "Pending Payment", "Items"]
+columns = ["Submitted At", "Due Date", "Invoice Date", "Order #", "Company Name", "Company ID", "Money Paid", "Pending Payment", "Items"]
 allOrders = []  #list that will contain all orders after extractData is called
 
 def extractData(data):
@@ -30,11 +37,10 @@ def extractData(data):
         pending_payment_total = order["pending_payment_total"]
         items = []
         for item in order["line_items"]:
-            items.append([item["id"], item["variant_id"], item["price"], item["quantity"]])
+            items.append([item["variant_id"], item["price"], item["quantity"]])
 
-        # zip together the columns with the values & add it to allOrders
+        # add the order to allOrders
         values = [order_date, due_date, invoice_date, order_num, company_name, company_id, payment_total, pending_payment_total, items]
-        #allOrders.append(dict(zip(columns, values)))
         allOrders.append(values)
 
 
@@ -45,8 +51,8 @@ def jprint(obj):
     print(text)
 
 
-def apiCall(pageNum):
-    payload = {'token': API_KEY, 'page':pageNum}
+def apiCall(pageNum, date):
+    payload = {'token': API_KEY, 'page':pageNum, 'q[invoice_date_gteq]': date}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data
@@ -57,7 +63,10 @@ def main():
     start_time = time.time()
 
     # make an API call to the first page of results in order to get # of total pages
-    data = apiCall(1)
+    oct31 = date(2019, 10, 31)
+    oct31str = october31.strftime("%Y-%m-%d")
+    
+    data = apiCall(1, oct31str)
     totalPages = data['meta']['total_pages']
 
     #totalPages = 1
@@ -71,12 +80,12 @@ def main():
     df = pd.DataFrame(allOrders, columns = columns)
 
     # sort the dataframe by the order date
-    df['Order Date'] = pd.to_datetime(df['Order Date'])
+    df['Submitted At'] = pd.to_datetime(df['Submitted At'])
     df['Money Paid'] = pd.to_numeric(df['Money Paid'])
     df.sort_values(by=['Order Date', 'Money Paid'], inplace=True, ascending=False)
 
     # turn dataframe into a csv
-    df.to_csv (r'income_data.csv', index=False, header=True)
+    df.to_csv (r'order_data.csv', index=False, header=True)
 
     print(len(df.index))    #tells you how many orders there are
 

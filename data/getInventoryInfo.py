@@ -61,6 +61,7 @@ def main():
     # make an API call to the first page of results in order to get # of total pages 
     data = apiCall(1)
     totalPages = data['meta']['total_pages']
+    print(totalPages)
 
     # loop thru every page, making a new API call every time
     for pageNum in range(1, totalPages+1):

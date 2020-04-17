@@ -4,6 +4,9 @@ import ast
 temp = pd.read_csv('base-map.csv')  
 products = pd.DataFrame(temp)
 
+# this works for level_one thus far
+# given the other "levels" in base-map are added to columns this will work for all levels 
+
 class Order:
     """
     Class attributes:
@@ -64,7 +67,7 @@ class Order:
         self.level_one = base
         return
     
-
+    #below not implemented yet in data
     def get_level_two(self):
         '''
         get_base: this method gets the base products for the order

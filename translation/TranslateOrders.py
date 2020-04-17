@@ -1,15 +1,20 @@
-from products_to_base import Order
+from OrderClass import Order
 import pandas as pd
+
+#this function is for translating sales predictions --> forecasting of products --> batches needed 
+#thus far takes orders --> level one 
 
 def order_translation(orders):
     '''
     order: csv of forecasted orders in format given by "two_week_proj_withSKU.csv"
-    returns df of   
+    returns df of updated amt of products needed  
+
     '''
 
-    order = pd.read_csv(orders)  #get niko's projections
+    order = pd.read_csv(orders)  #get niko's projections from csv 
     order = pd.DataFrame(order)
 
+    #get skus and amts forecasted
     lst = {}
     for sku in order["sku"]:
         amt = order.loc[order['sku'] == sku]["proj_sales"]
@@ -22,15 +27,20 @@ def order_translation(orders):
         elif sku in lst:
             lst[sku] += amt
 
-
+    #make into Order class so can get levels 
     order = Order(lst)
     order.get_base()
     base = order.level_one #get first level
 
+    #later can get other levels here
+
+    #put new levels into df 
     new_amt = pd.DataFrame()
     new_amt["sku"] = base.keys()
     new_amt["amt"] = base.values()
 
+
+    # right now pulling info about inventory "on hand" etc. from static csv below 
 
     temp2 = pd.read_csv('base-products.csv')  #can be replaced with emily's df later
     base_products = pd.DataFrame(temp2)
@@ -61,6 +71,8 @@ def order_translation(orders):
     df["on hand"] = helperA.values()
     df["prev committed"] = helperB.values()
 
+
+    #using current values calculate new values implied of each product
     new_amt = []
     for sku in skus:
         if sku in base:

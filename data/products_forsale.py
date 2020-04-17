@@ -31,6 +31,7 @@ def extractData(data):
             pack_size_qty = variant["pack_size_qty"]
             weight = variant["weight"]
             weight_units = variant["weight_units"]
+ 
             # make a list of all these values
             values = [sku, cost_price, fully_qualified_name, active, incremental_order_quantity, pack_size, pack_size_qty, weight, weight_units]
             allProducts.append(dict(zip(columns, values)))
@@ -48,6 +49,7 @@ def apiCall(pageNum):
     # 17669
     #payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_item"}
     payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_assembly"}
+    
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data

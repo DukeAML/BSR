@@ -49,7 +49,8 @@ def jprint(obj):
 def apiCall(pageNum):
     ''' Returns the products that == inventory_item (rather than inventory_assembly) '''
     #'q[name_eq]': "INGREDIENTS"
-    payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_assembly"}
+    # payload = {'token': API_KEY, 'page':pageNum, 'q[product_type_eq]': "inventory_assembly"}
+    payload = {'token': API_KEY, 'page':pageNum}
     r = requests.get(url=URL, headers=headers, params=payload)
     data = r.json()
     return data

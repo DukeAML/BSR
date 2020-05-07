@@ -5,6 +5,11 @@ from csv import writer
 import pathlib
 import numpy as np
 
+'''
+    Turns Niko's csv of projections (product ID -- yhat_lower -- yhat_upper -- yhat)
+    into a new csv of projections (including sku) --> two_week_proj_withSKU.csv
+'''
+
 #URL = 'https://app.getsweet.com/api/v1/products/:product_id/variants/:id'
 #URL = 'https://app.getsweet.com/api/v1/orders/:order_id/line_items'
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'

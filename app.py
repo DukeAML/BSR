@@ -80,7 +80,7 @@ def update_sku_mapper(productids, mapper):
 PATH = pathlib.Path(__file__).parent
 
 # Set up data for free cash flow
-indf = pd.read_csv(PATH.joinpath("data\income_data.csv"), low_memory=False)
+indf = pd.read_csv(PATH.joinpath("data\order_data.csv"), low_memory=False)
 expdf = pd.read_csv(PATH.joinpath("data\expense_data.csv"), low_memory=False)
 expdf = expdf.rename({'date': 'Due Date', 'money spent': 'Money Paid'}, axis=1)
 expdf["Money Paid"] = 0 - expdf["Money Paid"]

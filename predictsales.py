@@ -20,7 +20,7 @@ def retrievedata():
     """Retrieve relative folder and load data
     """
     PATH = pathlib.Path(__file__).parent
-    df = pd.read_csv(PATH.joinpath("data\income_data.csv"))
+    df = pd.read_csv(PATH.joinpath("data\order_data.csv"))
     df["Due Date"] = pd.to_datetime(df["Due Date"])
 
     dff = df[(df["Due Date"] >= OLDEST_DATE) & (df["Due Date"] < datetime.now())]
@@ -43,15 +43,15 @@ def createproductdict(df):
 
         for info in products:
 
-            if (info[1] not in productsales):
+            if (info[0] not in productsales):
                 index = pd.date_range(OLDEST_DATE, datetime.now(), freq='D')
                 tdf = pd.DataFrame(index=index, columns=["Amount"])
                 tdf.index = tdf.index.normalize()
                 tdf = tdf.fillna(0)
-                productsales[info[1]] = tdf
+                productsales[info[0]] = tdf
 
             strdate = date.strftime("%Y-%m-%d")
-            productsales[info[1]].loc[strdate] += info[3]
+            productsales[info[0]].loc[strdate] += info[2]
 
     return productsales
 

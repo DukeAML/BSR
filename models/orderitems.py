@@ -19,7 +19,9 @@ class OrderItemsModel(db.Model):
         self.order_id = order_id
         self.product_id = product_id
 
-    def json(self):
+    def json(self, hide_oid=False):
+        if hide_oid: return {'product_id': self.product_id,
+                                'quantity': self.quantity}
         return {'order_id': self.order_id, 'product_id': self.product_id,
                 'quantity': self.quantity}
 

@@ -14,8 +14,7 @@ class OrderModel(db.Model):
 
     company_id = db.Column(db.Integer, db.ForeignKey('companies.uid'))
     company = db.relationship('CompanyModel')
-    #content = db.relationship('OrderItemsModel')
-
+    content = db.relationship('OrderItemsModel', lazy='dynamic')
 
     def __init__(self, uid, submitted_date, due_date, invoice_date, cost, company_id):
         self.uid = uid
@@ -28,7 +27,7 @@ class OrderModel(db.Model):
     def json(self):
         return {'order_id': self.uid, 'company_id': self.company_id,
                 'paid': self.cost, 'submitted_date': str(self.submitted_date),
-                'due_date': str(self.due_date), 'invoice_date': str(self.invoice_date),} #'items': [item.json() for item in content]}
+                'due_date': str(self.due_date), 'invoice_date': str(self.invoice_date), 'items': [item.json(hide_oid=True) for item in self.content.all()]}
 
     def save_to_db(self, commit=True):
         db.session.add(self)

@@ -36,7 +36,13 @@ def create_tables():
 
     # from models.orderitems import OrderItemsModel
     # tempoi = OrderItemsModel(6, 12345, 1)
+    # tempoi2 = OrderItemsModel(3, 12345, 2)
+    # tempoi3 = OrderItemsModel(6, 12346, 1)
+    # tempoi4 = OrderItemsModel(6, 12347, 1)
     # db.session.add(tempoi)
+    # db.session.add(tempoi2)
+    # db.session.add(tempoi3)
+    # db.session.add(tempoi4)
 
     # from models.expense import ExpenseModel
     # tempe = ExpenseModel(datetime(2019,1,29).date(), 457.60)
@@ -50,11 +56,9 @@ def create_tables():
 
 # currently date must be in YYYY-mm-dd format
 api.add_resource(Expense, '/expense/<string:date>')
-api.add_resource(ExpenseRange,
-                '/expenses/<string:starting_date>/<string:ending_date>')
+api.add_resource(ExpenseRange, '/expenses')
 api.add_resource(Order, '/order/<int:id>')
-api.add_resource(OrderRange,
-                '/orders/<string:starting_date>/<string:ending_date>')
+api.add_resource(OrderRange, '/orders')
 
 if __name__ == '__main__':
     db.init_app(app)

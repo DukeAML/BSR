@@ -15,6 +15,10 @@ class CompanyModel(db.Model):
         self.name = name
         self.channel = channel
 
+    def json(self):
+        return {'company_id': self.uid, 'company_name': self.name,
+                'company_type': self.channel}
+
     def save_to_db(self, commit=True):
         db.session.add(self)
         if commit: db.session.commit()
@@ -22,3 +26,7 @@ class CompanyModel(db.Model):
     def delete_from_db(self):
         db.session.delete(self)
         db.session.commit()
+
+    @classmethod
+    def find_by_id(cls, id):
+        return cls.query.filter_by(uid=id).first()

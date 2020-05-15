@@ -6,7 +6,6 @@ from models.order import OrderModel
 class Order(Resource):
 
     def get(self, id):
-        print(OrderModel.query.all())
         order = OrderModel.find_by_id(id)
         if order:
             return order.json()

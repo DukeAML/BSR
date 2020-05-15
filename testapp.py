@@ -4,6 +4,8 @@ from flask_restful import Api
 from db import db
 from resources.expense import Expense, ExpenseRange
 from resources.order import Order, OrderRange
+from resources.company import Company
+from resources.product import Product, ProductHistory
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
@@ -59,6 +61,9 @@ api.add_resource(Expense, '/expense/<string:date>')
 api.add_resource(ExpenseRange, '/expenses')
 api.add_resource(Order, '/order/<int:id>')
 api.add_resource(OrderRange, '/orders')
+api.add_resource(Company, '/company/<int:id>')
+api.add_resource(Product, '/product/<int:id>')
+api.add_resource(ProductHistory, '/history/product/<int:id>')
 
 if __name__ == '__main__':
     db.init_app(app)

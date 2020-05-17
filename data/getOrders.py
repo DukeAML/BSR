@@ -73,7 +73,8 @@ def main():
     # loop thru every page, making a new API call every time
     for pageNum in range(1, totalPages+1):
         data = apiCall(pageNum, oct31)
-        
+
+        # error catch (pause the program & try to make API call again)
         while ('orders' not in data):
             print("Pausing execution for API time delay...")
             time.sleep(10)

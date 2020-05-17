@@ -17,8 +17,6 @@ def jprint(obj):
 
 def apiCall(productID, pageNum=1):
     ''' Returns the product with specified ID '''
-    #URL = 'https://app.getsweet.com/api/v1/products' + productID
-    #payload = {'token': API_KEY, 'page':pageNum, 'q[variants_id_eq]': '161955'}
     URL = 'https://app.getsweet.com/api/v1/variants/' + productID
     payload = {'token': API_KEY, 'page':pageNum}
     r = requests.get(url=URL, headers=headers, params=payload)

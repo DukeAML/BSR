@@ -1,0 +1,365 @@
+sku,price,fully_qualified_name,active,for_sale,product_type,incremental_order_quantity,pack_size,pack_size_qty,weight,weight_units
+BAR-BUTTER-PPEP,0,Bar Butters:Peanut Pepita,True,True,inventory_assembly,1,,,0,
+BAR-FC-SUBSCR,0,"Nut Butter Bar, Subscriptions:Figgy Chai",True,True,inventory_assembly,1,12/60g Bars,,0,
+BAR-CC-SUBSCR,0,"Nut Butter Bar, Subscriptions:Cranberry Cashew",True,True,inventory_assembly,1,12/60g Bars,,1.5,lb
+BAR-AP-SUBSCR,0,"Nut Butter Bar, Subscriptions:Apricot Pepita",True,True,inventory_assembly,1,12/60g Bars,,0,
+BAR-SUBSCR,0,"Nut Butter Bar, Subscriptions",True,True,inventory_assembly,1,,,0,
+BAR-AP-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Apricot Pepita",True,True,inventory_assembly,1,,,0.17,lb
+BAR-CP-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Cherry Pecan",True,True,inventory_assembly,1,,,0.17,lb
+BAR-CC-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Cranberry Cashew",True,True,inventory_assembly,1,,,0.17,lb
+BAR-CP-SUBSCR,0,"Nut Butter Bar, Subscriptions:Cherry Pecan",True,True,inventory_assembly,1,12/60g Bars,,0,
+BAR-FC-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar:Figgy Chai",True,True,inventory_assembly,1,,,0.17,lb
+NB-PNUT-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Peanut Butter",True,True,inventory_assembly,1,,,0,
+NB-FGIN-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Fiji Ginger",True,True,inventory_assembly,1,,,0,
+NB-MPC-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Maple Cinnamon",True,True,inventory_assembly,1,,,0,
+NB-CHAI-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample:Chai Spice",True,True,inventory_assembly,1,,,0,
+NB-3OZ-SAMPLE,0,"Nut Butter, 3 oz Single Jar Sample",True,True,inventory_assembly,1,,,0,
+NB-TCO-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Toasted Coconut",True,True,inventory_assembly,1,,,1.38,lb
+NB-PPEC-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Peanut Pecan",True,True,inventory_assembly,1,,,1.38,lb
+BAR-SINGLE-SAMPLE,0,"Nut Butter Bar, Sample 60g Bar",True,True,inventory_assembly,1,,,0,
+BAR-VP-SUBSCR,0,"Nut Butter Bar, Subscriptions:Variety Pack",True,True,inventory_assembly,1,12/60g Bars,,0,
+NB-SUBSCR,0,"Nut Butter, Subscriptions",True,True,inventory_assembly,1,,,0,
+NB-PNUT-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-PNUT",True,True,inventory_assembly,1,13 oz Jar,,17,oz
+NB-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack",True,True,inventory_assembly,1,1/13oz Pack,,0,
+NB-ABJ-SUBSCR-JUN20,0,"Nut Butter, Subscriptions:ABJ-JUN20-SUBSCR",True,True,inventory_assembly,1,2pack / 13oz jar,,2.14,lb
+NB-PBJ-SUBSCR-JUN20,0,"Nut Butter, Subscriptions:PBJ-JUN20-SUBSCR",True,True,inventory_assembly,1,2pack/13 oz Jar,,2.14,lb
+NB-RSTR-SUBSCR-MAY20,0,"Nut Butter, Subscriptions:RSTR-MAY20",True,True,inventory_assembly,1,13 oz jar,,1.15,lb
+NB-ABJ-SUBSCR-MAY20,0,"Nut Butter, Subscriptions:ABJ-MAY20-SUBSCR",True,True,inventory_assembly,1,2pack / 13oz jar,,2.14,lb
+NB-PBJ-SUBSCR-MAY20,0,"Nut Butter, Subscriptions:PBJ-MAY20-SUBSCR",True,True,inventory_assembly,1,2pack / 13oz jar,,2.14,
+NB-RSTR-SUBSCR-APR20,0,"Nut Butter, Subscriptions:RSTR-APR20",True,True,inventory_assembly,1,13 oz jar,,1.15,
+NB-CASH-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-CASH",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-MAMBA-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-MAMBA",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-MPC-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-MPC",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-TCO-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-TCO",True,True,inventory_assembly,1,13 oz Jar,,17,oz
+NB-FGIN-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-FGIN",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-CSS-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-CSS",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-ALM-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-ALM",True,True,inventory_assembly,1,13 oz Jar,,17,oz
+NB-GGET-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-GGET",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-CHAI-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-CHAI",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-PPEC-SUBSCR,0,"Nut Butter, Subscriptions:YOUR-PPEC",True,True,inventory_assembly,1,13 oz Jar,,0,
+NB-PNUT-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Peanut Butter",True,True,inventory_assembly,1,,,1.38,lb
+NB-MPC-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Maple Cinnamon",True,True,inventory_assembly,1,,,1.38,lb
+NB-MAMBA-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Hot Mamba",True,True,inventory_assembly,1,,,1.38,lb
+NB-GGET-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:GGet Espresso",True,True,inventory_assembly,1,,,1.38,lb
+BAR-BUTTER-GALM,0,Bar Butters:Ginger Almond,True,True,inventory_assembly,1,,,0,
+BAR-BUTTER-PCASH,0,Bar Butters:Peanut Cashew,True,True,inventory_assembly,1,,,0,
+BAR-BUTTER-PALM,0,Bar Butters:Peanut Almond,True,True,inventory_assembly,1,,,0,
+NB-WAG-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Wag Butter",True,True,inventory_assembly,1,,,0,
+BAR-BUTTER-PPEC,0,Bar Butters:Peanut Pec(less),True,True,inventory_assembly,1,,,0,
+BAR-BUTTER,0,Bar Butters,True,True,inventory_assembly,1,,,0,
+NB-PALM-10OZ,0,Peanut Almond:10 oz Jar,True,True,inventory_assembly,1,,,0,
+NB-PALM,0,Peanut Almond,True,True,inventory_assembly,1,,,0,
+NB-3OZ-4PACK-AB,0,"Nut Butter, Variety Pack 3oz:AB-3OZ-4PACK",True,True,inventory_assembly,1,4/3oz Jars,,5,
+NB-3OZ-4PACK,5.1,"Nut Butter, Variety Pack 3oz:3OZ-4PACK",True,True,inventory_assembly,1,4/3oz Jars,,5,lb
+NB-3OZ-VP,0,"Nut Butter, Variety Pack 3oz",True,True,inventory_assembly,1,4/3oz Jars,,0,
+NB-TRIO-SS20,0,"Nut Butter, 3-Pack 13 oz:TRIO-SS20",True,True,inventory_assembly,1,3/13oz Pack,,5,
+NB-130Z-3PACK,0,"Nut Butter, 3-Pack 13 oz",True,True,inventory_assembly,1,3/13oz Pack,,0,
+NB-PBJ-JUN20,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-JUN20",True,True,inventory_assembly,1,2/13oz Pack,,2.5,
+NB-PBJ-MAY20,0,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-MAY20",True,True,inventory_assembly,1,2/13oz Pack,,2.5,lb
+NB-PBJ-2PACK,0,"Nut Butter, PB&J 2-Pack 13 oz Jar",True,True,inventory_assembly,1,2/13oz Pack,,0,
+NB-ABJ-JUN20,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-JUN20",True,True,inventory_assembly,1,2/13oz Pack,,2.5,
+BAR-DRYKIT,0,Bar Dry Kits,True,True,inventory_assembly,1,,,0,
+NB-ALM-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Almond Butter",True,True,inventory_assembly,1,1/13oz Pack,,2,
+BAR-DRYKIT-AP,0,Bar Dry Kits:AP,True,True,inventory_assembly,1,,,0,
+BAR-DRYKIT-CC,0,Bar Dry Kits:CC,True,True,inventory_assembly,1,,,0,
+NB-FGIN-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Fiji Ginger",True,True,inventory_assembly,1,,,1.38,lb
+NB-CSS-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Chocolate Sea Salt",True,True,inventory_assembly,1,,,1.38,lb
+NB-CHAI-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Chai Spice",True,True,inventory_assembly,1,,,1.38,lb
+NB-CASH-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Cashew Butter",True,True,inventory_assembly,1,,,1.38,lb
+NB-ALM-130Z-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample:Almond Butter",True,True,inventory_assembly,1,,,1.38,lb
+NB-13OZ-SAMPLE,0,"Nut Butter, 13 oz Single Jar Sample",True,True,inventory_assembly,1,,,0,
+NB-GGET-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:GGet Espresso",True,True,inventory_assembly,1,,,0,
+NB-FGIN-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Fiji Ginger",True,True,inventory_assembly,1,,,0,
+NB-CSS-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Chocolate Sea Salt",True,True,inventory_assembly,1,,,0,
+NB-CASH-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Cashew Butter",True,True,inventory_assembly,1,,,0,
+NB-ALM-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Almond Butter",True,True,inventory_assembly,1,,,0,
+NB-LTD-CCAKE-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Carrot Cake Walnut",True,True,inventory_assembly,1,,,0,
+NB-LTD-PPIE-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Sorghum Pecan Pie",True,True,inventory_assembly,1,,,0,
+NB-LTD-FGPNUT-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Fiji Ginger Peanut",True,True,inventory_assembly,1,,,0,
+NB-LTD-CCCG,0,Limited Batch - Chocolate Chocolate Chocolate Gianduja Nut Butter,True,True,inventory_assembly,1,,,0,
+BAR-DRYKIT-GA,0,Bar Dry Kits:GA,True,True,inventory_assembly,1,,,0,
+BAR-DRYKIT-FC,0,Bar Dry Kits:FC,True,True,inventory_assembly,1,,,0,
+BAR-DRYKIT-CP,0,Bar Dry Kits:CP,True,True,inventory_assembly,1,,,0,
+NB-ABJ-MAY20,0,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-MAY20",True,True,inventory_assembly,1,2/13oz Pack,,2.5,
+NB-CASH-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Cashew Butter",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-CSS-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Chocolate Sea Salt",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-MAMBA-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MAMBA-PPEC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-MAMBA-PNUT-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-MAMBA-MPC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-FGIN-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-FGIN-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-FGIN-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MPC-PNUT-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-FGIN-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-CSS-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CSS-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-CSS-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-CSS-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CSS-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Hot Mamba",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-CSS-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Fiji Ginger",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-CHAI-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-FGIN-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Fiji Ginger",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MPC-PPEC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MPC-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-PNUT-PPEC-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Butter &  Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MPC-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Maple Cinnamon",True,True,inventory_assembly,1,,,0,
+NB-TCO-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Toasted Coconut",True,True,inventory_assembly,1,,,0,
+NB-PNUT-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Peanut Butter",True,True,inventory_assembly,1,,,0,
+NB-PPEC-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Peanut Pecan",True,True,inventory_assembly,1,,,0,
+NB-CHAI-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Chai Spice",True,True,inventory_assembly,1,,,0,
+NB-BAR-BUTTER-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Bar Butters",True,True,inventory_assembly,1,,,0,
+NB-LCASH-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Ltd Batch - Lemon Cashew",True,True,inventory_assembly,1,,,0,
+NB-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels",True,True,inventory_assembly,1,,,0,
+R&D-NB-CHAI,0,R&D Nut Butters:Chai Spice Mix Options,True,True,inventory_assembly,1,,,0,
+R&D-NB-CSS-ONYX,0,R&D Nut Butters:Guittard Onyx CSS,True,True,inventory_assembly,1,,,0,
+NB-R&D,0,R&D Nut Butters,True,True,inventory_assembly,1,,,0,
+NB-LTD-LCASH-SCRAP,0,Limited Batch - Lemon Cashew Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-LTD-LCASH-10OZ,0,Limited Batch - Lemon Cashew Nut Butter:10 oz Jar,True,True,inventory_assembly,1,10 oz,,1.25,lb
+NB-LTD-LCASH,0,Limited Batch - Lemon Cashew Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-WHOOPS-ESP,0,Whoops Tigerwalk Espresso Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-PPEC-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Pecan & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-PNUT-TCO-130Z-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Butter & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CHAI-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-CHAI-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-CHAI-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CHAI-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Hot Mamba",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-GGET-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:GGet Espresso",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CSS-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CHAI-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ALM-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack",True,True,inventory_assembly,1,2/13oz Pack,,0,
+NB-TCO-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Toasted Coconut",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-PPEC-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Peanut Pecan",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-PNUT-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Peanut Butter",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-MPC-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Maple Cinnamon",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-MAMBA-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Hot Mamba",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-GGET-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:GGet Espresso",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-FGIN-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Fiji Ginger",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CHAI-13OZ-1PACK-GIFT,0,"Nut Butter, 13 oz Single Jar Gift Pack:Chai Spice",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ALM-CHAI-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Chai Spice",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CHAI-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Fiji Ginger",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CHAI-CSS-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Chocolate Sea Salt",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Hot Mamba",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Fiji Ginger",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-CSS-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Chocolate Sea Salt",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CASH-CHAI-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Chai Spice",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ALM-TCO-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ALM-PPEC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-ALM-PNUT-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ALM-MPC-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-ALM-MAMBA-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Hot Mamba",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ALM-FGIN-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Fiji Ginger",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-ALM-CSS-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Chocolate Sea Salt",True,True,inventory_assembly,1,2/13oz Pack,,3,lb
+NB-ALM-CASH-13OZ-2PACK-GIFT,0,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Cashew Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ABJ-2PACK,0,"Nut Butter, AB&J 2-Pack 13 oz Jar",True,True,inventory_assembly,1,2/13oz Pack,,0,
+NB-WAG-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Wag Butter",True,True,inventory_assembly,1,2/13oz Pack,,0,
+NB-TCO-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Toasted Coconut",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CSS-13OZ,4.7,Chocolate Sea Salt Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-CSS,0,Chocolate Sea Salt Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-CHAI-SCRAP,0,Chai Spice Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-CHAI-8LB,27.59,Chai Spice Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-CHAI-4LB,14.24,Chai Spice Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-CHAI-3OZ,1.23,Chai Spice Nut Butter:3 oz Jar,True,True,inventory_assembly,12,3 oz Jar,,0,
+NB-CHAI-13OZ,3.18,Chai Spice Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-CSS-4LB,21.59,Chocolate Sea Salt Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-CHAI,0,Chai Spice Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-CASH-8LB,47.23,Cashew Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,0,
+NB-CASH-4LB,24.06,Cashew Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-CASH-13OZ,5.18,Cashew Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,1.5,lb
+NB-CASH,0,Cashew Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-ALM-3OZ,0,Almond Nut Butter:3 oz Jar,True,True,inventory_assembly,12,3 oz jar,,0.5,lb
+NB-ALM-SCRAP,0,Almond Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-ALM-8LB,34.99,Almond Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-CASH-SCRAP,0,Cashew Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-ALM-4LB,17.94,Almond Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-CSS-8LB,42.29,Chocolate Sea Salt Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-CSS-3OZ,0,Chocolate Sea Salt Nut Butter:3 oz Jar,True,True,inventory_assembly,12,3 oz jar,,0,
+NB-JUSTPNUT-1LB,3.03,Just Peanuts Nut Butter:40# Bucket,True,True,inventory_assembly,1,,,0,
+NB-TWALK-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Tigerwalk Espresso",True,True,inventory_assembly,1,,,0,
+NB-JUSTALM-1LB,0,Just Almonds Nut Butter:1# Bucket,True,True,inventory_assembly,1,,,0,
+NB-JUSTALM-8LB,36.11,Just Almonds Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,12,lb
+NB-JUSTALM,0,Just Almonds Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-GGET-SCRAP,0,GGet Espresso Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-GGET-8LB,42.41,GGet Espresso Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,12,lb
+NB-CSS-SCRAP,0,Chocolate Sea Salt Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-GGET-4LB,21.65,GGet Espresso Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-GGET,0,GGet Espresso Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-FGIN-SCRAP,0,Fiji Ginger Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-FGIN-8LB,38.97,Fiji Ginger Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-FGIN-4LB,19.93,Fiji Ginger Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-FGIN-3OZ,1.51,Fiji Ginger Nut Butter:3 oz Jar,True,True,inventory_assembly,12,3 oz Jar,,0.5,
+NB-FGIN-13OZ,4.37,Fiji Ginger Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-FGIN,0,Fiji Ginger Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-GGET-13OZ,4.69,GGet Espresso Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-LTD-PEP,0,Limited Batch - Pepperfest Peanut Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-ALM-13OZ,3.96,Almond Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+MERCH-BSR-10OZ-JAR,0,BSR Labeled 10 oz Jar - Case,True,True,inventory_assembly,1,12 Jar Case,12.0,0,
+BATCH-GGET,0,BATCH:BATCH-GGET,True,True,inventory_assembly,1,,,0,
+BATCH-MAMBA,0,BATCH:BATCH-MAMBA,True,True,inventory_assembly,1,,,0,
+BATCH-CASH,0,BATCH:BATCH-CASH,True,True,inventory_assembly,1,,,0,
+BATCH-BAR-CP,0,BATCH:BATCH-BAR-CP,True,True,inventory_assembly,1,,,0,
+BATCH-BAR-AP,0,BATCH:BATCH-BAR-AP,True,True,inventory_assembly,1,,,0,
+BATCH-BAR-CC,0,BATCH:BATCH-BAR-CC,True,True,inventory_assembly,1,,,0,
+BATCH-BAR-FC,0,BATCH:BATCH-BAR-FC,True,True,inventory_assembly,1,,,0,
+BATCH-ALM,0,BATCH:BATCH-ALM,True,True,inventory_assembly,1,,,0,
+BATCH-JUST-PNUT,0,BATCH:BATCH-JUST-PNUT,True,True,inventory_assembly,1,Each,,0,
+BATCH-PALM,0,BATCH:BATCH-PALM,True,True,inventory_assembly,1,,,0,
+BATCH-PNUT,0,BATCH:BATCH-PNUT,True,True,inventory_assembly,1,,,0,
+BATCH-MPC,0,BATCH:BATCH-MPC,True,True,inventory_assembly,1,,,0,
+BATCH-CHAI,0,BATCH:BATCH-CHAI,True,True,inventory_assembly,1,,,0,
+BATCH-TWALK,0,BATCH:BATCH-TWALK,True,True,inventory_assembly,1,,,0,gm
+BATCH,0,BATCH,True,True,inventory_assembly,1,,,0,
+NB-LTD-CCAKE-SCRAP,0,Limited Batch - Carrot Cake Walnut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,,,0,
+BATCH-PPEC,0,BATCH:BATCH-PPEC,True,True,inventory_assembly,1,,,0,
+NB-ALM,0,Almond Nut Butter,True,True,inventory_assembly,1,,,0,
+BATCH-TCO,0,BATCH:BATCH-TCO,True,True,inventory_assembly,1,,,0,
+BATCH-FGIN,0,BATCH:BATCH-FGIN,True,True,inventory_assembly,1,,,0,
+NB-10OZ-CASE,0,"Nut Butter, 10 oz Case",True,True,inventory_assembly,1,12/10oz Case,,0,
+NB-WAG,0,Wag Butter,True,True,inventory_assembly,1,,,0,
+NB-WAG-13OZ,0,Wag Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz jar,,17,oz
+NB-WAG-4LB,0,Wag Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,0,
+NB-WAG-8LB,0,Wag Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,0,
+NB-WAG-SCRAP,0,Wag Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,0,
+NB-13OZ-6PACK,0,"Nut Butter, 6-Pack 13 oz",True,True,inventory_assembly,1,,,0,
+BATCH-CSS,0,BATCH:BATCH-CSS,True,True,inventory_assembly,1,,,0,
+NB-GH-6PACK,0,"Nut Butter, 6-Pack 13 oz:GH-6PACK",True,True,inventory_assembly,1,,,0,
+MP-PANTRY,0,Nut Butter & Bar Multi-packs:Pantry Pack,True,True,inventory_assembly,1,,,0,
+NB-LTD-CCAKE,0,Limited Batch - Carrot Cake Walnut Butter,True,True,inventory_assembly,1,,,0,
+NB-LTD-CCAKE-10OZ,0,Limited Batch - Carrot Cake Walnut Butter:10 oz Jar,True,True,inventory_assembly,1,10 oz,,1.25,
+BATCH-LTD-CCAKE,0,BATCH:BATCH-LTD-CCAKE,True,True,inventory_assembly,1,,,0,
+BATCH-WAG,0,BATCH:BATCH-WAG,True,True,inventory_assembly,1,,,0,
+BATCH-LTD-LCASH,0,BATCH:BATCH-LTD-LCASH,True,True,inventory_assembly,1,,,0,
+BATCH-JUST-ALM,0,BATCH:BATCH-JUST-ALM,True,True,inventory_assembly,1,,,0,
+MP-NB-BAR,0,Nut Butter & Bar Multi-packs,True,True,inventory_assembly,1,,,0,
+NB-MAMBA,0,Hot Mamba Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-JUSTPNUT,0,Just Peanuts Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-MAMBA-4LB,12.15,Hot Mamba Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-CHAI-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Chai Spice",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-ALM-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Almond Butter",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack",True,True,inventory_assembly,1,1/13oz Pack,,0,
+BAR-FC-MASTERCASE,0,Bar Master Case:Figgy Chai,True,True,inventory_assembly,1,28/12 bar Cases,336.0,58,lb
+BAR-CP-MASTERCASE,0,Bar Master Case:Cherry Pecan,True,True,inventory_assembly,1,28/12 bar Cases,336.0,58,lb
+BAR-CC-MASTERCASE,0,Bar Master Case:Cranberry Cashew,True,True,inventory_assembly,1,28/12 bar Cases,336.0,58,lb
+BAR-AP-MASTERCASE,0,Bar Master Case:Apricot Pepita,True,True,inventory_assembly,1,28/12 bar Cases,336.0,58,lb
+NB-CSS-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Chocolate Sea Salt",True,True,inventory_assembly,1,1/13oz Pack,,2,
+BAR-MASTERCASE,0,Bar Master Case,True,True,inventory_assembly,1,28/12 bar Cases,,0,
+BAR-VP-CASE,0,Bar Variety Pack:Bar Variety Pack - Case,True,True,inventory_assembly,1,12/60 g Bars,12.0,1.15,lb
+BAR-VP,0,Bar Variety Pack,True,True,inventory_assembly,1,12/60 oz Bars,,0,
+BAR-FC-SCRAP,0,Figgy Chai Nut Butter Bar:Bar Scrap - 100g,True,True,inventory_assembly,1,100g,,100,gm
+BAR-FC-SINGLE,0,Figgy Chai Nut Butter Bar:Bar,True,True,inventory_assembly,1,1/60g Bar,1.0,0.17,lb
+BAR-FC-CASE,0,Figgy Chai Nut Butter Bar:Case,True,True,inventory_assembly,1,12/60 g Bars,12.0,2,lb
+NB-MAMBA-13OZ,2.78,Hot Mamba Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+BAR-CP-SCRAP,0,Cherry Pecan Nut Butter Bar:Bar Scrap - 100g,True,True,inventory_assembly,1,,,100,gm
+BAR-VP-GIFT,0,Bar Variety Pack:Bar Variety Pack - Gift Case,True,True,inventory_assembly,1,12/60 g Bars,12.0,1.15,lb
+BAR-CP-SINGLE,0,Cherry Pecan Nut Butter Bar:Bar,True,True,inventory_assembly,1,1/60g Bar,1.0,0.17,lb
+NB-FGIN-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Fiji Ginger",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-MAMBA-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Hot Mamba",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-PPEC-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Peanut Pecan",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-PNUT-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Peanut Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MPC-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Maple Cinnamon",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-MAMBA-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Hot Mamba",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-GGET-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:GGet Espresso",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-FGIN-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Fiji Ginger",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-CSS-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Chocolate Sea Salt",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-GGET-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:GGet Espresso",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-CHAI-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Chai Spice",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-ALM-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Almond Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+NB-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar",True,True,inventory_assembly,1,2/13oz Pack,,0,
+NB-WAG-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Wag Butter",True,True,inventory_assembly,1,1/13oz Pack,,0,
+NB-TCO-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Toasted Coconut",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-PPEC-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Peanut Pecan",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-PNUT-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Peanut Butter",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-MPC-13OZ-1PACK,0,"Nut Butter, 13 oz Single Jar Pack:Maple Cinnamon",True,True,inventory_assembly,1,1/13oz Pack,,2,
+NB-CASH-13OZ-2PACK,0,"Nut Butter, 2-Pack 13 oz Jar:Cashew Butter",True,True,inventory_assembly,1,2/13oz Pack,,3,
+BAR-CP-CASE,0,Cherry Pecan Nut Butter Bar:Case,True,True,inventory_assembly,1,12/60 g Bars,12.0,2,lb
+BAR-FC,0,Figgy Chai Nut Butter Bar,True,True,inventory_assembly,1,,,0,
+BAR-CC-SCRAP,0,Cranberry Cashew Nut Butter Bar:Bar Scrap - 100g,True,True,inventory_assembly,1,100g,,100,gm
+NB-PPEC,0,Peanut Pecan Nut Butter,True,True,inventory_assembly,1,,,0,
+BAR-CP,0,Cherry Pecan Nut Butter Bar,True,True,inventory_assembly,1,,,0,
+NB-PNUT-8LB,22.57,Peanut Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-PNUT-4LB,11.73,Peanut Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-PNUT-3OZ,1.11,Peanut Nut Butter:3 oz Jar,True,True,inventory_assembly,12,3 oz Jar,,0.5,
+NB-PNUT-1LB,2.93,Peanut Nut Butter:1# Bucket,True,True,inventory_assembly,1,1# Bucket,,1,lb
+NB-PNUT-13OZ,2.69,Peanut Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-PPEC-13OZ,3.2,Peanut Pecan Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-PNUT,0,Peanut Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-MPC-8LB,25.62,Maple Cinnamon Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-MPC-4LB,13.26,Maple Cinnamon Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-MPC-3OZ,1.18,Maple Cinnamon Nut Butter:3 oz Jar,True,True,inventory_assembly,12,3 oz Jar,,0.5,
+NB-MPC-13OZ,3,Maple Cinnamon Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-MPC,0,Maple Cinnamon Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-MAMBA-SCRAP,0,Hot Mamba Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-MAMBA-8LB,23.41,Hot Mamba Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-MPC-SCRAP,0,Maple Cinnamon Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-PPEC-4LB,14.25,Peanut Pecan Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-PNUT-SCRAP,0,Peanut Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-PPEC-SCRAP,0,Peanut Pecan Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+BAR-CC-SINGLE,0,Cranberry Cashew Nut Butter Bar:Bar,True,True,inventory_assembly,1,1/60g Bar,1.0,0.17,lb
+BAR-CC-CASE,0,Cranberry Cashew Nut Butter Bar:Case,True,True,inventory_assembly,1,12/60 g Bars,12.0,2,lb
+BAR-CC,0,Cranberry Cashew Nut Butter Bar,True,True,inventory_assembly,1,,,0,
+BAR-AP-SCRAP,0,Apricot Pepita Nut Butter Bar:Bar Scrap - 100g,True,True,inventory_assembly,1,100g,,100,gm
+NB-PPEC-8LB,27.6,Peanut Pecan Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+BAR-AP-CASE,0,Apricot Pepita Nut Butter Bar:Case,True,True,inventory_assembly,1,12/60 g Bars,12.0,2,lb
+BAR-AP,0,Apricot Pepita Nut Butter Bar,True,True,inventory_assembly,1,,,0,
+NB-TWALK-SCRAP,0,Tigerwalk Espresso Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+BAR-AP-SINGLE,0,Apricot Pepita Nut Butter Bar:Bar,True,True,inventory_assembly,1,1/60g Bar,1.0,0.17,lb
+NB-TWALK,0,Tigerwalk Espresso Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-TCO-3OZ,0,Toasted Coconut Nut Butter:3 oz Jar,True,True,inventory_assembly,12,3 oz jar,,0,
+NB-TCO-SCRAP,0,Toasted Coconut Nut Butter:NB Scrap - 1 oz,True,True,inventory_assembly,1,1 oz,,1,oz
+NB-TCO-8LB,36.11,Toasted Coconut Nut Butter:8# Bucket,True,True,inventory_assembly,1,8# Bucket,,11,lb
+NB-TCO-4LB,35.24,Toasted Coconut Nut Butter:4# Bucket,True,True,inventory_assembly,1,4# Bucket,,6,lb
+NB-TCO-13OZ,4,Toasted Coconut Nut Butter:13 oz Jar,True,True,inventory_assembly,6,13 oz Jar,,17,oz
+NB-TCO,0,Toasted Coconut Nut Butter,True,True,inventory_assembly,1,,,0,
+NB-TWALK-10OZ,0,Tigerwalk Espresso Nut Butter:10 oz Jar,True,True,inventory_assembly,1,10 oz Jar,,1.42,lb
+NB-MAMBA-TRANS-JAR,0,"Nut Butter, Transition Jar Packaging & Labels:Hot Mamba",True,True,inventory_assembly,1,,,0,
+MERCH-GIFT-ANNOUNCE,0.29938,Gift Announcement Card,True,True,inventory_item,1,,,0,
+MERCH-CAP-CYCL,11.56,BSR Cycling Cap,True,True,inventory_item,1,Each,,0,
+MERCH-SPOON-SILVER,7.29,BSR Silver Spoon,True,True,inventory_item,1,Each,,0,
+MERCH-T-PPLANT,0,BSR T-shirt - Peanut Plant,True,True,inventory_item,1,Each,,0,
+MERCH-T-PPLANT-U-XL,8.19,BSR T-shirt - Peanut Plant:Unisex XL,True,True,inventory_item,1,Each,,0,
+MERCH-T-PPLANT-W-XL,7.39,BSR T-shirt - Peanut Plant:Women's XL,True,True,inventory_item,1,Each,,0,
+MERCH-T-PPLANT-W-L,7.39,BSR T-shirt - Peanut Plant:Women's Large,True,True,inventory_item,1,Each,,0,
+MERCH-T-SPOONS,0,2019 BSR T-shirt - Spoons,True,True,inventory_item,1,Each,,0.25,lb
+MERCH-JAM-APRIL20-2,6.5,Featured Jam:Fiddlehead Farm Strawberry & Honeysuckle Jelly,True,True,inventory_item,1,,,1.5,lb
+MERCH-T-SPOONS-W-S,13.85,2019 BSR T-shirt - Spoons:Women's Small,True,True,inventory_item,1,Each,,0.25,lb
+MERCH-T-SPOONS-W-M,13.85,2019 BSR T-shirt - Spoons:Women's Medium,True,True,inventory_item,1,Each,,0.25,lb
+MERCH-T-SPOONS-W-L,13.85,2019 BSR T-shirt - Spoons:Women's Large,True,True,inventory_item,1,Each,,0.25,lb
+MERCH-T-SPOONS-W-XL,13.85,2019 BSR T-shirt - Spoons:Women's XL,True,True,inventory_item,1,Each,,0.25,lb
+MERCH-T-SPOONS-U-S,14.95,2019 BSR T-shirt - Spoons:Unisex Small,True,True,inventory_item,1,,,0.25,lb
+MERCH-T-SPOONS-U-M,14.95,2019 BSR T-shirt - Spoons:Unisex Medium,True,True,inventory_item,1,Each,,0.25,lb
+MERCH-T-SPOONS-U-L,14.95,2019 BSR T-shirt - Spoons:Unisex Large,True,True,inventory_item,1,Each,,0.25,lb
+MERCH-T-SPOONS-U-XL,14.95,2019 BSR T-shirt - Spoons:Unisex XL,True,True,inventory_item,1,Each,,6,oz
+MKT,0,Marketing Materials,True,True,inventory_item,1,,,0,
+MKT-SIGN-BUTTERS,0,Marketing Materials:2x5 Shelf Talker - Butters,True,True,inventory_item,1,Each,,0,
+MKT-SIGN-BARS,0,Marketing Materials:2x5 Shelf Talker - Bars,True,True,inventory_item,1,Each,,0,
+MKT-SIGN-LOGO-TIN,0,Marketing Materials:Large Tin Logo Sign,True,True,inventory_item,1,Each,,0,
+MKT-SIGN-BIGPRAISE,0,Marketing Materials:Large Big Praise Foamboard Sign,True,True,inventory_item,1,Each,,0,
+MERCH-JAM-MAY20-2,6.55,Featured Jam:Regina's Farm Kitchen Blueberry Lemon,True,True,inventory_item,1,,,0,
+MKT-SIGN-ABOUTUS,0,Marketing Materials:About BSR Card,True,True,inventory_item,1,Each,,0,
+MKT-SIGN-LOGO-FOAM,0,Marketing Materials:Logo Foam Sign,True,True,inventory_item,1,Each,,0,
+MKT-SIGN-CHECKLIST,0,Marketing Materials:Checklist Card,True,True,inventory_item,1,Each,,0,
+MKT-MAT-CARDS,0.2664,Marketing Materials:BSR Business Cards,True,True,inventory_item,1,Each,,0,
+MKT-MAT-GIFT,0.29938,Marketing Materials:Gift Note Card,True,True,inventory_item,1,Each,,0,
+MKT-STICKERS-OCTO,0.1625,Marketing Materials:Stickers - Octopus,True,True,inventory_item,1,Each,,0,
+MKT-STICKERS-BEAR,0.1625,Marketing Materials:Stickers - Bear,True,True,inventory_item,1,Each,,0,
+MERCH-T-PPLANT-W-M,7.39,BSR T-shirt - Peanut Plant:Women's Medium,True,True,inventory_item,1,Each,,0,
+MERCH-JAM,0,Featured Jam,True,True,inventory_item,1,,,0,
+MERCH-JAM-FEB20,8.33,Featured Jam:Frog Hollow Farm Organic Blood Orange & Strawberry Marmalade,True,True,inventory_item,1,,,0,
+MERCH-JAM-MAR20,7.25,Featured Jam:V Smiley Preserves Black Currant Shiro Plum,True,True,inventory_item,12,,,1.5,lb
+MERCH-JAM-APRIL20,4.5,Featured Jam:Potlicker Kitchen Pear Ginger Jam,True,True,inventory_item,1,,,1.5,lb
+MERCH-JAM-MAY20,6,Featured Jam:Regina's Farm Kitchen Peach Vanilla Bean,True,True,inventory_item,1,,,1.5,lb
+MERCH-JAM-JUN20,7.25,Featured Jam:Sqirl Seascape Strawberry & Rose Geranium,True,True,inventory_item,1,,,1.5,lb
+MKT-STICKERS-LOGO,0,Marketing Materials:Stickers - Logo,True,True,inventory_item,1,Each,,0,
+MERCH-T-PPLANT-W-S,7.39,BSR T-shirt - Peanut Plant:Women's Small,True,True,inventory_item,1,Each,,0,

@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restful import Api
+import pathlib
 
 from db import db
 from resources.expense import Expense, ExpenseRange
@@ -7,8 +8,11 @@ from resources.order import Order, OrderRange
 from resources.company import Company
 from resources.product import Product, ProductHistory
 
+PATH = pathlib.Path(__file__).parent
+PASSWORD = "postgres"
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:{}@localhost/bsrdata'.format(PASSWORD)#'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
 api = Api(app)

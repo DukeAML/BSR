@@ -5,19 +5,23 @@ class ProductModel(db.Model):
     __tablename__ = 'products'
 
     uid = db.Column(db.Integer, primary_key=True)
-    sku = db.Column(db.String(200))
+    name = db.Column(db.String(150))
+    sku = db.Column(db.String(50))
+    active = db.Column(db.Boolean)
     price = db.Column(db.Float(precision=2))
 
     orderinstances = db.relationship('OrderItemsModel', lazy='dynamic')
 
-    def __init__(self, uid, sku, price):
+    def __init__(self, uid, sku, price, name, active):
         self.uid = uid
+        self.name = name
         self.sku = sku
         self.price = price
+        self.active = active
 
     def json(self):
         return {'product_id': self.uid, 'sku': self.sku,
-                'price': self.price}
+                'name': self.name, 'price': self.price, 'active': self.active}
 
     def save_to_db(self, commit=True):
         db.session.add(self)
@@ -30,3 +34,28 @@ class ProductModel(db.Model):
     @classmethod
     def find_by_id(cls, id):
         return cls.query.filter_by(uid=id).first()
+
+    @classmethod
+    def init_fill_db(cls):
+        import csv
+        import psycopg2
+        from testapp import PATH, PASSWORD
+
+        conn = psycopg2.connect(host="localhost", dbname="bsrdata", user="postgres", password=PASSWORD)
+        cur = conn.cursor()
+
+        with open(PATH.joinpath('data\\INPUT NAME HERE.csv'), 'r') as f:
+            reader = csv.reader(f)
+            next(reader) # skip header row
+
+            for row in reader:
+
+                try:
+                    cur.execute(
+                        "INSERT INTO products VALUES (%s, %s, %s, %s, %s)",
+                        (row[0], row[1], row[2], row[3], row[4])
+                    )
+                except:
+                    print("There was an error inserting product with id: ", str(row[0]))
+
+        conn.commit()

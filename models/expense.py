@@ -25,3 +25,28 @@ class ExpenseModel(db.Model):
     @classmethod
     def find_by_date(cls, date):
         return cls.query.filter_by(date=date).first()
+
+    @classmethod
+    def init_fill_db(cls):
+        import csv
+        import psycopg2
+        from testapp import PATH, PASSWORD
+
+        conn = psycopg2.connect(host="localhost", dbname="bsrdata", user="postgres", password=PASSWORD)
+        cur = conn.cursor()
+
+        with open(PATH.joinpath('data\expense_data.csv'), 'r') as f:
+            reader = csv.reader(f)
+            next(reader) # skip header row
+
+            for row in reader:
+
+                try:
+                    cur.execute(
+                        "INSERT INTO expenses VALUES (%s, %s)",
+                        (row[0], row[1])
+                    )
+                except:
+                    print("There was an error inserting expense on date: ", str(row[0]))
+
+        conn.commit()

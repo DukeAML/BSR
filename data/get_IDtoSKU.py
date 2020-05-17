@@ -7,14 +7,16 @@ import numpy as np
 import time
 
 '''
-    Make a dictionary of {id : sku} key value pairs in file id_to_sku.csv 
+    Make a dictionary of {id : sku} key value pairs in file id_to_sku.csv
+
+    Makes one call to the API to get all the products, & one call to get all the variants
 '''
 
 # ----- GLOBAL -----
 API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
 URL = 'https://app.getsweet.com/api/v1/'
-#URL = 'https://app.getsweet.com/api/v1/products'
+
 
 # ----- HELPER FUNCTIONS -----
 def jprint(obj):
@@ -57,7 +59,7 @@ def generateUsingVariants(pairs):
         
         variants = data['variants']
         pairs += [[variant['id'], variant['sku']] for variant in variants]
-    #return pairs
+    return pairs
 
 def main():    
     pairs = []

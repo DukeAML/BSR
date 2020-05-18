@@ -15,7 +15,7 @@ API_KEY = '44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373'
 headers = {'Content-Type': 'application/json'}
 URL = 'https://app.getsweet.com/api/v1/products.json'
 
-columns = ["sku", "price", "fully_qualified_name", "active", "for_sale", "product_type", "incremental_order_quantity", "pack_size", "pack_size_qty", "weight", "weight_units"]
+columns = ["sku", "price", "fully_qualified_name", "id", "active", "for_sale", "product_type", "incremental_order_quantity", "pack_size", "pack_size_qty", "weight", "weight_units"]
 allProducts = []
 """
 class Products:
@@ -46,6 +46,7 @@ def extractData(data):
             cost_price = variant["cost_price"]
             # extras
             fully_qualified_name = variant["fully_qualified_name"]
+            ID = variant["id"]
             active = variant["active"]
             incremental_order_quantity = variant["incremental_order_quantity"]
             pack_size = variant["pack_size"]
@@ -54,7 +55,7 @@ def extractData(data):
             weight_units = variant["weight_units"]
  
             # make a list of all these values
-            values = [sku, cost_price, fully_qualified_name, active, for_sale, product_type, incremental_order_quantity, pack_size, pack_size_qty, weight, weight_units]
+            values = [sku, cost_price, fully_qualified_name, ID, active, for_sale, product_type, incremental_order_quantity, pack_size, pack_size_qty, weight, weight_units]
             allProducts.append(values)
 
 

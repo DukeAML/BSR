@@ -1,0 +1,298 @@
+id,sku,price,name,active
+161908,NB-ALM-13OZ,12.95,Almond Nut Butter:13 oz Jar,True
+161955,NB-PPEC-13OZ,11.95,Peanut Pecan Nut Butter:13 oz Jar,True
+161949,NB-PNUT-13OZ,9.95,Peanut Nut Butter:13 oz Jar,True
+161930,NB-GGET-13OZ,13.95,GGet Espresso Nut Butter:13 oz Jar,True
+163302,NB-LTD-LCASH-10OZ,14.95,Limited Batch - Lemon Cashew Nut Butter:10 oz Jar,True
+171253,NB-PBJ-MAR20,20.95,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-MAR20",False
+161916,NB-CHAI-13OZ,11.95,Chai Spice Nut Butter:13 oz Jar,True
+164078,MERCH-JAM-MAR20,14.5,Featured Jam:V Smiley Preserves Black Currant Shiro Plum,True
+163768,NB-WAG-13OZ,8.95,Wag Butter:13 oz Jar,True
+161944,NB-MPC-13OZ,11.95,Maple Cinnamon Nut Butter:13 oz Jar,True
+161960,NB-TCO-13OZ,13.95,Toasted Coconut Nut Butter:13 oz Jar,True
+161921,NB-CSS-13OZ,13.95,Chocolate Sea Salt Nut Butter:13 oz Jar,True
+162131,NB-PNUT-13OZ-CASE,107.5,"Nut Butter, 13 oz Case:Peanut Butter",True
+162074,BAR-VP-CASE,27,Bar Variety Pack:Bar Variety Pack - Case,True
+161912,NB-CASH-13OZ,14.95,Cashew Nut Butter:13 oz Jar,True
+161925,NB-FGIN-13OZ,13.95,Fiji Ginger Nut Butter:13 oz Jar,True
+162065,BAR-CC-CASE,27,Cranberry Cashew Nut Butter Bar:Case,True
+162068,BAR-CP-CASE,27,Cherry Pecan Nut Butter Bar:Case,True
+161940,NB-MAMBA-13OZ,11.95,Hot Mamba Nut Butter:13 oz Jar,True
+162595,NB-CSS-TCO-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Toasted Coconut",True
+164237,NB-3OZ-4PACK-AB,26.95,"Nut Butter, Variety Pack 3oz:AB-3OZ-4PACK",True
+171256,NB-ABJ-MAR20-GIFT,27.95,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-MAR20-GIFT",False
+164238,NB-3OZ-4PACK-AB-GIFT,26.95,"Nut Butter, Variety Pack 3oz:AB-3OZ-4PACK-GIFT",False
+162071,BAR-FC-CASE,27,Figgy Chai Nut Butter Bar:Case,True
+171255,NB-ABJ-MAR20,24.5,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-MAR20",False
+171254,NB-PBJ-MAR20-GIFT,24.5,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-MAR20-GIFT",False
+162149,NB-3OZ-4PACK,24.95,"Nut Butter, Variety Pack 3oz:3OZ-4PACK",True
+162591,NB-CSS-MAMBA-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Hot Mamba",True
+162525,BAR-CP-SUBSCR,32,"Nut Butter Bar, Subscriptions:Cherry Pecan",True
+171257,NB-PBJ-SUBSCR-MAR20,29,"Nut Butter, Subscriptions:PBJ-MAR20-SUBSCR",False
+171600,TP-SINGLE,1.148,SUPPLIES - NON-INVENTORY:TP - Single Roll,True
+171549,ALPET-16OZ-BOTTLE,2.21,SUPPLIES - NON-INVENTORY:16oz Alpet,True
+161953,NB-PNUT-8LB,56,Peanut Nut Butter:8# Bucket,True
+162129,NB-MAMBA-13OZ-CASE,128.95,"Nut Butter, 13 oz Case:Hot Mamba",True
+162123,NB-ALM-13OZ-CASE,139.95,"Nut Butter, 13 oz Case:Almond Butter",True
+162593,NB-CSS-PNUT-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Peanut Butter",True
+163725,MERCH-GCARD-25,25,BSR Gift Card:$25,True
+162529,NB-PNUT-SUBSCR,14.95,"Nut Butter, Subscriptions:YOUR-PNUT",True
+162133,NB-TCO-13OZ-CASE,150.95,"Nut Butter, 13 oz Case:Toasted Coconut",True
+171258,NB-ABJ-SUBSCR-MAR20,31,"Nut Butter, Subscriptions:ABJ-MAR20-SUBSCR",False
+162062,BAR-AP-CASE,27,Apricot Pepita Nut Butter Bar:Case,True
+161788,MERCH-T-SPOONS-U-S,25,2019 BSR T-shirt - Spoons:Unisex Small,True
+163724,MERCH-GCARD-10,10,BSR Gift Card:$10,True
+162328,NB-FGIN-13OZ-SAMPLE,8.75,"Nut Butter, 13 oz Single Jar Sample:Fiji Ginger",True
+162327,NB-CSS-13OZ-SAMPLE,8.75,"Nut Butter, 13 oz Single Jar Sample:Chocolate Sea Salt",True
+162325,NB-CASH-13OZ-SAMPLE,8.95,"Nut Butter, 13 oz Single Jar Sample:Cashew Butter",True
+162334,NB-TCO-13OZ-SAMPLE,8.75,"Nut Butter, 13 oz Single Jar Sample:Toasted Coconut",True
+162333,NB-PPEC-13OZ-SAMPLE,7.5,"Nut Butter, 13 oz Single Jar Sample:Peanut Pecan",True
+162337,NB-MPC-3OZ-SAMPLE,4.25,"Nut Butter, 3 oz Single Jar Sample:Maple Cinnamon",True
+162330,NB-MAMBA-13OZ-SAMPLE,7.5,"Nut Butter, 13 oz Single Jar Sample:Hot Mamba",True
+162146,NB-TRIO-FW19,33.95,"Nut Butter, 3-Pack 13 oz:TRIO-FW19",False
+162148,NB-3OZ-4PACK-GIFT,24.95,"Nut Butter, Variety Pack 3oz:3OZ-4PACK-GIFT",False
+162592,NB-CSS-MPC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Maple Cinnamon",True
+162590,NB-CSS-FGIN-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Fiji Ginger",True
+171259,NB-RSTR-SUBSCR-MAR20,15.95,"Nut Butter, Subscriptions:RSTR-MAR20",False
+162132,NB-PPEC-13OZ-CASE,128.95,"Nut Butter, 13 oz Case:Peanut Pecan",True
+162125,NB-CHAI-13OZ-CASE,128.95,"Nut Butter, 13 oz Case:Chai Spice",True
+161784,MERCH-T-SPOONS-W-S,25,2019 BSR T-shirt - Spoons:Women's Small,True
+162602,NB-MAMBA-MPC-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Maple Cinnamon",True
+162063,BAR-AP-SINGLE,1.5,Apricot Pepita Nut Butter Bar:Bar,True
+162069,BAR-CP-SINGLE,1.5,Cherry Pecan Nut Butter Bar:Bar,True
+162072,BAR-FC-SINGLE,1.5,Figgy Chai Nut Butter Bar:Bar,True
+162066,BAR-CC-SINGLE,1.5,Cranberry Cashew Nut Butter Bar:Bar,True
+162121,NB-TCO-13OZ-2PACK,13.13,"Nut Butter, 2-Pack 13 oz Jar:Toasted Coconut",True
+162117,NB-MAMBA-13OZ-2PACK,11.25,"Nut Butter, 2-Pack 13 oz Jar:Hot Mamba",True
+162107,NB-PNUT-13OZ-1PACK,4.46,"Nut Butter, 13 oz Single Jar Pack:Peanut Butter",True
+162101,NB-CHAI-13OZ-1PACK,5.63,"Nut Butter, 13 oz Single Jar Pack:Chai Spice",True
+162104,NB-GGET-13OZ-1PACK,6.56,"Nut Butter, 13 oz Single Jar Pack:GGet Espresso",True
+162120,NB-PPEC-13OZ-2PACK,11.25,"Nut Butter, 2-Pack 13 oz Jar:Peanut Pecan",True
+161934,NB-JUSTALM-8LB,80,Just Almonds Nut Butter:8# Bucket,True
+161919,NB-CHAI-8LB,72,Chai Spice Nut Butter:8# Bucket,True
+161927,NB-FGIN-4LB,42,Fiji Ginger Nut Butter:4# Bucket,True
+161945,NB-MPC-3OZ,4.25,Maple Cinnamon Nut Butter:3 oz Jar,True
+162339,NB-PNUT-3OZ-SAMPLE,3.85,"Nut Butter, 3 oz Single Jar Sample:Peanut Butter",True
+163406,MERCH-JAM-FEB20,14.95,Featured Jam:Frog Hollow Farm Organic Blood Orange & Strawberry Marmalade,True
+162558,NB-CSS-13OZ-2PACK-GIFT,13.12,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt",True
+162128,NB-GGET-13OZ-CASE,150.95,"Nut Butter, 13 oz Case:GGet Espresso",True
+161936,NB-JUSTPNUT-1LB,194,Just Peanuts Nut Butter:40# Bucket,True
+16576,MKT-SIGN-BARS,0,Marketing Materials:2x5 Shelf Talker - Bars,True
+16575,MKT-SIGN-BUTTERS,0,Marketing Materials:2x5 Shelf Talker - Butters,True
+164236,NB-TCO-3OZ-CASE,71.95,"Nut Butter, 3 oz Case:Toasted Coconut",True
+162584,NB-CHAI-FGIN-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Fiji Ginger",True
+163706,MERCH-BSR-10OZ-JAR,7,BSR Labeled 10 oz Jar - Case,True
+162555,NB-ALM-13OZ-2PACK-GIFT,13.13,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter",True
+162126,NB-CSS-13OZ-CASE,150.95,"Nut Butter, 13 oz Case:Chocolate Sea Salt",True
+162127,NB-FGIN-13OZ-CASE,150.95,"Nut Butter, 13 oz Case:Fiji Ginger",True
+162586,NB-CHAI-MPC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Maple Cinnamon",True
+161790,MERCH-T-SPOONS-U-L,25,2019 BSR T-shirt - Spoons:Unisex Large,True
+162533,NB-ALM-SUBSCR,17.95,"Nut Butter, Subscriptions:YOUR-ALM",True
+162535,NB-FGIN-SUBSCR,18.95,"Nut Butter, Subscriptions:YOUR-FGIN",True
+162532,NB-GGET-SUBSCR,17.5,"Nut Butter, Subscriptions:YOUR-GGET",True
+162551,NB-PNUT-13OZ-1PACK-GIFT,4.46,"Nut Butter, 13 oz Single Jar Gift Pack:Peanut Butter",True
+162102,NB-CSS-13OZ-1PACK,6.56,"Nut Butter, 13 oz Single Jar Pack:Chocolate Sea Salt",True
+162114,NB-CSS-13OZ-2PACK,13.12,"Nut Butter, 2-Pack 13 oz Jar:Chocolate Sea Salt",True
+162115,NB-FGIN-13OZ-2PACK,13.13,"Nut Butter, 2-Pack 13 oz Jar:Fiji Ginger",True
+162109,NB-TCO-13OZ-1PACK,6.56,"Nut Butter, 13 oz Single Jar Pack:Toasted Coconut",True
+162099,NB-ALM-13OZ-1PACK,6.19,"Nut Butter, 13 oz Single Jar Pack:Almond Butter",True
+162103,NB-FGIN-13OZ-1PACK,6.56,"Nut Butter, 13 oz Single Jar Pack:Fiji Ginger",True
+162113,NB-CHAI-13OZ-2PACK,11.25,"Nut Butter, 2-Pack 13 oz Jar:Chai Spice",True
+162119,NB-PNUT-13OZ-2PACK,8.93,"Nut Butter, 2-Pack 13 oz Jar:Peanut Butter",True
+162118,NB-MPC-13OZ-2PACK,11.25,"Nut Butter, 2-Pack 13 oz Jar:Maple Cinnamon",True
+162105,NB-MAMBA-13OZ-1PACK,5.63,"Nut Butter, 13 oz Single Jar Pack:Hot Mamba",True
+162106,NB-MPC-13OZ-1PACK,5.63,"Nut Butter, 13 oz Single Jar Pack:Maple Cinnamon",True
+162108,NB-PPEC-13OZ-1PACK,5.63,"Nut Butter, 13 oz Single Jar Pack:Peanut Pecan",True
+162111,NB-ALM-13OZ-2PACK,13.13,"Nut Butter, 2-Pack 13 oz Jar:Almond Butter",True
+20977,SHIPPING,10,Shipping Charge,True
+162524,BAR-FC-SUBSCR,32,"Nut Butter Bar, Subscriptions:Figgy Chai",True
+162130,NB-MPC-13OZ-CASE,128.95,"Nut Butter, 13 oz Case:Maple Cinnamon",True
+162526,BAR-VP-SUBSCR,32,"Nut Butter Bar, Subscriptions:Variety Pack",True
+162587,NB-CHAI-PNUT-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Peanut Butter",True
+162135,NB-CHAI-3OZ-CASE,71.95,"Nut Butter, 3 oz Case:Chai Spice",True
+162124,NB-CASH-13OZ-CASE,152.5,"Nut Butter, 13 oz Case:Cashew Butter",True
+161857,MERCH-T-PNUT-W-L,20,2018 BSR T-shirt - Peanut Plant:Women's Large,False
+161786,MERCH-T-SPOONS-W-L,25,2019 BSR T-shirt - Spoons:Women's Large,True
+161860,MERCH-SILV-SPOON,18.95,Silver-plated Big Spoon,False
+162601,NB-FGIN-TCO-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Toasted Coconut",True
+162596,NB-FGIN-MAMBA-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Fiji Ginger",True
+161952,NB-PNUT-4LB,28,Peanut Nut Butter:4# Bucket,True
+162548,NB-GGET-13OZ-1PACK-GIFT,6.56,"Nut Butter, 13 oz Single Jar Gift Pack:GGet Espresso",True
+21050,MKT-SIGN-LOGO-TIN,0,Marketing Materials:Large Tin Logo Sign,True
+162075,BAR-VP-GIFT,30,Bar Variety Pack:Bar Variety Pack - Gift Case,True
+161951,NB-PNUT-3OZ,3.85,Peanut Nut Butter:3 oz Jar,True
+162116,NB-GGET-13OZ-2PACK,13.12,"Nut Butter, 2-Pack 13 oz Jar:GGet Espresso",True
+161962,NB-TCO-8LB,84,Toasted Coconut Nut Butter:8# Bucket,True
+161922,NB-CSS-4LB,42,Chocolate Sea Salt Nut Butter:4# Bucket,True
+161913,NB-CASH-4LB,44,Cashew Nut Butter:4# Bucket,True
+161946,NB-MPC-4LB,36,Maple Cinnamon Nut Butter:4# Bucket,True
+161917,NB-CHAI-3OZ,4.25,Chai Spice Nut Butter:3 oz Jar,True
+164235,NB-TCO-3OZ,4.75,Toasted Coconut Nut Butter:3 oz Jar,True
+161961,NB-TCO-4LB,42,Toasted Coconut Nut Butter:4# Bucket,True
+164234,NB-ALM-3OZ-CASE,71.95,"Nut Butter, 3 oz Case:Almond Butter",True
+162138,NB-PNUT-3OZ-CASE,59.95,"Nut Butter, 3 oz Case:Peanut Butter",True
+162543,NB-ALM-13OZ-1PACK-GIFT,6.19,"Nut Butter, 13 oz Single Jar Gift Pack:Almond Butter",True
+162536,NB-TCO-SUBSCR,18.95,"Nut Butter, Subscriptions:YOUR-TCO",True
+162329,NB-GGET-13OZ-SAMPLE,8.75,"Nut Butter, 13 oz Single Jar Sample:GGet Espresso",True
+162331,NB-MPC-13OZ-SAMPLE,7.5,"Nut Butter, 13 oz Single Jar Sample:Maple Cinnamon",True
+164232,NB-CSS-3OZ-CASE,71.95,"Nut Butter, 3 oz Case:Chocolate Sea Salt",True
+162553,NB-TCO-13OZ-1PACK-GIFT,6.56,"Nut Butter, 13 oz Single Jar Gift Pack:Toasted Coconut",True
+162567,NB-ALM-CHAI-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Chai Spice",True
+162571,NB-ALM-MPC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Maple Cinnamon",True
+162583,NB-CHAI-CSS-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Chocolate Sea Salt",True
+163756,NB-PCASH-10OZ-1,7.95,Peanut Cashew Butter:10 oz Jar,False
+163985,NB-ABJ-SUBSCR-FEB20,31,"Nut Butter, Subscriptions:ABJ-FEB20",False
+164021,NB-RSTR-SUBSCR-FEB20,15.95,"Nut Butter, Subscriptions:RSTR-FEB20",False
+162079,BAR-CP-MASTERCASE,504,Bar Master Case:Cherry Pecan,True
+162078,BAR-CC-MASTERCASE,504,Bar Master Case:Cranberry Cashew,True
+162550,NB-MPC-13OZ-1PACK-GIFT,5.63,"Nut Butter, 13 oz Single Jar Gift Pack:Maple Cinnamon",True
+163882,NB-PBJ-FEB20-GIFT,26.5,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-FEB20-GIFT",False
+163884,NB-ABJ-FEB20-GIFT,27.95,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-FEB20-GIFT",False
+164002,NB-PBJ-SUBSCR-FEB20,29,"Nut Butter, Subscriptions:PBJ-FEB20",False
+162608,NB-MPC-TCO-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Toasted Coconut",True
+161858,MERCH-T-PNUT-W-M,20,2018 BSR T-shirt - Peanut Plant:Women's Medium,False
+163885,NB-ABJ-FEB20,24.5,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-FEB20",False
+163883,NB-PBJ-FEB20,22.95,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-FEB20",False
+162594,NB-CSS-PPEC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chocolate Sea Salt & Peanut Pecan",True
+161789,MERCH-T-SPOONS-U-M,25,2019 BSR T-shirt - Spoons:Unisex Medium,True
+161914,NB-CASH-8LB,88,Cashew Nut Butter:8# Bucket,True
+161947,NB-MPC-8LB,72,Maple Cinnamon Nut Butter:8# Bucket,True
+162582,NB-CASH-TCO-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Toasted Coconut",True
+162136,NB-FGIN-3OZ-CASE,71.95,"Nut Butter, 3 oz Case:Fiji Ginger",True
+161910,NB-ALM-8LB,80,Almond Nut Butter:8# Bucket,True
+161926,NB-FGIN-3OZ,4.75,Fiji Ginger Nut Butter:3 oz Jar,True
+162577,NB-CASH-FGIN-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Fiji Ginger",True
+163278,MERCH-JAM-JAN20,10,Featured Jam:Brins Strawberry Lemongrass,False
+163752,NB-PCO-10OZ-1,9.95,Peanut Cocoa Nut Butter:10 oz Jar,False
+162324,MKT-SIGN-ABOUTUS,0,Marketing Materials:About BSR Card,True
+161928,NB-FGIN-8LB,84,Fiji Ginger Nut Butter:8# Bucket,True
+162546,NB-CSS-13OZ-1PACK-GIFT,6.56,"Nut Butter, 13 oz Single Jar Gift Pack:Chocolate Sea Salt",True
+162588,NB-CHAI-PPEC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Peanut Pecan",True
+161964,NB-TWALK-10OZ,7.5,Tigerwalk Espresso Nut Butter:10 oz Jar,True
+162531,NB-CHAI-SUBSCR,16.95,"Nut Butter, Subscriptions:YOUR-CHAI",True
+161909,NB-ALM-4LB,40,Almond Nut Butter:4# Bucket,True
+162336,NB-CHAI-3OZ-SAMPLE,4.25,"Nut Butter, 3 oz Single Jar Sample:Chai Spice",True
+162080,BAR-FC-MASTERCASE,504,Bar Master Case:Figgy Chai,True
+163762,NB-PCO-10OZ-CASE,107.5,"Nut Butter, 10 oz Case:Peanut Cocoa",False
+162597,NB-FGIN-MPC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Fiji Ginger & Maple Cinnamon",True
+162579,NB-CASH-MPC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Maple Cinnamon",True
+162343,BAR-CP-SINGLE-SAMPLE,1.5,"Nut Butter Bar, Sample 60g Bar:Cherry Pecan",True
+161792,MERCH-CYL-CAP,15,Cycling Cap,False
+162549,NB-MAMBA-13OZ-1PACK-GIFT,5.63,"Nut Butter, 13 oz Single Jar Gift Pack:Hot Mamba",True
+162547,NB-FGIN-13OZ-1PACK-GIFT,6.56,"Nut Butter, 13 oz Single Jar Gift Pack:Fiji Ginger",True
+163384,NB-RSTR-SUBSCR-JAN20,15.95,"Nut Butter, Subscriptions:RSTR-JAN20",False
+161957,NB-PPEC-4LB,36,Peanut Pecan Nut Butter:4# Bucket,True
+162589,NB-CHAI-TCO-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Toasted Coconut",True
+163378,NB-PBJ-JAN20,16.95,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-JAN20",False
+163379,NB-ABJ-JAN20,19.95,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-JAN20",False
+163382,NB-ABJ-SUBSCR-JAN20,31,"Nut Butter, Subscriptions:ABJ-JAN20",False
+162537,NB-MPC-SUBSCR,16.95,"Nut Butter, Subscriptions:YOUR-MPC",True
+163383,NB-PBJ-SUBSCR-JAN20,29,"Nut Butter, Subscriptions:PBJ-JAN20",False
+163351,MKT-STICKERS-LOGO,0,Marketing Materials:Stickers - Logo,True
+161856,MERCH-T-PNUT-W-XL,20,2018 BSR T-shirt - Peanut Plant:Women's XL,False
+162323,NB-ALM-130Z-SAMPLE,8.25,"Nut Butter, 13 oz Single Jar Sample:Almond Butter",True
+163380,NB-ABJ-JAN20-GIFT,23.5,"Nut Butter, AB&J 2-Pack 13 oz Jar:AB&J-JAN20-GIFT",False
+163381,NB-PBJ-JAN20-GIFT,20.5,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-JAN20-GIFT",False
+162077,BAR-AP-MASTERCASE,504,Bar Master Case:Apricot Pepita,True
+162605,NB-MAMBA-TCO-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Toasted Coconut",True
+162585,NB-CHAI-MAMBA-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice & Hot Mamba",True
+162611,NB-PPEC-TCO-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Pecan & Toasted Coconut",True
+161859,MERCH-T-PNUT-W-S,20,2018 BSR T-shirt - Peanut Plant:Women's Small,False
+162284,MERCH-JAM-DEC19,13.95,Featured Jam:Girl Meets Dirt Pear Balsamic,False
+161785,MERCH-T-SPOONS-W-M,25,2019 BSR T-shirt - Spoons:Women's Medium,True
+162338,NB-FGIN-3OZ-SAMPLE,4.75,"Nut Butter, 3 oz Single Jar Sample:Fiji Ginger",True
+162581,NB-CASH-PPEC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Cashew Butter & Peanut Pecan",True
+162545,NB-CHAI-13OZ-1PACK-GIFT,5.63,"Nut Butter, 13 oz Single Jar Gift Pack:Chai Spice",True
+162566,NB-ALM-CASH-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Cashew Butter",True
+162609,NB-PNUT-PPEC-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Peanut Butter &  Peanut Pecan",True
+162943,NB-ABJ-SUBSCR-DEC19,31,"Nut Butter, Subscriptions:ABJ-DEC19",False
+163243,NB-RSTR-SUBSCR-DEC19,15.95,"Nut Butter, Subscriptions:RSTR-DEC19",False
+162942,NB-PBJ-SUBSCR-DEC19,29,"Nut Butter, Subscriptions:PBJ-DEC19",False
+163206,NB-WHOOPS-ESP-13OZ,10.46,Whoops Tigerwalk Espresso Nut Butter:13 oz Jar,False
+162173,NB-LTD-CCCG-10OZ,13.95,Limited Batch - Chocolate Chocolate Chocolate Gianduja Nut Butter:10 oz Jar,False
+162573,NB-ALM-PPEC-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Peanut Pecan",True
+162569,NB-ALM-FGIN-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Fiji Ginger",True
+162604,NB-MAMBA-PPEC-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Peanut Pecan",True
+162568,NB-ALM-CSS-13OZ-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Almond Butter & Chocolate Sea Salt",True
+162247,BAR-CP-SCRAP,3.75,Cherry Pecan Nut Butter Bar:Bar Scrap - 100g,True
+161791,MERCH-T-SPOONS-U-XL,25,2019 BSR T-shirt - Spoons:Unisex XL,True
+162940,NB-ABJ-DEC19,23.95,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-DEC19",False
+162939,NB-PBJ-DEC19-GIFT,25.5,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-DEC19-GIFT",False
+162938,NB-PBJ-DEC19,21.95,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-DEC19",False
+162523,BAR-CC-SUBSCR,32,"Nut Butter Bar, Subscriptions:Cranberry Cashew",True
+162326,NB-CHAI-13OZ-SAMPLE,7.5,"Nut Butter, 13 oz Single Jar Sample:Chai Spice",True
+162332,NB-PNUT-13OZ-SAMPLE,5.95,"Nut Butter, 13 oz Single Jar Sample:Peanut Butter",True
+162603,NB-MAMBA-PNUT-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Hot Mamba & Peanut Butter",True
+161923,NB-CSS-8LB,84,Chocolate Sea Salt Nut Butter:8# Bucket,True
+162482,MERCH-JAM-FIDDLEHEAD,6.5,Featured Jam:Fiddlehead Farm Jams,False
+161854,MERCH-T-PNUT-U-M,20,2018 BSR T-shirt - Peanut Plant:Unisex Medium,False
+162177,MERCH-JAM-OCT19,19,Featured Jam:Lemon Bird Preserves Bourbon Figs with Vanilla & Smoked Salt,False
+162468,MERCH-JAM-BLENAPRICOT,7,Featured Jam:Lemon Bird Preserves Blenheim Apricot,False
+162469,MERCH-JAM-FLAVPLUMCOT,6,Featured Jam:Lemon Bird Preserves Flavorella Plumcot,False
+162470,MERCH-JAM-PEARGINGER,6,Featured Jam:Lemon Bird Preserves Pear Ginger,False
+162030,PKG-BOX-2PK-4PK,0,NB Packaging:2-4-Pack Box,True
+29085,W-AGIN-13OZ-INACTIVE,8.75,WHOLESALE-INACTIVE:Each,False
+29078,W-MPC-13OZ-INACTIVE,7.5,WHOLESALE-INACTIVE:Each,False
+21548,W-CASE-AP-INACTIVE,18,WHOLESALE-INACTIVE:W-CASE-AP,False
+21550,W-CASE-CP-INACTIVE,18,WHOLESALE-INACTIVE:Each,False
+21549,W-CASE-CC-INACTIVE,18,WHOLESALE-INACTIVE:Each,False
+21547,W-CASE-FC-INACTIVE,18,WHOLESALE-INACTIVE:Each,False
+20336,W-CHAI-3OZ-INACTIVE,4.25,WHOLESALE-INACTIVE:W-CHAI-3OZ,False
+29077,W-CHAI-13OZ-INACTIVE,7.5,WHOLESALE-INACTIVE:W-CHAI-13OZ,False
+29084,W-ACO-13OZ-INACTIVE,8.75,WHOLESALE-INACTIVE:Each,False
+20423,W-AGIN-3OZ-INACTIVE,4.75,WHOLESALE-INACTIVE:W-AGIN-3OZ,False
+29075,W-HOT-13OZ-INACTIVE,7.5,WHOLESALE-INACTIVE:W-HOT-13OZ,False
+29071,W-PNUT-13OZ-INACTIVE,5.95,WHOLESALE-INACTIVE:W-PNUT-13OZ,False
+15581,W-PNUT-3OZ-INACTIVE,3.85,WHOLESALE-INACTIVE:W-PNUT-3OZ,False
+29083,W-ACT-13OZ-INACTIVE,8.75,WHOLESALE-INACTIVE:W-ACT-13OZ,False
+15560,B-PNUT-8LB-INACTIVE,56,WHOLESALE-INACTIVE:B-PNUT-8LB,False
+29082,W-ALM-13OZ-INACTIVE,8.25,WHOLESALE-INACTIVE:W-ALM-13OZ,False
+29080,W-CASH-13OZ-INACTIVE,8.95,WHOLESALE-INACTIVE:Each,False
+29081,W-ESP-13OZ-INACTIVE,8.75,WHOLESALE-INACTIVE:W-ESP-13OZ,False
+29074,W-PPEC-13OZ-INACTIVE,7.5,WHOLESALE-INACTIVE:W-PPEC-13OZ,False
+15540,B-AGIN-4LB-INACTIVE,42,WHOLESALE-INACTIVE:B-AGIN-4LB,False
+29241,W-3OZ-VP-NB-INACTIVE,18,WHOLESALE-INACTIVE:W-3OZ-VP,False
+29725,B-CASH-4LB-INACTIVE,44,WHOLESALE-INACTIVE:Each,False
+15552,B-MPC-8LB-INACTIVE,72,WHOLESALE-INACTIVE:Each,False
+15559,B-PNUT-4LB-INACTIVE,28,WHOLESALE-INACTIVE:B-PNUT-4LB,False
+19802,B-PNUT-ONLY-INACTIVE,3.15,WHOLESALE-INACTIVE:B-PEANUTS-ONLY,False
+15544,B-ALM-WFM-1GAL-INACTIVE,80,WHOLESALE-INACTIVE:B-ALM-WFM-1GAL,False
+15542,B-ALM-4LB-INACTIVE,40,WHOLESALE-INACTIVE:B-ALM-4LB,False
+20383,W-MPC-3OZ-INACTIVE,4.25,WHOLESALE-INACTIVE:W-MPC-3OZ,False
+15569,W-ESP-10OZ-INACTIVE,8.5,WHOLESALE-INACTIVE:W-ESP-10OZ,False
+15546,B-CHAI-8LB-INACTIVE,72,WHOLESALE-INACTIVE:B-CHAI-8LB,False
+15562,B-PPEC-4LB-INACTIVE,36,WHOLESALE-INACTIVE:B-PPEC-4LB,False
+15548,B-ESP-8LB-INACTIVE,84,WHOLESALE-INACTIVE:B-ESP-8LB,False
+15550,B-HOTP-8LB-INACTIVE,72,WHOLESALE-INACTIVE:B-HOTP-8LB,False
+15539,B-ACT-8LB-INACTIVE,84,WHOLESALE-INACTIVE:Each,False
+15563,B-PPEC-8LB-INACTIVE,72,WHOLESALE-INACTIVE:Each,False
+15551,B-MPC-4LB-INACTIVE,36,WHOLESALE-INACTIVE:Each,False
+171584,NB-GH-6PACK,69.95,"Nut Butter, 6-Pack 13 oz:GH-6PACK",True
+171407,NB-PBJ-SUBSCR-APR20,29,"Nut Butter, Subscriptions:PBJ-APR20-SUBSCR",False
+171773,NB-LTD-CCAKE-10OZ,14.95,Limited Batch - Carrot Cake Walnut Butter:10 oz Jar,True
+171402,MERCH-JAM-APRIL20,8.95,Featured Jam:Potlicker Kitchen Pear Ginger Jam,True
+171403,NB-PBJ-APR20,17.95,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-APR20",False
+171405,NB-ABJ-APR20,19.5,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-APR20",False
+171406,NB-ABJ-APR20-GIFT,22.95,"Nut Butter, AB&J 2-Pack 13 oz Jar:ABJ-APR20-GIFT",False
+171586,MP-PANTRY,57.95,Nut Butter & Bar Multi-packs:Pantry Pack,True
+162606,NB-MPC-PNUT-130Z-2PACK-GIFT,27.95,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Maple Cinnamon & Peanut Butter",True
+170162,MKT-STICKERS-OCTO,0,Marketing Materials:Stickers - Octopus,True
+171774,NB-TRIO-SS20,34.95,"Nut Butter, 3-Pack 13 oz:TRIO-SS20",True
+171404,NB-PBJ-APR20-GIFT,21.5,"Nut Butter, PB&J 2-Pack 13 oz Jar:PBJ-APR20-GIFT",False
+171409,NB-RSTR-SUBSCR-APR20,15.95,"Nut Butter, Subscriptions:RSTR-APR20",True
+171582,NB-VP-13OZ-CASE,139.95,"Nut Butter, 13 oz Case:Ultimate NB Variety Pack",True
+162522,BAR-AP-SUBSCR,32,"Nut Butter Bar, Subscriptions:Apricot Pepita",True
+162539,NB-CASH-SUBSCR,19.95,"Nut Butter, Subscriptions:YOUR-CASH",True
+162530,NB-PPEC-SUBSCR,16.95,"Nut Butter, Subscriptions:YOUR-PPEC",True
+162544,NB-CASH-13OZ-1PACK-GIFT,5.63,"Nut Butter, 13 oz Single Jar Gift Pack:Cashew Butter",True
+162151,NB-PALM-10OZ,7.5,Peanut Almond:10 oz Jar,True
+171408,NB-ABJ-SUBSCR-APR20,31,"Nut Butter, Subscriptions:ABJ-APR20-SUBSCR",False
+161852,MERCH-T-PNUT-U-XL,20,2018 BSR T-shirt - Peanut Plant:Unisex XL,False
+162557,NB-CHAI-13OZ-2PACK-GIFT,11.25,"Nut Butter, 13oz Custom 2 Jar Gift Pack:Chai Spice",True
+171622,AIRACO-STD,6.5,Shipping Charge:Airaco Standard,True
+162137,NB-MPC-3OZ-CASE,71.95,"Nut Butter, 3 oz Case:Maple Cinnamon",True
+161787,MERCH-T-SPOONS-W-XL,25,2019 BSR T-shirt - Spoons:Women's XL,True
+171621,AIRACO-SAMEDAY,7.4,Shipping Charge:Airaco Same Day,True
+164231,NB-CSS-3OZ,4.75,Chocolate Sea Salt Nut Butter:3 oz Jar,True
+171619,45231700000-4,10,Shipping Charge:Central Market Freight Big Spoon Roasters,True
+161932,NB-GGET-8LB,84,GGet Espresso Nut Butter:8# Bucket,True

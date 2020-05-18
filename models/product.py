@@ -44,7 +44,7 @@ class ProductModel(db.Model):
         conn = psycopg2.connect(host="localhost", dbname="bsrdata", user="postgres", password=PASSWORD)
         cur = conn.cursor()
 
-        with open(PATH.joinpath('data\\INPUT NAME HERE.csv'), 'r') as f:
+        with open(PATH.joinpath('data\products_for_db.csv'), 'r') as f:
             reader = csv.reader(f)
             next(reader) # skip header row
 
@@ -53,7 +53,7 @@ class ProductModel(db.Model):
                 try:
                     cur.execute(
                         "INSERT INTO products VALUES (%s, %s, %s, %s, %s)",
-                        (row[0], row[1], row[2], row[3], row[4])
+                        (row[0], row[3], row[1], row[4], row[2])
                     )
                 except:
                     print("There was an error inserting product with id: ", str(row[0]))

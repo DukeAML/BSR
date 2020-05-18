@@ -56,7 +56,9 @@ class OrderModel(db.Model):
     def init_fill_db(cls):
         import csv
         import psycopg2
+        import time
         from testapp import PATH, PASSWORD
+        from data.getCustomerType import addCMap
 
         conn = psycopg2.connect(host="localhost", dbname="bsrdata", user="postgres", password=PASSWORD)
         cur = conn.cursor()
@@ -68,22 +70,42 @@ class OrderModel(db.Model):
 
             for row in reader:
 
+                if row[3] == '19906' or row[3] == '20815' or row[3] == '20781' or row[3] == '20821': continue
+
                 if row[3][0] == "R":
                     shopify = True
                     order_id = row[3][1:]
                 else:
                     shopify = False
                     order_id = row[3]
+                company_id = row[5]
 
-                try:
+
+                cur.execute("SELECT * FROM companies WHERE uid = (%s)", (company_id,))
+                exists = len(cur.fetchall()) != 0
+                if not exists:
+                    cdata = addCMap(company_id)
+                    while ('customer' not in cdata):
+                        time.sleep(10)
+                        cdata = addCMap(company_id)
+                    cid = cdata['customer']['id']
+                    cname = cdata['customer']['fully_qualified_name']
+                    ctype = cdata['customer']['customer_type_id']
                     cur.execute(
-                        "INSERT INTO orders VALUES (%s, %s, %s, %s, %s, %s, %s)",
-                        (order_id, row[0], row[1], row[2], row[6], shopify, row[5])
+                        "INSERT INTO companies VALUES (%s, %s, %s)",
+                        (cid, cname, ctype)
                     )
-                except:
-                    print("There was an error inserting order with id: ", str(order_id))
+
+                cur.execute(
+                    "INSERT INTO orders VALUES (%s, %s, %s, %s, %s, %s, %s)",
+                    (order_id, row[0], row[1], row[2], row[6], shopify, company_id)
+                )
 
         conn.commit()
+
+        # part 2: order instances
+        import json
+        from data.temptransfer import pullProduct
 
         # insert all order instances
         with open(PATH.joinpath('data\order_data.csv'), 'r') as f:
@@ -92,6 +114,8 @@ class OrderModel(db.Model):
 
             for row in reader:
 
+                if row[3] == '19906' or row[3] == '20815' or row[3] == '20781' or row[3] == '20821': continue
+
                 if row[3][0] == "R":
                     shopify = True
                     order_id = row[3][1:]
@@ -99,13 +123,35 @@ class OrderModel(db.Model):
                     shopify = False
                     order_id = row[3]
 
-                for item in row[8]:
-                    try:
+
+                itemdict = dict()
+                for item in json.loads(row[8]):
+
+                    pid = item[0]
+                    cur.execute("SELECT * FROM products WHERE uid = (%s)", (pid,))
+                    exists = len(cur.fetchall()) != 0
+                    if not exists:
+                        data = pullProduct(pid)
+                        while ('variant' not in data):
+                            print("Pausing execution for API time delay...")
+                            time.sleep(10)
+                            data = pullProduct(pid)
+                        psku = data['variant']['sku']
+                        pprice = data['variant']['price']
+                        pname = data['variant']['fully_qualified_name']
+                        pactive = data['variant']['active']
                         cur.execute(
-                            "INSERT INTO orderitems VALUES (%s, %s, %s, %s)",
-                            (item[2], order_id, shopify, item[0])
+                            "INSERT INTO products VALUES (%s, %s, %s, %s, %s)",
+                            (pid, pname, psku, pactive, pprice)
                         )
-                    except:
-                        print("There was an error inserting order instance with order id: {} and product id: {}".format(order_id, item[0]))
+
+                    if pid in itemdict: itemdict[pid] += item[2]
+                    else: itemdict[pid] = item[2]
+
+                for pid,quantity in itemdict.items():
+                    cur.execute(
+                        "INSERT INTO orderitems VALUES (%s, %s, %s, %s)",
+                        (quantity, order_id, shopify, pid)
+                    )
 
         conn.commit()

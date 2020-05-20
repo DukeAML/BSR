@@ -1,4 +1,5 @@
 from db import db
+from models.batch import BatchModel
 
 
 class ProductModel(db.Model):
@@ -10,6 +11,8 @@ class ProductModel(db.Model):
     active = db.Column(db.Boolean)
     price = db.Column(db.Float(precision=2))
 
+    batch_id = db.Column(db.BigInteger, db.ForeignKey('batches.uid'))
+    batch = db.relationship('BatchModel', lazy='dynamic')
     orderinstances = db.relationship('OrderItemsModel', lazy='dynamic')
 
     def __init__(self, uid, sku, price, name, active):

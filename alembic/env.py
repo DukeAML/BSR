@@ -22,7 +22,7 @@ import sys
 # changes PYTHONPATH inside env.py to allow for access to db.py
 sys.path = ['', '..'] + sys.path[1:]
 from db import db
-from models import company, expense, order, orderitems, product
+from models import batch, company, expense, ingredient, order, orderitems, product, recipe
 
 target_metadata = db.metadata
 

@@ -4,9 +4,9 @@ from db import db
 class BatchModel(db.Model):
     __tablename__ = 'batches'
 
-    uid = db.Column(db.TYPE_NOT_SURE_YET)
+    uid = db.Column(db.BigInteger, primary_key=True)
     name = db.Column(db.String(75))
-    sweet_reference = db.Column(db.TYPE_NOT_SURE_YET)
+    sweet_reference = db.Column(db.String(30))
     weight = db.Column(db.Float(precision=2)) # csv rounds to 2 places, in lbs
 
     ingredients = db.relationship('RecipeModel', lazy='dynamic')

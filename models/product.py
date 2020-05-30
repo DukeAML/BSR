@@ -1,3 +1,6 @@
+import json
+import requests
+
 from db import db
 from models.batch import BatchModel
 
@@ -12,15 +15,16 @@ class ProductModel(db.Model):
     price = db.Column(db.Float(precision=2))
 
     batch_id = db.Column(db.BigInteger, db.ForeignKey('batches.uid'))
-    batch = db.relationship('BatchModel', lazy='dynamic')
+    batch = db.relationship('BatchModel')
     orderinstances = db.relationship('OrderItemsModel', lazy='dynamic')
 
-    def __init__(self, uid, sku, price, name, active):
+    def __init__(self, uid, sku, price, name, active, batch_id=None):
         self.uid = uid
         self.name = name
         self.sku = sku
         self.price = price
         self.active = active
+        self.batch_id = batch_id
 
     def json(self):
         return {'product_id': self.uid, 'sku': self.sku,
@@ -33,6 +37,13 @@ class ProductModel(db.Model):
     def delete_from_db(self):
         db.session.delete(self)
         db.session.commit()
+
+    @classmethod
+    def getProduct(cls, uid, pageNum=1):
+        """Retrieve product with id uid from getsweet api."""
+        from testapp import SWEET_API_KEY, SWEET_HEADERS
+        payload = {'token': SWEET_API_KEY, 'page':pageNum}
+        return requests.get(url='https://app.getsweet.com/api/v1/variants/' + str(uid), headers=SWEET_HEADERS, params=payload).json()
 
     @classmethod
     def find_by_id(cls, id):

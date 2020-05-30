@@ -1,3 +1,6 @@
+import json
+import requests
+
 from db import db
 
 
@@ -26,6 +29,13 @@ class CompanyModel(db.Model):
     def delete_from_db(self):
         db.session.delete(self)
         db.session.commit()
+
+    @classmethod
+    def getCompany(cls, uid, pageNum=1):
+        """Retrieve company with id uid from getsweet api."""
+        from testapp import SWEET_API_KEY, SWEET_HEADERS
+        payload = {'token': SWEET_API_KEY, 'page':pageNum}
+        return requests.get(url='https://app.getsweet.com/api/v1/customers/' + str(uid), headers=SWEET_HEADERS, params=payload).json()
 
     @classmethod
     def find_by_id(cls, id):

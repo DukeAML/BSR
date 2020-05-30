@@ -5,8 +5,8 @@ from models.order import OrderModel
 
 class Order(Resource):
 
-    def get(self, id):
-        order = OrderModel.find_by_id(id)
+    def get(self, id, shopify):
+        order = OrderModel.find_by_id(id, shopify)
         if order:
             return order.json()
         return {'message': 'Date not found'}, 404

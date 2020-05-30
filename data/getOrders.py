@@ -66,7 +66,7 @@ def main():
 
     # make an API call to the first page of results in order to get # of total pages
     oct31 = date(2019, 10, 31).strftime("%Y-%m-%d")
-    
+
     data = apiCall(1, oct31)
     totalPages = data['meta']['total_pages']
 
@@ -79,7 +79,7 @@ def main():
             print("Pausing execution for API time delay...")
             time.sleep(10)
             data = apiCall(pageNum, oct31)
-        
+
         extractData(data)
 
     # create pandas dataframe

@@ -1,4 +1,5 @@
 from db import db
+from models.ingredient import IngredientModel
 
 
 class RecipeModel(db.Model):

@@ -1,4 +1,5 @@
 from db import db
+from models.recipe import RecipeModel
 
 
 class BatchModel(db.Model):

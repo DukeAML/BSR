@@ -1,4 +1,5 @@
 import json
+import datetime
 import requests
 import time
 
@@ -31,6 +32,9 @@ class OrderModel(db.Model):
         self.invoice_date = invoice_date
         self.cost = cost
         self.company_id = company_id
+
+        # some orders have missing submitted date fields from api?
+        if submitted_date == "": self.submitted_date = None
 
     def json(self):
         if self.shopify:
@@ -79,6 +83,7 @@ class OrderModel(db.Model):
         """
         print("Updating orders, orderitems, companies, and products tables.")
         newest_date = db.session.query(func.max(OrderModel.submitted_date)).one()[0]
+        newest_date = newest_date + datetime.timedelta(days=-60) # for some reason, the submitted date can be multiple months into the future--this will catch most otherwise missed cases.
         total_pages = cls.getOrders(newest_date, 1)['meta']['total_pages']
 
         # access each page available
@@ -90,7 +95,7 @@ class OrderModel(db.Model):
                 print("Pausing execution for API time delay on orders...")
                 time.sleep(10)
                 order_data = getOrders(newest_date, page)
-            print("Integrating orders page:", page)
+            print("Integrating orders page: {} / {}".format(page, total_pages))
 
             # record each order's information
             for order in order_data['orders']:

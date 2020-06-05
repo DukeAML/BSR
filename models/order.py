@@ -8,6 +8,7 @@ from sqlalchemy.sql import func
 from models.company import CompanyModel
 from models.orderitems import OrderItemsModel
 from models.product import ProductModel
+from models.batch import BatchModel
 
 
 class OrderModel(db.Model):
@@ -94,7 +95,7 @@ class OrderModel(db.Model):
             while ('orders' not in order_data):
                 print("Pausing execution for API time delay on orders...")
                 time.sleep(10)
-                order_data = getOrders(newest_date, page)
+                order_data = cls.getOrders(newest_date, page)
             print("Integrating orders page: {} / {}".format(page, total_pages))
 
             # record each order's information
@@ -138,7 +139,12 @@ class OrderModel(db.Model):
 
                         # insert product into database
                         p = product_data['variant']
-                        product_insert = ProductModel(uid=p['id'], name=p['fully_qualified_name'], sku=p['sku'], active=p['active'], price=p['price'])
+                        for component in p['components']:
+                            if BatchModel.find_by_id(component['id']):
+                                batch = component['id']
+                            else: batch = None
+
+                        product_insert = ProductModel(uid=p['id'], name=p['fully_qualified_name'], sku=p['sku'], active=p['active'], price=p['price'], batch_id=batch)
                         ProductModel.save_to_db(product_insert, False)
 
                     # place order instance into db with individual product

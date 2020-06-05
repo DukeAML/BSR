@@ -1,5 +1,7 @@
 import json
+import datetime
 import requests
+import time
 
 from db import db
 from models.batch import BatchModel
@@ -48,6 +50,29 @@ class ProductModel(db.Model):
     @classmethod
     def find_by_id(cls, id):
         return cls.query.filter_by(uid=id).first()
+
+    @classmethod
+    def link_products_to_batch(cls):
+        """Iterates through all products with Null-type batch_id's and try to link them to existing batches.
+        """
+        products = db.session.query(ProductModel)\
+                        .filter(ProductModel.batch_id==None).all()
+
+        for product in products:
+            product_data = cls.getProduct(product.uid)
+
+            # pause if API unresponsive
+            while ('variant' not in product_data):
+                print("Pausing execution for API time delay on product retrieval...")
+                time.sleep(10)
+                product_data = cls.getProduct(product.uid)
+
+            # find components
+            for component in product_data['variant']['components']:
+                if BatchModel.find_by_id(component['id']):
+                    product.batch_id = component['id']
+                    db.session.commit()
+
 
     @classmethod
     def init_fill_db(cls):

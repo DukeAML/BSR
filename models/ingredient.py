@@ -41,6 +41,10 @@ class IngredientModel(db.Model):
         db.session.commit()
 
     @classmethod
+    def find_by_id(cls, id):
+        return cls.query.filter_by(uid=id).first()
+
+    @classmethod
     def init_fill_db(cls):
         import csv
         import json

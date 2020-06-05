@@ -9,21 +9,32 @@ from resources.company import Company
 from resources.product import Product, ProductHistory
 
 PATH = pathlib.Path(__file__).parent
-PASSWORD = "postgres"
 SWEET_API_KEY = "44ea3bf2fd0d37eb6d39b576846c69187ffe34fd39177373"
 SWEET_HEADERS = {'Content-Type': 'application/json'}
 
+CLOUD_PUBLIC_IP = "34.67.69.84"
+INSTANCE_CONNECTION_NAME = "golden-furnace-279100:us-central1:bsr-data"
+PASSWORD = "damlbsrproject2020" #"postgres"
+cloud_str = "postgres+psycopg2://postgres:{db_pass}@localhost:5430".format(db_pass=PASSWORD)
+
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:{}@localhost/bsrdata'.format(PASSWORD)#'sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = cloud_str
+#'postgresql+psycopg2://postgres:{}@localhost/bsrdata'.format("postgres")#'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
 api = Api(app)
 
 
 from models.order import OrderModel
+from models.batch import BatchModel
+from models.product import ProductModel
 @app.before_first_request
 def update():
-    OrderModel.update()
+    pass
+    #BatchModel.init_fill_db()
+    #ProductModel.link_products_to_batch()
+    #OrderModel.update()
 
 
 # currently date must be in YYYY-mm-dd format

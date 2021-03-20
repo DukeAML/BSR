@@ -25,7 +25,7 @@ holidays==0.10.1
 idna==2.9
 inflection==0.3.1
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 joblib==0.14.1
 kiwisolver==1.1.0
 LunarCalendar==0.0.9

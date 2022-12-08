@@ -1,6 +1,6 @@
 arviz==0.7.0
 asn1crypto==1.3.0
-certifi==2019.11.28
+certifi==2022.12.7
 cffi==1.14.0
 cftime==1.1.1.2
 chardet==3.0.4
